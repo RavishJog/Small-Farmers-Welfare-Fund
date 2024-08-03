@@ -11,6 +11,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import gherkin.lexer.Th;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import javassist.bytecode.stackmap.BasicBlock;
 import objectrepository.*;
 import org.openqa.selenium.*;
@@ -22,7 +23,8 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 
 import java.io.File;
@@ -34,6 +36,21 @@ import java.util.function.Function;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class Steps extends Utility {
+
+    protected static WebDriver driver;
+
+    @BeforeMethod
+    public void setUp() {
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 
     public Scenario scenario;
 
@@ -70,13 +87,11 @@ public class Steps extends Utility {
     @Given("^I am on SFWF Back Office Home Page \"([^\"]*)\"$")
     public void iAmOnSFWFBackOfficeHomePage(String Browser) throws Throwable {
         if (Browser.equals("Chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\suraj.joggessur\\Desktop\\SFWF\\SFWF\\chromedriver_126_62.exe");
-            driver = new ChromeDriver();
+            setUp();
             driver.get("http://130.1.16.176:18080/sfwfback/");
             driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
-            System.setProperty("webdriver.edge.driver", "C:\\Users\\suraj.joggessur\\Desktop\\SFWF\\SFWF\\msedgedriver17jul24.exe");
-            driver = new EdgeDriver();
+            setUp();
             driver.get("http://130.1.16.176:18080/sfwfback/");
             driver.manage().window().maximize();
         } else {
@@ -397,13 +412,12 @@ public class Steps extends Utility {
     @Given("^I am on SFWF Front Office Home Page \"([^\"]*)\"$")
     public void iAmOnSFWFFrontOfficeHomePage(String Browser) throws Throwable {
         if (Browser.equals("Chrome")) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\suraj.joggessur\\Desktop\\SFWF\\SFWF\\chromedriver_126_62.exe");
-            driver = new ChromeDriver();
+            setUp();
+
             driver.get("http://130.1.16.175:18080/sfwffront/pages/login.xhtml");
             driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
-            System.setProperty("webdriver.edge.driver", "C:\\Users\\suraj.joggessur\\Desktop\\SFWF\\SFWF\\msedgedriver17jul24.exe");
-            driver = new EdgeDriver();
+            setUp();
             driver.get("http://130.1.16.175:18080/sfwffront/pages/login.xhtml");
             driver.manage().window().maximize();
         } else {

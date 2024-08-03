@@ -372,7 +372,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 54000,
+  "duration": 110600,
   "status": "passed"
 });
 formatter.scenario({
@@ -764,7 +764,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePage(String)"
 });
 formatter.result({
-  "duration": 21219397800,
+  "duration": 4714357500,
   "status": "passed"
 });
 formatter.match({
@@ -781,77 +781,77 @@ formatter.match({
   "location": "Steps.iInputRegisteredUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 235687900,
+  "duration": 216095400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 1305767200,
+  "duration": 4731441500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 76427700,
+  "duration": 95129200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 258040800,
+  "duration": 569424300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 94799700,
+  "duration": 27417000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 22673300,
+  "duration": 24944700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 14375500,
+  "duration": 15405900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
 });
 formatter.result({
-  "duration": 148741700,
+  "duration": 487382600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
 });
 formatter.result({
-  "duration": 16831400,
+  "duration": 15696500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnFarmersCooperativesAssociationSocietyOrCompany()"
 });
 formatter.result({
-  "duration": 439552600,
+  "duration": 2597185400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfRegistrationOfFarmersPage()"
 });
 formatter.result({
-  "duration": 20710600,
+  "duration": 58178500,
   "status": "passed"
 });
 formatter.match({
@@ -864,7 +864,7 @@ formatter.match({
   "location": "Steps.iInputAssociateSocietyCompanyName(String)"
 });
 formatter.result({
-  "duration": 61008400,
+  "duration": 158616900,
   "status": "passed"
 });
 formatter.match({
@@ -877,7 +877,7 @@ formatter.match({
   "location": "Steps.iInputRepresentedBy(String)"
 });
 formatter.result({
-  "duration": 60389200,
+  "duration": 91880500,
   "status": "passed"
 });
 formatter.match({
@@ -890,7 +890,7 @@ formatter.match({
   "location": "Steps.iInputBusinessRegistrationNoBRN(String)"
 });
 formatter.result({
-  "duration": 56488400,
+  "duration": 67724200,
   "status": "passed"
 });
 formatter.match({
@@ -903,7 +903,7 @@ formatter.match({
   "location": "Steps.iInputCertificateOfIncorporationNo(String)"
 });
 formatter.result({
-  "duration": 59754300,
+  "duration": 71258700,
   "status": "passed"
 });
 formatter.match({
@@ -916,7 +916,7 @@ formatter.match({
   "location": "Steps.iSelectActivity(String)"
 });
 formatter.result({
-  "duration": 52647600,
+  "duration": 63306800,
   "status": "passed"
 });
 formatter.match({
@@ -929,7 +929,7 @@ formatter.match({
   "location": "Steps.iInputOfficePhoneNumber(String)"
 });
 formatter.result({
-  "duration": 56736400,
+  "duration": 85766800,
   "status": "passed"
 });
 formatter.match({
@@ -942,7 +942,7 @@ formatter.match({
   "location": "Steps.iInputMobilePhoneNumber(String)"
 });
 formatter.result({
-  "duration": 62382000,
+  "duration": 85238400,
   "status": "passed"
 });
 formatter.match({
@@ -955,7 +955,7 @@ formatter.match({
   "location": "Steps.iInputOfficeAddress(String)"
 });
 formatter.result({
-  "duration": 67433500,
+  "duration": 69232100,
   "status": "passed"
 });
 formatter.match({
@@ -968,7 +968,7 @@ formatter.match({
   "location": "Steps.iSelectStatusOfApplicant(String)"
 });
 formatter.result({
-  "duration": 41015100,
+  "duration": 57789800,
   "status": "passed"
 });
 formatter.match({
@@ -981,7 +981,7 @@ formatter.match({
   "location": "Steps.iSelectDurationYearForRegistrationMembership(String)"
 });
 formatter.result({
-  "duration": 2143934500,
+  "duration": 2169239200,
   "status": "passed"
 });
 formatter.match({
@@ -994,7 +994,7 @@ formatter.match({
   "location": "Steps.iInputListOfProductsManufactured(String)"
 });
 formatter.result({
-  "duration": 2141076500,
+  "duration": 2199150000,
   "status": "passed"
 });
 formatter.match({
@@ -1007,7 +1007,7 @@ formatter.match({
   "location": "Steps.iInputNoOfPersonsEmployed(String)"
 });
 formatter.result({
-  "duration": 50897100,
+  "duration": 69374400,
   "status": "passed"
 });
 formatter.match({
@@ -1020,7 +1020,7 @@ formatter.match({
   "location": "Steps.iInputActualAnnualTurnoverRs(String)"
 });
 formatter.result({
-  "duration": 65995100,
+  "duration": 79000800,
   "status": "passed"
 });
 formatter.match({
@@ -1033,7 +1033,7 @@ formatter.match({
   "location": "Steps.iSelectStatusOfBusiness(String)"
 });
 formatter.result({
-  "duration": 47357700,
+  "duration": 51775900,
   "status": "passed"
 });
 formatter.match({
@@ -1046,21 +1046,21 @@ formatter.match({
   "location": "Steps.iInputNoOfYearsOfOperation(String)"
 });
 formatter.result({
-  "duration": 53184700,
+  "duration": 77482600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 4101371700,
+  "duration": 4167047700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
 });
 formatter.result({
-  "duration": 128276400,
+  "duration": 132314300,
   "status": "passed"
 });
 formatter.match({
@@ -1073,7 +1073,7 @@ formatter.match({
   "location": "Steps.iUploadBusinessRegistrationCard(String)"
 });
 formatter.result({
-  "duration": 16575166400,
+  "duration": 4915581900,
   "status": "passed"
 });
 formatter.match({
@@ -1086,7 +1086,7 @@ formatter.match({
   "location": "Steps.iUploadCertificateOfIncorporation(String)"
 });
 formatter.result({
-  "duration": 17715558000,
+  "duration": 2763698500,
   "status": "passed"
 });
 formatter.match({
@@ -1099,7 +1099,7 @@ formatter.match({
   "location": "Steps.iUploadListOfDirectorsAssociates(String)"
 });
 formatter.result({
-  "duration": 1147765200,
+  "duration": 3912832300,
   "status": "passed"
 });
 formatter.match({
@@ -1112,7 +1112,7 @@ formatter.match({
   "location": "Steps.iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String)"
 });
 formatter.result({
-  "duration": 1119807200,
+  "duration": 1725657400,
   "status": "passed"
 });
 formatter.match({
@@ -1125,7 +1125,7 @@ formatter.match({
   "location": "Steps.iUploadNationalIdentityCardOfRepresentative(String)"
 });
 formatter.result({
-  "duration": 1109111500,
+  "duration": 2246323400,
   "status": "passed"
 });
 formatter.match({
@@ -1138,7 +1138,7 @@ formatter.match({
   "location": "Steps.iUploadNationalIdentityCardsOfAllShareholders(String)"
 });
 formatter.result({
-  "duration": 1149236500,
+  "duration": 3846365400,
   "status": "passed"
 });
 formatter.match({
@@ -1151,7 +1151,7 @@ formatter.match({
   "location": "Steps.iUploadLocationPlan(String)"
 });
 formatter.result({
-  "duration": 6514723300,
+  "duration": 2811608400,
   "status": "passed"
 });
 formatter.match({
@@ -1164,7 +1164,7 @@ formatter.match({
   "location": "Steps.iUploadCopyOfSMEDACertificate(String)"
 });
 formatter.result({
-  "duration": 3831995500,
+  "duration": 1189310500,
   "status": "passed"
 });
 formatter.match({
@@ -1177,21 +1177,21 @@ formatter.match({
   "location": "Steps.iUploadCopyOfUtilityBill(String)"
 });
 formatter.result({
-  "duration": 2231697900,
+  "duration": 1182840000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 28994800,
+  "duration": 31486300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAddAdditionalDocument()"
 });
 formatter.result({
-  "duration": 3123030200,
+  "duration": 3173112000,
   "status": "passed"
 });
 formatter.match({
@@ -1204,14 +1204,14 @@ formatter.match({
   "location": "Steps.iInputAdditionalDocumentName(String)"
 });
 formatter.result({
-  "duration": 1687811400,
+  "duration": 1719271900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
 });
 formatter.result({
-  "duration": 35079400,
+  "duration": 32582500,
   "status": "passed"
 });
 formatter.match({
@@ -1224,35 +1224,35 @@ formatter.match({
   "location": "Steps.iUploadAdditionalDocument(String)"
 });
 formatter.result({
-  "duration": 8032450300,
+  "duration": 1186120900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 35144600,
+  "duration": 21651700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 4112202000,
+  "duration": 4199691500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyTermsAndConditionsPage()"
 });
 formatter.result({
-  "duration": 110864400,
+  "duration": 120922000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
 });
 formatter.result({
-  "duration": 134179400,
+  "duration": 169844800,
   "status": "passed"
 });
 formatter.match({
@@ -1265,7 +1265,7 @@ formatter.match({
   "location": "Steps.iSelectBank(String)"
 });
 formatter.result({
-  "duration": 4469847700,
+  "duration": 4364956100,
   "status": "passed"
 });
 formatter.match({
@@ -1278,7 +1278,7 @@ formatter.match({
   "location": "Steps.iInputBankBranch(String)"
 });
 formatter.result({
-  "duration": 1156016700,
+  "duration": 1191054800,
   "status": "passed"
 });
 formatter.match({
@@ -1291,7 +1291,7 @@ formatter.match({
   "location": "Steps.iInputPersonalBankAccountNumber(String)"
 });
 formatter.result({
-  "duration": 1145934600,
+  "duration": 1162859400,
   "status": "passed"
 });
 formatter.match({
@@ -1304,22 +1304,22 @@ formatter.match({
   "location": "Steps.iClickOnSubmitApplication(String)"
 });
 formatter.result({
-  "duration": 3449410300,
+  "duration": 4086324700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
 });
 formatter.result({
-  "duration": 57006400,
+  "duration": 53833400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1237902700,
+  "duration": 1966420300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 170300,
+  "duration": 123400,
   "status": "passed"
 });
 });
