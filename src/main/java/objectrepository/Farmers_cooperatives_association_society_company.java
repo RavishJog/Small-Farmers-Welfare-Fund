@@ -209,7 +209,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Save and Continue
-    private static By btn_Save_and_continue = By.xpath("//span[contains(.,'Save and Continue')]");
+    private static By btn_Save_and_continue = By.xpath("//span[contains(text(),'Save and Continue')]");
 
     public static WebElement Save_and_continue(WebDriver driver) {
         element = driver.findElement(btn_Save_and_continue);
