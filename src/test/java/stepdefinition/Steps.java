@@ -677,7 +677,9 @@ public class Steps extends Utility {
     public void iClickOnSaveAndContinue() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Farmers_cooperatives_association_society_company.Save_and_continue(driver));
         Thread.sleep(1000);
-        Farmers_cooperatives_association_society_company.Save_and_continue(driver).click();
+        WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Farmers_cooperatives_association_society_company.Save_and_continue(driver)));
+        element.click();
         Thread.sleep(3000);
     }
 
