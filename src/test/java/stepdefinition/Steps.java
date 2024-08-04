@@ -700,7 +700,8 @@ public class Steps extends Utility {
 
     @And("^I Upload Business Registration Card \"([^\"]*)\"$")
     public void iUploadBusinessRegistrationCard(String Upload_test) throws Throwable {
-        Documents_upload.Business_Registration_card_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Documents_upload.Business_Registration_card_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[1]")));
 
@@ -720,7 +721,9 @@ public class Steps extends Utility {
 
     @And("^I Upload Certificate of Incorporation \"([^\"]*)\"$")
     public void iUploadCertificateOfIncorporation(String Upload_test) throws Throwable {
-        Documents_upload.Certificate_of_incorporation_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Certificate_of_incorporation_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[2]")));
 
@@ -728,49 +731,63 @@ public class Steps extends Utility {
 
     @And("^I Upload List of Directors/ Associates \"([^\"]*)\"$")
     public void iUploadListOfDirectorsAssociates(String Upload_test) throws Throwable {
-        Documents_upload.List_of_directors_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.List_of_directors_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[3]")));
     }
 
     @And("^I Upload Board Resolution of Enterprise for appointment of representative\\(s\\) \"([^\"]*)\"$")
     public void iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String Upload_test) throws Throwable {
-        Documents_upload.Board_resolution_of_enterprise_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Board_resolution_of_enterprise_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[4]")));
     }
 
     @And("^I Upload National Identity card of representative \"([^\"]*)\"$")
     public void iUploadNationalIdentityCardOfRepresentative(String Upload_test) throws Throwable {
-        Documents_upload.National_identity_card_Representative_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.National_identity_card_Representative_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[5]")));
     }
 
     @And("^I Upload National Identity cards of all shareholders \"([^\"]*)\"$")
     public void iUploadNationalIdentityCardsOfAllShareholders(String Upload_test) throws Throwable {
-        Documents_upload.National_identity_card_Shareholders_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.National_identity_card_Shareholders_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]")));
     }
 
     @And("^I Upload Location Plan \"([^\"]*)\"$")
     public void iUploadLocationPlan(String Upload_test) throws Throwable {
-        Documents_upload.Location_plan_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Location_plan_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[7]")));
     }
 
     @And("^I Upload Copy of SMEDA Certificate \"([^\"]*)\"$")
     public void iUploadCopyOfSMEDACertificate(String Upload_test) throws Throwable {
-        Documents_upload.SMEDA_certificate_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.SMEDA_certificate_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[8]")));
     }
 
     @And("^I Upload Copy of Utility Bill \"([^\"]*)\"$")
     public void iUploadCopyOfUtilityBill(String Upload_test) throws Throwable {
-        Documents_upload.Utility_bill_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Utility_bill_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[9]")));
     }
@@ -855,7 +872,8 @@ public class Steps extends Utility {
 
     @And("^I Upload Additional Document \"([^\"]*)\"$")
     public void iUploadAdditionalDocument(String Upload_test) throws Throwable {
-        Documents_upload.Additional_document_upload(driver).sendKeys(Upload_test);
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Documents_upload.Additional_document_upload(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[10]")));
 
