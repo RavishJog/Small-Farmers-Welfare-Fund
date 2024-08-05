@@ -1,0 +1,439 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#User Story 12199 - List of Type of Fee and Fine"
+      },
+      {
+        "line": 2,
+        "value": "# As an Back Office User"
+      },
+      {
+        "line": 3,
+        "value": "# I want to Access the List of Fees and fines"
+      },
+      {
+        "line": 4,
+        "value": "# So that I can view, Edit and Add fees and fines"
+      }
+    ],
+    "line": 8,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 63500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 65,
+        "name": "Searching of Fees and fines",
+        "description": "",
+        "id": "view,-edit,-add-fees-and-fines;searching-of-fees-and-fines;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1083330600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 89759300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.setup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7168357200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I am on SFWF Back Office Home Page \"Chrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chrome",
+                  "offset": 36
+                }
+              ],
+              "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 194574100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I Input Username \"Suraj_Admin1\" and Password \"Admin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Suraj_Admin1",
+                  "offset": 18
+                },
+                {
+                  "val": "Admin@123",
+                  "offset": 46
+                }
+              ],
+              "location": "Steps.iInputUsernameAndPassword(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1314031900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I Click on Sign In button",
+            "match": {
+              "location": "Steps.iClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 72659600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I Verify Successful Login",
+            "match": {
+              "location": "Steps.IVerifySuccessfulLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80261300,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I click on Manage Farmers Details",
+            "match": {
+              "location": "Steps.iClickOnManageFarmersDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1187960300,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I Click on Manage Fee and Fine",
+            "match": {
+              "location": "Steps.iClickOnManageFeeAndFine()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3113041000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I Input Type of Fee \"AA-Fertiliser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AA-Fertiliser",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.iInputTypeOfFee(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3049381900,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I Verify Type of Fee search Bar is working properly",
+            "match": {
+              "location": "Steps.iVerifyTypeOfFeeSearchBarIsWorkingProperly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 763067000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I Click on Manage Fee and Fine",
+            "match": {
+              "location": "Steps.iClickOnManageFeeAndFine()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3107927600,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "I Input Fee Code \"AAFSS2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AAFSS2",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.iInputFeeCode(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3051038000,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "I Verify Fee Code search Bar is working properly",
+            "match": {
+              "location": "Steps.iVerifyFeeCodeSearchBarIsWorkingProperly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1975023200,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I Click on Manage Fee and Fine",
+            "match": {
+              "location": "Steps.iClickOnManageFeeAndFine()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3109923500,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I Input Amount \"10000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10000",
+                  "offset": 16
+                }
+              ],
+              "location": "Steps.iInputAmount(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3054804600,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "I Verify Amount search Bar is working properly",
+            "match": {
+              "location": "Steps.iVerifyAmountSearchBarIsWorkingProperly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1592036800,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I Click on Manage Fee and Fine",
+            "match": {
+              "location": "Steps.iClickOnManageFeeAndFine()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3087093100,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I Input Year \"10 Year\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10 Year",
+                  "offset": 14
+                }
+              ],
+              "location": "Steps.iInputYear(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3048301900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I Verify Year search Bar is working properly",
+            "match": {
+              "location": "Steps.iVerifyYearSearchBarIsWorkingProperly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 716129200,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I Click on Manage Fee and Fine",
+            "match": {
+              "location": "Steps.iClickOnManageFeeAndFine()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3095040300,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I Input Currency \"AA-Rs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "AA-Rs",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.iInputCurrency(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3048927600,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I Verify Currency search Bar is working properly",
+            "match": {
+              "location": "Steps.iVerifyCurrencySearchBarIsWorkingProperly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573701800,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I Click on Manage Fee and Fine",
+            "match": {
+              "location": "Steps.iClickOnManageFeeAndFine()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4318005100,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "I Sign Out",
+            "match": {
+              "location": "Steps.iSignOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45375900,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I Verify Successful Sign Out",
+            "match": {
+              "location": "Steps.iVerifySuccessfulSignOut()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Main_feature"
+          },
+          {
+            "line": 36,
+            "name": "@Searching_list_of_fees_and_fines"
+          },
+          {
+            "line": 7,
+            "name": "@US12199"
+          }
+        ]
+      }
+    ],
+    "name": "View, Edit, Add fees and fines",
+    "description": "",
+    "id": "view,-edit,-add-fees-and-fines",
+    "keyword": "Feature",
+    "uri": "features/US12199.feature",
+    "tags": [
+      {
+        "line": 7,
+        "name": "@Main_feature"
+      },
+      {
+        "line": 7,
+        "name": "@US12199"
+      }
+    ]
+  }
+]

@@ -207,7 +207,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 52000,
+  "duration": 63500,
   "status": "passed"
 });
 formatter.scenario({
@@ -379,7 +379,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
 });
 formatter.result({
-  "duration": 22350186600,
+  "duration": 7168357200,
   "status": "passed"
 });
 formatter.match({
@@ -396,35 +396,35 @@ formatter.match({
   "location": "Steps.iInputUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 212322500,
+  "duration": 194574100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 1229665800,
+  "duration": 1314031900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.IVerifySuccessfulLogin()"
 });
 formatter.result({
-  "duration": 65777100,
+  "duration": 72659600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageFarmersDetails()"
 });
 formatter.result({
-  "duration": 91044300,
+  "duration": 80261300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageFeeAndFine()"
 });
 formatter.result({
-  "duration": 1237287200,
+  "duration": 1187960300,
   "status": "passed"
 });
 formatter.match({
@@ -437,21 +437,21 @@ formatter.match({
   "location": "Steps.iInputTypeOfFee(String)"
 });
 formatter.result({
-  "duration": 3118011000,
+  "duration": 3113041000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyTypeOfFeeSearchBarIsWorkingProperly()"
 });
 formatter.result({
-  "duration": 3050546300,
+  "duration": 3049381900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageFeeAndFine()"
 });
 formatter.result({
-  "duration": 969998500,
+  "duration": 763067000,
   "status": "passed"
 });
 formatter.match({
@@ -464,21 +464,21 @@ formatter.match({
   "location": "Steps.iInputFeeCode(String)"
 });
 formatter.result({
-  "duration": 3085671000,
+  "duration": 3107927600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyFeeCodeSearchBarIsWorkingProperly()"
 });
 formatter.result({
-  "duration": 3053633600,
+  "duration": 3051038000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageFeeAndFine()"
 });
 formatter.result({
-  "duration": 2622058800,
+  "duration": 1975023200,
   "status": "passed"
 });
 formatter.match({
@@ -491,21 +491,21 @@ formatter.match({
   "location": "Steps.iInputAmount(String)"
 });
 formatter.result({
-  "duration": 3113491900,
+  "duration": 3109923500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyAmountSearchBarIsWorkingProperly()"
 });
 formatter.result({
-  "duration": 3050137200,
+  "duration": 3054804600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageFeeAndFine()"
 });
 formatter.result({
-  "duration": 4591762500,
+  "duration": 1592036800,
   "status": "passed"
 });
 formatter.match({
@@ -518,21 +518,21 @@ formatter.match({
   "location": "Steps.iInputYear(String)"
 });
 formatter.result({
-  "duration": 3113310200,
+  "duration": 3087093100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyYearSearchBarIsWorkingProperly()"
 });
 formatter.result({
-  "duration": 3056075400,
+  "duration": 3048301900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageFeeAndFine()"
 });
 formatter.result({
-  "duration": 1352784900,
+  "duration": 716129200,
   "status": "passed"
 });
 formatter.match({
@@ -545,43 +545,43 @@ formatter.match({
   "location": "Steps.iInputCurrency(String)"
 });
 formatter.result({
-  "duration": 3097674800,
+  "duration": 3095040300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyCurrencySearchBarIsWorkingProperly()"
 });
 formatter.result({
-  "duration": 3059054200,
+  "duration": 3048927600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageFeeAndFine()"
 });
 formatter.result({
-  "duration": 623764800,
+  "duration": 573701800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSignOut()"
 });
 formatter.result({
-  "duration": 4482263500,
+  "duration": 4318005100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessfulSignOut()"
 });
 formatter.result({
-  "duration": 53523800,
+  "duration": 45375900,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1091401400,
+  "duration": 1083330600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 90833100,
+  "duration": 89759300,
   "status": "passed"
 });
 });

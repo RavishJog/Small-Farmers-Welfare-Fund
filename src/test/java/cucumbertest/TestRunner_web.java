@@ -12,7 +12,9 @@ import org.testng.annotations.Test;
         glue={"stepdefinition"},
         plugin={
                 "html:target/CucumberReportjson/html-report",
-                "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/Report.html"
+                "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/Report.html",
+                "pretty",
+                "json:target/cucumber-reports/cucumber.json" // Specify the JSON report path
         }
         ,tags = "@Searching_list_of_fees_and_fines"
 )
