@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="cucumbertest.TestRunner_web" time="198.838" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="cucumbertest.TestRunner_web" time="72.51" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin"/>
     <property name="java.vm.version" value="25.371-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\suraj.joggessur\Desktop\SFWF\SFWF"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\suraj.joggessur\Desktop\SFWF\Small-Farmers-Welfare-Fund"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\suraj.joggessur\Desktop\SFWF\SFWF"/>
+    <property name="user.dir" value="C:\Users\suraj.joggessur\Desktop\SFWF\Small-Farmers-Welfare-Fund"/>
     <property name="java.runtime.version" value="1.8.0_371-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk-1.8\jre\lib\endorsed"/>
@@ -39,7 +39,7 @@
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
     <property name="user.home" value="C:\Users\suraj.joggessur"/>
-    <property name="tags" value="&quot;@Register_as_Farmers_Cooperative_Association&quot;"/>
+    <property name="tags" value="&quot;@Searching_list_of_fees_and_fines&quot;"/>
     <property name="user.timezone" value="Indian/Mauritius"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
@@ -49,7 +49,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-1.8\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 clean test -D tags=&quot;@Register_as_Farmers_Cooperative_Association&quot;"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 clean test -D tags=&quot;@Searching_list_of_fees_and_fines&quot;"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -67,5 +67,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="198.838"/>
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="72.51"/>
 </testsuite>

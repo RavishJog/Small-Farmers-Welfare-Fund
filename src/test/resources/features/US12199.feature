@@ -62,7 +62,7 @@ Feature: View, Edit, Add fees and fines
 
     Examples:
       |Browser|Username     |Password |Fee_Type     |Fee_Code   |Amount |Year    |Currency |
-      |Chrome |Suraj_Admin1 |Admin@123|AA-Fertiliser|AAFSS2     |10,000 |10 Year|AA-Rs     |
+      |Chrome |Suraj_Admin1 |Admin@123|AA-Fertiliser|AAFSS2     |10000 |10 Year|AA-Rs     |
 
 
 #Scenario4 - 13204 - TC 4-Verify the content of Type of fee and fine

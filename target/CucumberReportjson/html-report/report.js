@@ -1,413 +1,248 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US12200.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US12199.feature");
 formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#User Story 12200 - Register as Farmers’ Cooperative Association, Society or Company-Application form"
-    }
-  ],
-  "line": 5,
-  "name": "Register as Farmers’ Cooperative Association, Society or Company",
-  "description": "",
-  "id": "register-as-farmers’-cooperative-association,-society-or-company",
-  "keyword": "Feature",
-  "tags": [
+      "value": "#User Story 12199 - List of Type of Fee and Fine"
+    },
     {
-      "line": 4,
-      "name": "@Main_feature"
+      "line": 2,
+      "value": "# As an Back Office User"
+    },
+    {
+      "line": 3,
+      "value": "# I want to Access the List of Fees and fines"
     },
     {
       "line": 4,
-      "name": "@US12200"
+      "value": "# So that I can view, Edit and Add fees and fines"
+    }
+  ],
+  "line": 8,
+  "name": "View, Edit, Add fees and fines",
+  "description": "",
+  "id": "view,-edit,-add-fees-and-fines",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 7,
+      "name": "@Main_feature"
+    },
+    {
+      "line": 7,
+      "name": "@US12199"
     }
   ]
 });
 formatter.scenarioOutline({
   "comments": [
     {
-      "line": 7,
-      "value": "#Scenario1"
+      "line": 35,
+      "value": "#Scenario2 - 12873 - TC 2-Search"
     }
   ],
-  "line": 9,
-  "name": "Register as Farmers’ Cooperative Association, Society or Company",
+  "line": 37,
+  "name": "Searching of Fees and fines",
   "description": "",
-  "id": "register-as-farmers’-cooperative-association,-society-or-company;register-as-farmers’-cooperative-association,-society-or-company",
+  "id": "view,-edit,-add-fees-and-fines;searching-of-fees-and-fines",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 8,
-      "name": "@Register_as_Farmers_Cooperative_Association"
+      "line": 36,
+      "name": "@Searching_list_of_fees_and_fines"
     }
   ]
 });
 formatter.step({
-  "line": 11,
-  "name": "I am on SFWF Front Office Home Page \"\u003cBrowser\u003e\"",
+  "line": 39,
+  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 12,
-  "name": "I Input Registered User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "line": 40,
+  "name": "I Input Username \"\u003cUsername\u003e\" and Password \"\u003cPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
+  "line": 41,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
-  "name": "I Verify Applicant\u0027s Successful Login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "I Click on Register as Farmer",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "I Verify that User is directed to My Application Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "I Verify display of Farmers Card link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "I Verify Programmes link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "I Click on New Button to apply for Registration",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "I Verify display of Registration Type Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "I Click on Farmers Cooperatives Association, Society or Company",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "I Verify display of Registration of Farmers page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "I Input Associate/Society/Company Name \"\u003cCo_Name\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "I Input Represented by \"\u003cRep_by\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "I Input Business Registration No.(BRN) \"\u003cBRN\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "I Input Certificate of Incorporation No \"\u003cCert_No\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "I Select Activity \"\u003cAct\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "I Input Office Phone Number \"\u003cOff_Num\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "I Input Mobile Phone Number \"\u003cMob_Num\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 30,
-  "name": "I Input Office Address \"\u003cOff_Add\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I Select Status of Applicant \"\u003cStatus_Applicant\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 32,
-  "name": "I Select Duration Year for Registration membership \"\u003cYear_dur\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 33,
-  "name": "I Input List of Products manufactured \"\u003cProd_man\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 34,
-  "name": "I Input No. of persons employed \"\u003cNo_person\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 35,
-  "name": "I Input Actual Annual Turnover (Rs) \"\u003cActual_ann_turnover\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
-  "name": "I Select Status of business \"\u003cStatus_business\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 37,
-  "name": "I Input No. of years of operation \"\u003cYears_operation\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 38,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 39,
-  "name": "I Verify Upload Required Documents Page is displayed",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 40,
-  "name": "I Upload Business Registration Card \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 41,
-  "name": "I Upload Certificate of Incorporation \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
   "line": 42,
-  "name": "I Upload List of Directors/ Associates \"\u003cUpload_test\u003e\"",
+  "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
   "line": 43,
-  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"\u003cUpload_test\u003e\"",
+  "name": "I click on Manage Farmers Details",
   "keyword": "And "
 });
 formatter.step({
   "line": 44,
-  "name": "I Upload National Identity card of representative \"\u003cUpload_test\u003e\"",
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
   "line": 45,
-  "name": "I Upload National Identity cards of all shareholders \"\u003cUpload_test\u003e\"",
+  "name": "I Input Type of Fee \"\u003cFee_Type\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 46,
-  "name": "I Upload Location Plan \"\u003cUpload_test\u003e\"",
+  "name": "I Verify Type of Fee search Bar is working properly",
   "keyword": "And "
 });
 formatter.step({
   "line": 47,
-  "name": "I Upload Copy of SMEDA Certificate \"\u003cUpload_test\u003e\"",
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
   "line": 48,
-  "name": "I Upload Copy of Utility Bill \"\u003cUpload_test\u003e\"",
+  "name": "I Input Fee Code \"\u003cFee_Code\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 49,
-  "name": "I Verify for Document Upload Success Message",
+  "name": "I Verify Fee Code search Bar is working properly",
   "keyword": "And "
 });
 formatter.step({
   "line": 50,
-  "name": "I Click on Add Additional Document",
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
   "line": 51,
-  "name": "I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\"",
+  "name": "I Input Amount \"\u003cAmount\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 52,
-  "name": "I Verify Success message for adding Additional Document Name",
+  "name": "I Verify Amount search Bar is working properly",
   "keyword": "And "
 });
 formatter.step({
   "line": 53,
-  "name": "I Upload Additional Document \"\u003cUpload_test\u003e\"",
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
   "line": 54,
-  "name": "I Verify for Document Upload Success Message",
+  "name": "I Input Year \"\u003cYear\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 55,
-  "name": "I Click on Save and Continue",
+  "name": "I Verify Year search Bar is working properly",
   "keyword": "And "
 });
 formatter.step({
   "line": 56,
-  "name": "I Verify Terms and Conditions Page",
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
   "line": 57,
-  "name": "I click on I agree to the Terms and Conditions",
+  "name": "I Input Currency \"\u003cCurrency\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 58,
-  "name": "I Select Bank \"\u003cBank_Name\u003e\"",
+  "name": "I Verify Currency search Bar is working properly",
   "keyword": "And "
 });
 formatter.step({
   "line": 59,
-  "name": "I Input Bank Branch \"\u003cBank_Branch\u003e\"",
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
   "line": 60,
-  "name": "I Input Personal Bank Account Number\"\u003cBank_Account_No\u003e\"",
+  "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "line": 61,
-  "name": "I Click on Submit Application \"\u003cConfirmation\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 62,
-  "name": "I Verify Success message for application submitted",
+  "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 70,
+  "line": 63,
   "name": "",
   "description": "",
-  "id": "register-as-farmers’-cooperative-association,-society-or-company;register-as-farmers’-cooperative-association,-society-or-company;",
+  "id": "view,-edit,-add-fees-and-fines;searching-of-fees-and-fines;",
   "rows": [
     {
       "cells": [
         "Browser",
         "Username",
         "Password",
-        "Co_Name",
-        "Rep_by",
-        "BRN",
-        "Cert_No",
-        "Act",
-        "Off_Num",
-        "Mob_Num",
-        "Off_Add",
-        "Status_Applicant",
-        "Year_dur",
-        "Prod_man",
-        "No_person",
-        "Actual_ann_turnover",
-        "Status_business",
-        "Years_operation",
-        "Upload_test",
-        "Additional_Doc_Name",
-        "Bank_Name",
-        "Bank_Branch",
-        "Bank_Account_No",
-        "Confirmation"
+        "Fee_Type",
+        "Fee_Code",
+        "Amount",
+        "Year",
+        "Currency"
       ],
-      "line": 71,
-      "id": "register-as-farmers’-cooperative-association,-society-or-company;register-as-farmers’-cooperative-association,-society-or-company;;1"
+      "line": 64,
+      "id": "view,-edit,-add-fees-and-fines;searching-of-fees-and-fines;;1"
     },
     {
       "cells": [
         "Chrome",
-        "Suraj",
+        "Suraj_Admin1",
         "Admin@123",
-        "ABC Agro Co Ltd",
-        "Mr John Brown",
-        "C123456789",
-        "XLPR852",
-        "Full Time",
-        "2025599",
-        "58964587",
-        "The Main Road, Grand Port",
-        "Company",
-        "1",
-        "Tomato, Pepper",
-        "50",
-        "10000000",
-        "Existing",
-        "5",
-        "src\\test\\resources\\Upload_Test1.pdf",
-        "Additional Document Test",
-        "ABC Banking",
-        "Port Louis",
-        "0001252563636",
-        "Yes"
+        "AA-Fertiliser",
+        "AAFSS2",
+        "10000",
+        "10 Year",
+        "AA-Rs"
       ],
-      "line": 72,
-      "id": "register-as-farmers’-cooperative-association,-society-or-company;register-as-farmers’-cooperative-association,-society-or-company;;2"
+      "line": 65,
+      "id": "view,-edit,-add-fees-and-fines;searching-of-fees-and-fines;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 91900,
+  "duration": 52000,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 72,
-  "name": "Register as Farmers’ Cooperative Association, Society or Company",
+  "line": 65,
+  "name": "Searching of Fees and fines",
   "description": "",
-  "id": "register-as-farmers’-cooperative-association,-society-or-company;register-as-farmers’-cooperative-association,-society-or-company;;2",
+  "id": "view,-edit,-add-fees-and-fines;searching-of-fees-and-fines;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
+      "line": 7,
       "name": "@Main_feature"
     },
     {
-      "line": 4,
-      "name": "@US12200"
+      "line": 36,
+      "name": "@Searching_list_of_fees_and_fines"
     },
     {
-      "line": 8,
-      "name": "@Register_as_Farmers_Cooperative_Association"
+      "line": 7,
+      "name": "@US12199"
     }
   ]
 });
 formatter.step({
-  "line": 11,
-  "name": "I am on SFWF Front Office Home Page \"Chrome\"",
+  "line": 39,
+  "name": "I am on SFWF Back Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
   ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 12,
-  "name": "I Input Registered User\u0027s Username \"Suraj\" and Password \"Admin@123\"",
+  "line": 40,
+  "name": "I Input Username \"Suraj_Admin1\" and Password \"Admin@123\"",
   "matchedColumns": [
     1,
     2
@@ -415,911 +250,338 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
+  "line": 41,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
-  "name": "I Verify Applicant\u0027s Successful Login",
+  "line": 42,
+  "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
-  "name": "I Click on Register as Farmer",
+  "line": 43,
+  "name": "I click on Manage Farmers Details",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
-  "name": "I Verify that User is directed to My Application Page",
+  "line": 44,
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "I Verify display of Farmers Card link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "I Verify Programmes link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "I Click on New Button to apply for Registration",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "I Verify display of Registration Type Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "I Click on Farmers Cooperatives Association, Society or Company",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "I Verify display of Registration of Farmers page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "I Input Associate/Society/Company Name \"ABC Agro Co Ltd\"",
+  "line": 45,
+  "name": "I Input Type of Fee \"AA-Fertiliser\"",
   "matchedColumns": [
     3
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
-  "name": "I Input Represented by \"Mr John Brown\"",
+  "line": 46,
+  "name": "I Verify Type of Fee search Bar is working properly",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 47,
+  "name": "I Click on Manage Fee and Fine",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 48,
+  "name": "I Input Fee Code \"AAFSS2\"",
   "matchedColumns": [
     4
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
-  "name": "I Input Business Registration No.(BRN) \"C123456789\"",
+  "line": 49,
+  "name": "I Verify Fee Code search Bar is working properly",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 50,
+  "name": "I Click on Manage Fee and Fine",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 51,
+  "name": "I Input Amount \"10000\"",
   "matchedColumns": [
     5
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 26,
-  "name": "I Input Certificate of Incorporation No \"XLPR852\"",
+  "line": 52,
+  "name": "I Verify Amount search Bar is working properly",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 53,
+  "name": "I Click on Manage Fee and Fine",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 54,
+  "name": "I Input Year \"10 Year\"",
   "matchedColumns": [
     6
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 27,
-  "name": "I Select Activity \"Full Time\"",
+  "line": 55,
+  "name": "I Verify Year search Bar is working properly",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 56,
+  "name": "I Click on Manage Fee and Fine",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 57,
+  "name": "I Input Currency \"AA-Rs\"",
   "matchedColumns": [
     7
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 28,
-  "name": "I Input Office Phone Number \"2025599\"",
-  "matchedColumns": [
-    8
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "I Input Mobile Phone Number \"58964587\"",
-  "matchedColumns": [
-    9
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 30,
-  "name": "I Input Office Address \"The Main Road, Grand Port\"",
-  "matchedColumns": [
-    10
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I Select Status of Applicant \"Company\"",
-  "matchedColumns": [
-    11
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 32,
-  "name": "I Select Duration Year for Registration membership \"1\"",
-  "matchedColumns": [
-    12
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 33,
-  "name": "I Input List of Products manufactured \"Tomato, Pepper\"",
-  "matchedColumns": [
-    13
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 34,
-  "name": "I Input No. of persons employed \"50\"",
-  "matchedColumns": [
-    14
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 35,
-  "name": "I Input Actual Annual Turnover (Rs) \"10000000\"",
-  "matchedColumns": [
-    15
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
-  "name": "I Select Status of business \"Existing\"",
-  "matchedColumns": [
-    16
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 37,
-  "name": "I Input No. of years of operation \"5\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 38,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 39,
-  "name": "I Verify Upload Required Documents Page is displayed",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 40,
-  "name": "I Upload Business Registration Card \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 41,
-  "name": "I Upload Certificate of Incorporation \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 42,
-  "name": "I Upload List of Directors/ Associates \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 43,
-  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 44,
-  "name": "I Upload National Identity card of representative \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 45,
-  "name": "I Upload National Identity cards of all shareholders \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 46,
-  "name": "I Upload Location Plan \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 47,
-  "name": "I Upload Copy of SMEDA Certificate \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 48,
-  "name": "I Upload Copy of Utility Bill \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 49,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 50,
-  "name": "I Click on Add Additional Document",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 51,
-  "name": "I Input Additional Document Name \"Additional Document Test\"",
-  "matchedColumns": [
-    19
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 52,
-  "name": "I Verify Success message for adding Additional Document Name",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 53,
-  "name": "I Upload Additional Document \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 54,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 55,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 56,
-  "name": "I Verify Terms and Conditions Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 57,
-  "name": "I click on I agree to the Terms and Conditions",
-  "keyword": "And "
-});
-formatter.step({
   "line": 58,
-  "name": "I Select Bank \"ABC Banking\"",
-  "matchedColumns": [
-    20
-  ],
+  "name": "I Verify Currency search Bar is working properly",
   "keyword": "And "
 });
 formatter.step({
   "line": 59,
-  "name": "I Input Bank Branch \"Port Louis\"",
-  "matchedColumns": [
-    21
-  ],
+  "name": "I Click on Manage Fee and Fine",
   "keyword": "And "
 });
 formatter.step({
   "line": 60,
-  "name": "I Input Personal Bank Account Number\"0001252563636\"",
-  "matchedColumns": [
-    22
-  ],
+  "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "line": 61,
-  "name": "I Click on Submit Application \"Yes\"",
-  "matchedColumns": [
-    23
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 62,
-  "name": "I Verify Success message for application submitted",
+  "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.match({
   "arguments": [
     {
       "val": "Chrome",
-      "offset": 37
+      "offset": 36
     }
   ],
-  "location": "Steps.iAmOnSFWFFrontOfficeHomePage(String)"
+  "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
 });
 formatter.result({
-  "duration": 3110178400,
+  "duration": 22350186600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Suraj",
-      "offset": 36
+      "val": "Suraj_Admin1",
+      "offset": 18
     },
     {
       "val": "Admin@123",
-      "offset": 57
+      "offset": 46
     }
   ],
-  "location": "Steps.iInputRegisteredUserSUsernameAndPassword(String,String)"
+  "location": "Steps.iInputUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 271044300,
+  "duration": 212322500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 2059813600,
+  "duration": 1229665800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
+  "location": "Steps.IVerifySuccessfulLogin()"
 });
 formatter.result({
-  "duration": 51752000,
+  "duration": 65777100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickOnRegisterAsFarmer()"
+  "location": "Steps.iClickOnManageFarmersDetails()"
 });
 formatter.result({
-  "duration": 576672600,
+  "duration": 91044300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
+  "location": "Steps.iClickOnManageFeeAndFine()"
 });
 formatter.result({
-  "duration": 20381400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
-});
-formatter.result({
-  "duration": 11449600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyProgrammesLink()"
-});
-formatter.result({
-  "duration": 13601200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
-});
-formatter.result({
-  "duration": 597611900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
-});
-formatter.result({
-  "duration": 19644600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnFarmersCooperativesAssociationSocietyOrCompany()"
-});
-formatter.result({
-  "duration": 2899956100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyDisplayOfRegistrationOfFarmersPage()"
-});
-formatter.result({
-  "duration": 47330000,
+  "duration": 1237287200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "ABC Agro Co Ltd",
-      "offset": 40
-    }
-  ],
-  "location": "Steps.iInputAssociateSocietyCompanyName(String)"
-});
-formatter.result({
-  "duration": 71547600,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Mr John Brown",
-      "offset": 24
-    }
-  ],
-  "location": "Steps.iInputRepresentedBy(String)"
-});
-formatter.result({
-  "duration": 74415800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "C123456789",
-      "offset": 40
-    }
-  ],
-  "location": "Steps.iInputBusinessRegistrationNoBRN(String)"
-});
-formatter.result({
-  "duration": 54591200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "XLPR852",
-      "offset": 41
-    }
-  ],
-  "location": "Steps.iInputCertificateOfIncorporationNo(String)"
-});
-formatter.result({
-  "duration": 57824100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Full Time",
-      "offset": 19
-    }
-  ],
-  "location": "Steps.iSelectActivity(String)"
-});
-formatter.result({
-  "duration": 53111200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2025599",
-      "offset": 29
-    }
-  ],
-  "location": "Steps.iInputOfficePhoneNumber(String)"
-});
-formatter.result({
-  "duration": 62803000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "58964587",
-      "offset": 29
-    }
-  ],
-  "location": "Steps.iInputMobilePhoneNumber(String)"
-});
-formatter.result({
-  "duration": 57056800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "The Main Road, Grand Port",
-      "offset": 24
-    }
-  ],
-  "location": "Steps.iInputOfficeAddress(String)"
-});
-formatter.result({
-  "duration": 78866800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Company",
-      "offset": 30
-    }
-  ],
-  "location": "Steps.iSelectStatusOfApplicant(String)"
-});
-formatter.result({
-  "duration": 49481000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 52
-    }
-  ],
-  "location": "Steps.iSelectDurationYearForRegistrationMembership(String)"
-});
-formatter.result({
-  "duration": 2154572100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Tomato, Pepper",
-      "offset": 39
-    }
-  ],
-  "location": "Steps.iInputListOfProductsManufactured(String)"
-});
-formatter.result({
-  "duration": 2143679100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "50",
-      "offset": 33
-    }
-  ],
-  "location": "Steps.iInputNoOfPersonsEmployed(String)"
-});
-formatter.result({
-  "duration": 47597900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10000000",
-      "offset": 37
-    }
-  ],
-  "location": "Steps.iInputActualAnnualTurnoverRs(String)"
-});
-formatter.result({
-  "duration": 68783700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Existing",
-      "offset": 29
-    }
-  ],
-  "location": "Steps.iSelectStatusOfBusiness(String)"
-});
-formatter.result({
-  "duration": 45228000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "5",
-      "offset": 35
-    }
-  ],
-  "location": "Steps.iInputNoOfYearsOfOperation(String)"
-});
-formatter.result({
-  "duration": 53017500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnSaveAndContinue()"
-});
-formatter.result({
-  "duration": 4115220900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
-});
-formatter.result({
-  "duration": 93554700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 37
-    }
-  ],
-  "location": "Steps.iUploadBusinessRegistrationCard(String)"
-});
-formatter.result({
-  "duration": 22621893200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 39
-    }
-  ],
-  "location": "Steps.iUploadCertificateOfIncorporation(String)"
-});
-formatter.result({
-  "duration": 3836536300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 40
-    }
-  ],
-  "location": "Steps.iUploadListOfDirectorsAssociates(String)"
-});
-formatter.result({
-  "duration": 31757054400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 78
-    }
-  ],
-  "location": "Steps.iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String)"
-});
-formatter.result({
-  "duration": 21530645500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 51
-    }
-  ],
-  "location": "Steps.iUploadNationalIdentityCardOfRepresentative(String)"
-});
-formatter.result({
-  "duration": 7048071500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 54
-    }
-  ],
-  "location": "Steps.iUploadNationalIdentityCardsOfAllShareholders(String)"
-});
-formatter.result({
-  "duration": 9747870300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 24
-    }
-  ],
-  "location": "Steps.iUploadLocationPlan(String)"
-});
-formatter.result({
-  "duration": 16742908000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 36
-    }
-  ],
-  "location": "Steps.iUploadCopyOfSMEDACertificate(String)"
-});
-formatter.result({
-  "duration": 19463130100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 31
-    }
-  ],
-  "location": "Steps.iUploadCopyOfUtilityBill(String)"
-});
-formatter.result({
-  "duration": 11912163800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
-});
-formatter.result({
-  "duration": 21485200,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnAddAdditionalDocument()"
-});
-formatter.result({
-  "duration": 3125018000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Additional Document Test",
-      "offset": 34
-    }
-  ],
-  "location": "Steps.iInputAdditionalDocumentName(String)"
-});
-formatter.result({
-  "duration": 1630244300,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
-});
-formatter.result({
-  "duration": 31276500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 30
-    }
-  ],
-  "location": "Steps.iUploadAdditionalDocument(String)"
-});
-formatter.result({
-  "duration": 14047931100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
-});
-formatter.result({
-  "duration": 23589100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnSaveAndContinue()"
-});
-formatter.result({
-  "duration": 4146038500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyTermsAndConditionsPage()"
-});
-formatter.result({
-  "duration": 81642800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
-});
-formatter.result({
-  "duration": 80948900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "ABC Banking",
-      "offset": 15
-    }
-  ],
-  "location": "Steps.iSelectBank(String)"
-});
-formatter.result({
-  "duration": 4259809400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Port Louis",
+      "val": "AA-Fertiliser",
       "offset": 21
     }
   ],
-  "location": "Steps.iInputBankBranch(String)"
+  "location": "Steps.iInputTypeOfFee(String)"
 });
 formatter.result({
-  "duration": 1149126500,
+  "duration": 3118011000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyTypeOfFeeSearchBarIsWorkingProperly()"
+});
+formatter.result({
+  "duration": 3050546300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnManageFeeAndFine()"
+});
+formatter.result({
+  "duration": 969998500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "0001252563636",
-      "offset": 37
+      "val": "AAFSS2",
+      "offset": 18
     }
   ],
-  "location": "Steps.iInputPersonalBankAccountNumber(String)"
+  "location": "Steps.iInputFeeCode(String)"
 });
 formatter.result({
-  "duration": 1088322700,
+  "duration": 3085671000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyFeeCodeSearchBarIsWorkingProperly()"
+});
+formatter.result({
+  "duration": 3053633600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnManageFeeAndFine()"
+});
+formatter.result({
+  "duration": 2622058800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Yes",
-      "offset": 31
+      "val": "10000",
+      "offset": 16
     }
   ],
-  "location": "Steps.iClickOnSubmitApplication(String)"
+  "location": "Steps.iInputAmount(String)"
 });
 formatter.result({
-  "duration": 3628368200,
+  "duration": 3113491900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
+  "location": "Steps.iVerifyAmountSearchBarIsWorkingProperly()"
 });
 formatter.result({
-  "duration": 40945200,
+  "duration": 3050137200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnManageFeeAndFine()"
+});
+formatter.result({
+  "duration": 4591762500,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "10 Year",
+      "offset": 14
+    }
+  ],
+  "location": "Steps.iInputYear(String)"
+});
+formatter.result({
+  "duration": 3113310200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyYearSearchBarIsWorkingProperly()"
+});
+formatter.result({
+  "duration": 3056075400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnManageFeeAndFine()"
+});
+formatter.result({
+  "duration": 1352784900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "AA-Rs",
+      "offset": 18
+    }
+  ],
+  "location": "Steps.iInputCurrency(String)"
+});
+formatter.result({
+  "duration": 3097674800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyCurrencySearchBarIsWorkingProperly()"
+});
+formatter.result({
+  "duration": 3059054200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnManageFeeAndFine()"
+});
+formatter.result({
+  "duration": 623764800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iSignOut()"
+});
+formatter.result({
+  "duration": 4482263500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifySuccessfulSignOut()"
+});
+formatter.result({
+  "duration": 53523800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1195087200,
+  "duration": 1091401400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 225800,
+  "duration": 90833100,
   "status": "passed"
 });
 });

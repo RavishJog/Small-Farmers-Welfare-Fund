@@ -163,7 +163,7 @@ public class Fees_and_fines {
     }
 
     //Object for 10,000 Amount
-    private static By txt_Ten_thousand_amount = By.xpath("//td[@role='gridcell'][contains(.,'Amount10,000.00')]");
+    private static By txt_Ten_thousand_amount = By.xpath("//td[@role='gridcell'][contains(.,'Amount10000')]");
     public static WebElement Ten_thousand_amount(WebDriver driver) {
         element = driver.findElement(txt_Ten_thousand_amount);
         return element;
