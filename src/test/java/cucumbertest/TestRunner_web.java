@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
                 "html:target/CucumberReportjson/html-report",
                 "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/Report.html"
         }
-        ,tags = "@Register_as_Farmers_Cooperative_Association"
+        ,tags = "@Searching_list_of_fees_and_fines"
 )
 
 public class TestRunner_web {
