@@ -632,7 +632,7 @@ public class Steps extends Utility {
     @And("^I Input List of Products manufactured \"([^\"]*)\"$")
     public void iInputListOfProductsManufactured(String Prod_man) throws Throwable {
         Thread.sleep(1000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Farmers_cooperatives_association_society_company.Registration_for_farmers(driver));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Agro_Processing_Enterprise.Registration_for_agro_processing_enterprise(driver));
         Thread.sleep(1000);
         Farmers_cooperatives_association_society_company.List_products_manufactured(driver).sendKeys(Prod_man);
     }
@@ -676,7 +676,7 @@ public class Steps extends Utility {
     @And("^I Click on Save and Continue$")
     public void iClickOnSaveAndContinue() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Farmers_cooperatives_association_society_company.Save_and_continue(driver));
-        Thread.sleep(1000);
+        Thread.sleep(6000);
         WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Farmers_cooperatives_association_society_company.Save_and_continue(driver)));
         element.click();
@@ -920,12 +920,31 @@ public class Steps extends Utility {
 
     @And("^I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page$")
     public void iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage() {
+        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'REGISTRATION FOR AGRO-PROCESSING ENTERPRISE')]")));
+
         try {
             Agro_Processing_Enterprise.Registration_for_agro_processing_enterprise(driver);
         } catch (Exception e) {
             System.out.println("REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page did not appear");
             Assert.fail("REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page page did not appear");
         }
+    }
+
+    @And("^I Input Enterprise Address \"([^\"]*)\"$")
+    public void iInputEnterpriseAddress(String Enterprise_Address) throws Throwable {
+        Agro_Processing_Enterprise.Enterprise_address(driver).sendKeys(Enterprise_Address);
+    }
+
+
+    @And("^I Input Business Registration No\\(BRN\\) for Agro-Processing Enterprise \"([^\"]*)\"$")
+    public void iInputBusinessRegistrationNoBRNForAgroProcessingEnterprise(String BRN) throws Throwable {
+        Agro_Processing_Enterprise.BRN(driver).sendKeys(BRN);
+    }
+
+    @And("^I Input Certificate of Incorporation No for Agro-Processing Enterprise \"([^\"]*)\"$")
+    public void iInputCertificateOfIncorporationNoForAgroProcessingEnterprise(String Cert_No) throws Throwable {
+        Agro_Processing_Enterprise.Certificate_of_incorporation(driver).sendKeys(Cert_No);
     }
 }
 
