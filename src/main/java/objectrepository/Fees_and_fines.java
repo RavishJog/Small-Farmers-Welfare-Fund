@@ -24,7 +24,7 @@ public class Fees_and_fines {
     }
 
     //Object for Page Lable Manage Fee and Fine
-    private static By lbl_Manage_fees_and_fine = By.xpath("//span[@class='toolbar-menu-title'][contains(.,'Manage Fees and Fine')]");
+    private static By lbl_Manage_fees_and_fine = By.xpath("(//span[contains(.,'Manage Fee and Fine')])[2]");
     public static WebElement Manage_fees_and_fine(WebDriver driver) {
         element = driver.findElement(lbl_Manage_fees_and_fine);
         return element;
