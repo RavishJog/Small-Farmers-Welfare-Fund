@@ -21,6 +21,29 @@ public class Agro_Processing_Enterprise {
         element = driver.findElement(lbl_Registration_for_agro_processing_enterprise);
         return element;
     }
+
+    //Object for Enterprise Address
+    private static By txt_Enterprise_address = By.xpath("//input[@placeholder='Enterprise Address']");
+    public static WebElement Enterprise_address(WebDriver driver) {
+        element = driver.findElement(txt_Enterprise_address);
+        return element;
+    }
+    //Object for BRN
+    private static By txt_BRN = By.xpath("//input[@placeholder='Business Registration No(BRN)']");
+
+    public static WebElement BRN(WebDriver driver) {
+        element = driver.findElement(txt_BRN);
+        return element;
+    }
+
+    //Object for Certificate of Incorporation No
+    private static By txt_Certificate_of_incorporation = By.xpath("//input[@placeholder='Certificate of Incorporation No']");
+
+    public static WebElement Certificate_of_incorporation(WebDriver driver) {
+        element = driver.findElement(txt_Certificate_of_incorporation);
+        return element;
+    }
+
 }
 
 //Object for XXX

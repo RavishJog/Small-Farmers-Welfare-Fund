@@ -19,23 +19,16 @@ Feature: Register as Agro-Processing Enterprise-Application form
     And I Verify display of Registration Type Page
     And I Click on Agro Processing Enterprise
     And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page
-
-    And I Verify display of Registration of Farmers page
     And I Input Associate/Society/Company Name "<Co_Name>"
     And I Input Represented by "<Rep_by>"
-    And I Input Business Registration No.(BRN) "<BRN>"
-    And I Input Certificate of Incorporation No "<Cert_No>"
+    And I Input Business Registration No(BRN) for Agro-Processing Enterprise "<BRN>"
+    And I Input Certificate of Incorporation No for Agro-Processing Enterprise "<Cert_No>"
     And I Select Activity "<Act>"
-    And I Input Office Phone Number "<Off_Num>"
-    And I Input Mobile Phone Number "<Mob_Num>"
     And I Input Office Address "<Off_Add>"
-    And I Select Status of Applicant "<Status_Applicant>"
+    And I Input Enterprise Address "<Enterprise_Address>"
     And I Select Duration Year for Registration membership "<Year_dur>"
     And I Input List of Products manufactured "<Prod_man>"
-    And I Input No. of persons employed "<No_person>"
-    And I Input Actual Annual Turnover (Rs) "<Actual_ann_turnover>"
-    And I Select Status of business "<Status_business>"
-    And I Input No. of years of operation "<Years_operation>"
+    And I Select Status of Applicant "<Status_Applicant>"
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Upload Business Registration Card "<Upload_test>"
@@ -66,5 +59,5 @@ Feature: Register as Agro-Processing Enterprise-Application form
 
 
     Examples:
-      |Browser|Username |Password |Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Num|Mob_Num  |Off_Add                  |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                                                |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|
-      |Chrome |Suraj    |Admin@123|ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|2025599|58964587 |The Main Road, Grand Port|Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |C:\Users\suraj.joggessur\Desktop\SFWF\SFWF\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |
+      |Browser|Username |Password |Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|
+      |Chrome |Suraj    |Admin@123|ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |

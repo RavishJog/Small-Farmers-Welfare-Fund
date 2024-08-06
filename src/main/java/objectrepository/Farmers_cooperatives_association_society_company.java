@@ -105,7 +105,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Status of Applicant - Company
-    private static By btn_Company = By.xpath("(//label[contains(.,'Company')])[2]");
+    private static By btn_Company = By.xpath("//label[contains(.,'Company')]");
 
     public static WebElement Company(WebDriver driver) {
         element = driver.findElement(btn_Company);
