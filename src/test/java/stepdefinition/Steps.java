@@ -632,7 +632,7 @@ public class Steps extends Utility {
     @And("^I Input List of Products manufactured \"([^\"]*)\"$")
     public void iInputListOfProductsManufactured(String Prod_man) throws Throwable {
         Thread.sleep(1000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Agro_Processing_Enterprise.Registration_for_agro_processing_enterprise(driver));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
         Thread.sleep(1000);
         Farmers_cooperatives_association_society_company.List_products_manufactured(driver).sendKeys(Prod_man);
     }
@@ -945,6 +945,62 @@ public class Steps extends Utility {
     @And("^I Input Certificate of Incorporation No for Agro-Processing Enterprise \"([^\"]*)\"$")
     public void iInputCertificateOfIncorporationNoForAgroProcessingEnterprise(String Cert_No) throws Throwable {
         Agro_Processing_Enterprise.Certificate_of_incorporation(driver).sendKeys(Cert_No);
+    }
+
+    @And("^I Select Status of Applicant for Agro-Processing Enterprise \"([^\"]*)\"$")
+    public void iSelectStatusOfApplicantForAgroProcessingEnterprise(String Status_Applicant) throws Throwable {
+        if (Status_Applicant.equals("Sole Trader")) {
+            try {
+                Agro_Processing_Enterprise.Sole_trader(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button is not working");
+                Assert.fail("Radio Button is not working");
+            }
+        } else if (Status_Applicant.equals("Company")) {
+            try {
+                Agro_Processing_Enterprise.Company(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button is not working");
+                Assert.fail("Radio Button is not working");
+            }
+        } else if (Status_Applicant.equals("Société/Partnership")) {
+            try {
+                Agro_Processing_Enterprise.Societe_Partnership(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button is not working");
+                Assert.fail("Radio Button is not working");
+            }
+        }  else if (Status_Applicant.equals("Cooperative society")) {
+            try {
+                Agro_Processing_Enterprise.Cooperative_society(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button is not working");
+                Assert.fail("Radio Button is not working");
+            }
+        }  else if (Status_Applicant.equals("Association")) {
+            try {
+                Agro_Processing_Enterprise.Association(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button is not working");
+                Assert.fail("Radio Button is not working");
+            }
+        }  else {
+            System.out.println("Radio Button is functioning properly");
+        }
+    }
+
+    @And("^I Input Bank Branch for Agro-Processing Enterprise \"([^\"]*)\"$")
+    public void iInputBankBranchForAgroProcessingEnterprise(String Bank_Branch) throws Throwable {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Branch_label(driver));
+        Thread.sleep(1000);
+        Agro_Processing_Enterprise.Bank_Branch(driver).sendKeys(Bank_Branch);
+    }
+
+    @And("^I Input Personal Bank Account Number Agro-Processing Enterprise \"([^\"]*)\"$")
+    public void iInputPersonalBankAccountNumberAgroProcessingEnterprise(String Bank_Account_No) throws Throwable {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Personal_Bank_Account_Number_label(driver));
+        Thread.sleep(1000);
+        Agro_Processing_Enterprise.Bank_account_number(driver).sendKeys(Bank_Account_No);
     }
 }
 

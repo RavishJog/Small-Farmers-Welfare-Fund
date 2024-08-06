@@ -28,7 +28,7 @@ Feature: Register as Agro-Processing Enterprise-Application form
     And I Input Enterprise Address "<Enterprise_Address>"
     And I Select Duration Year for Registration membership "<Year_dur>"
     And I Input List of Products manufactured "<Prod_man>"
-    And I Select Status of Applicant "<Status_Applicant>"
+    And I Select Status of Applicant for Agro-Processing Enterprise "<Status_Applicant>"
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Upload Business Registration Card "<Upload_test>"
@@ -50,8 +50,8 @@ Feature: Register as Agro-Processing Enterprise-Application form
     And I Verify Terms and Conditions Page
     And I click on I agree to the Terms and Conditions
     And I Select Bank "<Bank_Name>"
-    And I Input Bank Branch "<Bank_Branch>"
-    And I Input Personal Bank Account Number"<Bank_Account_No>"
+    And I Input Bank Branch for Agro-Processing Enterprise "<Bank_Branch>"
+    And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
 
