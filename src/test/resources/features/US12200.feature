@@ -60,6 +60,9 @@ Feature: Register as Farmers’ Cooperative Association, Society or Company
     And I Input Personal Bank Account Number"<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
+    And I Verify Application Status "<App_status>"
+    And I Verify Payment Status "<Payment_Status>"
+    Then I Sign Out as Front Registered User
 
 
 
