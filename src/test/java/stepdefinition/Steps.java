@@ -2,6 +2,7 @@ package stepdefinition;
 
 import com.cucumber.listener.Reporter;
 import commonmethods.Utility;
+import cucumber.api.PendingException;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -30,6 +31,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 public class Steps extends Utility {
 
     protected static WebDriver driver;
+
+    private String Application_reference_number;
 
     @BeforeMethod
     public void setUp() {
@@ -1057,6 +1060,96 @@ public class Steps extends Utility {
         w.until(ExpectedConditions.visibilityOf(Front_Home_page.Yes_sign_out(driver)));
         Front_Home_page.Yes_sign_out(driver).click();
         Thread.sleep(2000);
+
+    }
+
+    @And("^I Click on Shopping Cart for payment$")
+    public void iClickOnShoppingCartForPayment() throws InterruptedException {
+        Payment_process.Payment_shopping_cart(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h3[contains(.,'Welcome, ')]")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
+        Thread.sleep(2000);
+    }
+
+    @And("^I Copy Application Number$")
+    public void iCopyApplicationNumber() {
+        Front_Home_page.Search_reference_number(driver);
+        Application_reference_number = Front_Home_page.Search_reference_number(driver).getText();
+        System.out.println("Text from source element: " + Application_reference_number);
+
+    }
+
+    @And("^Select Application for payment$")
+    public void selectApplicationForPayment() throws InterruptedException {
+        Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
+        Thread.sleep(2000);
+        Payment_process.Select_last_application(driver).click();
+
+    }
+
+    @And("^I Click on Proceed to Payment$")
+    public void iClickOnProceedToPayment() {
+        Payment_process.Proceed_to_payment(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Voucher Number')])[1]")));
+    }
+
+    @And("^I Click on Payment Icon$")
+    public void iClickOnPaymentIcon() {
+        Payment_process.Pay(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Payment Method')]")));
+    }
+
+    @And("^I Select Payment Method \"([^\"]*)\"$")
+    public void iSelectPaymentMethod(String Payment_method) throws Throwable {
+        Payment_process.Select_payment(driver).click();
+        Thread.sleep(2000);
+        if (Payment_method.equals("Credit")) {
+            try {
+                Payment_process.Credit_card(driver).click();
+            } catch (Exception e){
+                System.out.println("Credit Card did not appear");
+            }
+        } else if (Payment_method.equals("Debit")){
+            try {
+                Payment_process.Debit_card(driver).click();
+            } catch (Exception e){
+                System.out.println("Debit Card did not appear");
+            }
+        } else if (Payment_method.equals("Counter")){
+            try {
+                Payment_process.Counter(driver).click();
+            } catch (Exception e){
+                System.out.println("Counter did not appear");
+            }
+        } else {
+            System.out.println("Payment Method is not valid");
+        }
+        Thread.sleep(3000);
+    }
+
+
+    @And("^I Click on Final Proceed to Payment$")
+    public void iClickOnFinalProceedToPayment() throws InterruptedException {
+        WebDriverWait ww = new WebDriverWait(driver, 5);
+        ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
+        Payment_process.Proceed_to_payment(driver).click();
+
+}
+
+    @And("^I Verify Message to proceed to Post Office for Payment$")
+    public void iVerifyMessageToProceedToPostOfficeForPayment() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
+        try {
+            Payment_process.Proceed_to_post_office_payment(driver);
+        } catch (Exception e) {
+            System.out.println("Message did not appear");
+            Assert.fail("Message did not appear");
+        }
+        Thread.sleep(8000);
 
     }
 }

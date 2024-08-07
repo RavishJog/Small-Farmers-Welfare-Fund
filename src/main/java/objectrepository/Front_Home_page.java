@@ -127,6 +127,13 @@ public class Front_Home_page {
         return element;
     }
 
+    //Object for Search Box for Reference Number
+    private static By txt_Search_reference_number = By.xpath("(//td[contains(@role,'gridcell')])[3]");
+    public static WebElement Search_reference_number(WebDriver driver) {
+        element = driver.findElement(txt_Search_reference_number);
+        return element;
+    }
+
 }
 
     //Object for XXX
