@@ -1,15 +1,15 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US12203.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US12822.feature");
 formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#User Story 12203 - Register as Agro-Processing Enterprise-Application form"
+      "value": "#User Story 12822 - Payment Process"
     }
   ],
   "line": 4,
-  "name": "Register as Agro-Processing Enterprise-Application form",
+  "name": "Payment for Registration",
   "description": "",
-  "id": "register-as-agro-processing-enterprise-application-form",
+  "id": "payment-for-registration",
   "keyword": "Feature",
   "tags": [
     {
@@ -18,7 +18,7 @@ formatter.feature({
     },
     {
       "line": 3,
-      "name": "@US12203"
+      "name": "@US12882"
     }
   ]
 });
@@ -30,15 +30,15 @@ formatter.scenarioOutline({
     }
   ],
   "line": 8,
-  "name": "Register as Agro-Processing Enterprise-Application form",
+  "name": "Payment at counter for Registration as Agro-Processing Enterprise-Application form",
   "description": "",
-  "id": "register-as-agro-processing-enterprise-application-form;register-as-agro-processing-enterprise-application-form",
+  "id": "payment-for-registration;payment-at-counter-for-registration-as-agro-processing-enterprise-application-form",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 7,
-      "name": "@Register_as_Agro-Processing_Enterprise-Application_form"
+      "name": "@Payment_at_counter_for_Agro-Processing-Enterprise"
     }
   ]
 });
@@ -83,220 +83,221 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
-  "name": "I Click on New Button to apply for Registration",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "I Verify display of Registration Type Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "I Click on Agro Processing Enterprise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "I Input Associate/Society/Company Name \"\u003cCo_Name\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "I Input Represented by \"\u003cRep_by\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "I Input Business Registration No(BRN) for Agro-Processing Enterprise \"\u003cBRN\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "I Input Certificate of Incorporation No for Agro-Processing Enterprise \"\u003cCert_No\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "I Select Activity \"\u003cAct\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "I Input Office Address \"\u003cOff_Add\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "I Input Enterprise Address \"\u003cEnterprise_Address\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "I Select Duration Year for Registration membership \"\u003cYear_dur\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 30,
-  "name": "I Input List of Products manufactured \"\u003cProd_man\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I Select Status of Applicant for Agro-Processing Enterprise \"\u003cStatus_Applicant\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 32,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 33,
-  "name": "I Verify Upload Required Documents Page is displayed",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 34,
-  "name": "I Upload Business Registration Card \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 35,
-  "name": "I Upload Certificate of Incorporation \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
-  "name": "I Upload List of Directors/ Associates \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 37,
-  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 38,
-  "name": "I Upload National Identity card of representative \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 39,
-  "name": "I Upload National Identity cards of all shareholders \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 40,
-  "name": "I Upload Location Plan \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 41,
-  "name": "I Upload Copy of SMEDA Certificate \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 42,
-  "name": "I Upload Copy of Utility Bill \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 43,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 44,
-  "name": "I Click on Add Additional Document",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 45,
-  "name": "I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 46,
-  "name": "I Verify Success message for adding Additional Document Name",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 47,
-  "name": "I Upload Additional Document \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 48,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 49,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 50,
-  "name": "I Verify Terms and Conditions Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 51,
-  "name": "I click on I agree to the Terms and Conditions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 52,
-  "name": "I Select Bank \"\u003cBank_Name\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 53,
-  "name": "I Input Bank Branch for Agro-Processing Enterprise \"\u003cBank_Branch\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 54,
-  "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"\u003cBank_Account_No\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 55,
-  "name": "I Click on Submit Application \"\u003cConfirmation\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 56,
-  "name": "I Verify Success message for application submitted",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 57,
-  "name": "I Verify Application Status \"\u003cApp_status\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 58,
-  "name": "I Verify Payment Status \"\u003cPayment_Status\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
+  "comments": [
+    {
+      "line": 18,
+      "value": "#    And I Click on New Button to apply for Registration"
+    },
+    {
+      "line": 19,
+      "value": "#    And I Verify display of Registration Type Page"
+    },
+    {
+      "line": 20,
+      "value": "#    And I Click on Agro Processing Enterprise"
+    },
+    {
+      "line": 21,
+      "value": "#    And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page"
+    },
+    {
+      "line": 22,
+      "value": "#    And I Input Associate/Society/Company Name \"\u003cCo_Name\u003e\""
+    },
+    {
+      "line": 23,
+      "value": "#    And I Input Represented by \"\u003cRep_by\u003e\""
+    },
+    {
+      "line": 24,
+      "value": "#    And I Input Business Registration No(BRN) for Agro-Processing Enterprise \"\u003cBRN\u003e\""
+    },
+    {
+      "line": 25,
+      "value": "#    And I Input Certificate of Incorporation No for Agro-Processing Enterprise \"\u003cCert_No\u003e\""
+    },
+    {
+      "line": 26,
+      "value": "#    And I Select Activity \"\u003cAct\u003e\""
+    },
+    {
+      "line": 27,
+      "value": "#    And I Input Office Address \"\u003cOff_Add\u003e\""
+    },
+    {
+      "line": 28,
+      "value": "#    And I Input Enterprise Address \"\u003cEnterprise_Address\u003e\""
+    },
+    {
+      "line": 29,
+      "value": "#    And I Select Duration Year for Registration membership \"\u003cYear_dur\u003e\""
+    },
+    {
+      "line": 30,
+      "value": "#    And I Input List of Products manufactured \"\u003cProd_man\u003e\""
+    },
+    {
+      "line": 31,
+      "value": "#    And I Select Status of Applicant for Agro-Processing Enterprise \"\u003cStatus_Applicant\u003e\""
+    },
+    {
+      "line": 32,
+      "value": "#    And I Click on Save and Continue"
+    },
+    {
+      "line": 33,
+      "value": "#    And I Verify Upload Required Documents Page is displayed"
+    },
+    {
+      "line": 34,
+      "value": "#    And I Upload Business Registration Card \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 35,
+      "value": "#    And I Upload Certificate of Incorporation \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 36,
+      "value": "#    And I Upload List of Directors/ Associates \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 37,
+      "value": "#    And I Upload Board Resolution of Enterprise for appointment of representative(s) \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 38,
+      "value": "#    And I Upload National Identity card of representative \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 39,
+      "value": "#    And I Upload National Identity cards of all shareholders \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 40,
+      "value": "#    And I Upload Location Plan \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 41,
+      "value": "#    And I Upload Copy of SMEDA Certificate \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 42,
+      "value": "#    And I Upload Copy of Utility Bill \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 43,
+      "value": "#    And I Verify for Document Upload Success Message"
+    },
+    {
+      "line": 44,
+      "value": "#    And I Click on Add Additional Document"
+    },
+    {
+      "line": 45,
+      "value": "#    And I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\""
+    },
+    {
+      "line": 46,
+      "value": "#    And I Verify Success message for adding Additional Document Name"
+    },
+    {
+      "line": 47,
+      "value": "#    And I Upload Additional Document \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 48,
+      "value": "#    And I Verify for Document Upload Success Message"
+    },
+    {
+      "line": 49,
+      "value": "#    And I Click on Save and Continue"
+    },
+    {
+      "line": 50,
+      "value": "#    And I Verify Terms and Conditions Page"
+    },
+    {
+      "line": 51,
+      "value": "#    And I click on I agree to the Terms and Conditions"
+    },
+    {
+      "line": 52,
+      "value": "#    And I Select Bank \"\u003cBank_Name\u003e\""
+    },
+    {
+      "line": 53,
+      "value": "#    And I Input Bank Branch for Agro-Processing Enterprise \"\u003cBank_Branch\u003e\""
+    },
+    {
+      "line": 54,
+      "value": "#    And I Input Personal Bank Account Number Agro-Processing Enterprise \"\u003cBank_Account_No\u003e\""
+    },
+    {
+      "line": 55,
+      "value": "#    And I Click on Submit Application \"\u003cConfirmation\u003e\""
+    },
+    {
+      "line": 56,
+      "value": "#    And I Verify Success message for application submitted"
+    },
+    {
+      "line": 57,
+      "value": "#    And I Verify Application Status \"\u003cApp_status\u003e\""
+    },
+    {
+      "line": 58,
+      "value": "#    And I Verify Payment Status \"\u003cPayment_Status\u003e\""
+    }
+  ],
   "line": 59,
+  "name": "I Copy Application Number",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 60,
+  "name": "I Click on Shopping Cart for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "Select Application for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "I Click on Proceed to Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 63,
+  "name": "I Click on Payment Icon",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 64,
+  "name": "I Select Payment Method \"\u003cPayment_method\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 65,
+  "name": "I Click on Final Proceed to Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 66,
+  "name": "I Verify Message to proceed to Post Office for Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 67,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 64,
+  "line": 70,
   "name": "",
   "description": "",
-  "id": "register-as-agro-processing-enterprise-application-form;register-as-agro-processing-enterprise-application-form;",
+  "id": "payment-for-registration;payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;",
   "rows": [
     {
       "cells": [
@@ -324,10 +325,11 @@ formatter.examples({
         "Bank_Account_No",
         "Confirmation",
         "App_status",
-        "Payment_Status"
+        "Payment_Status",
+        "Payment_method"
       ],
-      "line": 65,
-      "id": "register-as-agro-processing-enterprise-application-form;register-as-agro-processing-enterprise-application-form;;1"
+      "line": 71,
+      "id": "payment-for-registration;payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;1"
     },
     {
       "cells": [
@@ -355,23 +357,24 @@ formatter.examples({
         "0001252563636",
         "Yes",
         "Submitted",
-        "Pending"
+        "Pending",
+        "Counter"
       ],
-      "line": 66,
-      "id": "register-as-agro-processing-enterprise-application-form;register-as-agro-processing-enterprise-application-form;;2"
+      "line": 72,
+      "id": "payment-for-registration;payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 113100,
+  "duration": 94100,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 66,
-  "name": "Register as Agro-Processing Enterprise-Application form",
+  "line": 72,
+  "name": "Payment at counter for Registration as Agro-Processing Enterprise-Application form",
   "description": "",
-  "id": "register-as-agro-processing-enterprise-application-form;register-as-agro-processing-enterprise-application-form;;2",
+  "id": "payment-for-registration;payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -381,11 +384,11 @@ formatter.scenario({
     },
     {
       "line": 7,
-      "name": "@Register_as_Agro-Processing_Enterprise-Application_form"
+      "name": "@Payment_at_counter_for_Agro-Processing-Enterprise"
     },
     {
       "line": 3,
-      "name": "@US12203"
+      "name": "@US12882"
     }
   ]
 });
@@ -437,293 +440,216 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
-  "name": "I Click on New Button to apply for Registration",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 19,
-  "name": "I Verify display of Registration Type Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 20,
-  "name": "I Click on Agro Processing Enterprise",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 21,
-  "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 22,
-  "name": "I Input Associate/Society/Company Name \"ABC Agro Co Ltd\"",
-  "matchedColumns": [
-    3
+  "comments": [
+    {
+      "line": 18,
+      "value": "#    And I Click on New Button to apply for Registration"
+    },
+    {
+      "line": 19,
+      "value": "#    And I Verify display of Registration Type Page"
+    },
+    {
+      "line": 20,
+      "value": "#    And I Click on Agro Processing Enterprise"
+    },
+    {
+      "line": 21,
+      "value": "#    And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page"
+    },
+    {
+      "line": 22,
+      "value": "#    And I Input Associate/Society/Company Name \"\u003cCo_Name\u003e\""
+    },
+    {
+      "line": 23,
+      "value": "#    And I Input Represented by \"\u003cRep_by\u003e\""
+    },
+    {
+      "line": 24,
+      "value": "#    And I Input Business Registration No(BRN) for Agro-Processing Enterprise \"\u003cBRN\u003e\""
+    },
+    {
+      "line": 25,
+      "value": "#    And I Input Certificate of Incorporation No for Agro-Processing Enterprise \"\u003cCert_No\u003e\""
+    },
+    {
+      "line": 26,
+      "value": "#    And I Select Activity \"\u003cAct\u003e\""
+    },
+    {
+      "line": 27,
+      "value": "#    And I Input Office Address \"\u003cOff_Add\u003e\""
+    },
+    {
+      "line": 28,
+      "value": "#    And I Input Enterprise Address \"\u003cEnterprise_Address\u003e\""
+    },
+    {
+      "line": 29,
+      "value": "#    And I Select Duration Year for Registration membership \"\u003cYear_dur\u003e\""
+    },
+    {
+      "line": 30,
+      "value": "#    And I Input List of Products manufactured \"\u003cProd_man\u003e\""
+    },
+    {
+      "line": 31,
+      "value": "#    And I Select Status of Applicant for Agro-Processing Enterprise \"\u003cStatus_Applicant\u003e\""
+    },
+    {
+      "line": 32,
+      "value": "#    And I Click on Save and Continue"
+    },
+    {
+      "line": 33,
+      "value": "#    And I Verify Upload Required Documents Page is displayed"
+    },
+    {
+      "line": 34,
+      "value": "#    And I Upload Business Registration Card \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 35,
+      "value": "#    And I Upload Certificate of Incorporation \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 36,
+      "value": "#    And I Upload List of Directors/ Associates \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 37,
+      "value": "#    And I Upload Board Resolution of Enterprise for appointment of representative(s) \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 38,
+      "value": "#    And I Upload National Identity card of representative \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 39,
+      "value": "#    And I Upload National Identity cards of all shareholders \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 40,
+      "value": "#    And I Upload Location Plan \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 41,
+      "value": "#    And I Upload Copy of SMEDA Certificate \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 42,
+      "value": "#    And I Upload Copy of Utility Bill \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 43,
+      "value": "#    And I Verify for Document Upload Success Message"
+    },
+    {
+      "line": 44,
+      "value": "#    And I Click on Add Additional Document"
+    },
+    {
+      "line": 45,
+      "value": "#    And I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\""
+    },
+    {
+      "line": 46,
+      "value": "#    And I Verify Success message for adding Additional Document Name"
+    },
+    {
+      "line": 47,
+      "value": "#    And I Upload Additional Document \"\u003cUpload_test\u003e\""
+    },
+    {
+      "line": 48,
+      "value": "#    And I Verify for Document Upload Success Message"
+    },
+    {
+      "line": 49,
+      "value": "#    And I Click on Save and Continue"
+    },
+    {
+      "line": 50,
+      "value": "#    And I Verify Terms and Conditions Page"
+    },
+    {
+      "line": 51,
+      "value": "#    And I click on I agree to the Terms and Conditions"
+    },
+    {
+      "line": 52,
+      "value": "#    And I Select Bank \"\u003cBank_Name\u003e\""
+    },
+    {
+      "line": 53,
+      "value": "#    And I Input Bank Branch for Agro-Processing Enterprise \"\u003cBank_Branch\u003e\""
+    },
+    {
+      "line": 54,
+      "value": "#    And I Input Personal Bank Account Number Agro-Processing Enterprise \"\u003cBank_Account_No\u003e\""
+    },
+    {
+      "line": 55,
+      "value": "#    And I Click on Submit Application \"\u003cConfirmation\u003e\""
+    },
+    {
+      "line": 56,
+      "value": "#    And I Verify Success message for application submitted"
+    },
+    {
+      "line": 57,
+      "value": "#    And I Verify Application Status \"\u003cApp_status\u003e\""
+    },
+    {
+      "line": 58,
+      "value": "#    And I Verify Payment Status \"\u003cPayment_Status\u003e\""
+    }
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 23,
-  "name": "I Input Represented by \"Mr John Brown\"",
-  "matchedColumns": [
-    4
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 24,
-  "name": "I Input Business Registration No(BRN) for Agro-Processing Enterprise \"C123456789\"",
-  "matchedColumns": [
-    5
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "I Input Certificate of Incorporation No for Agro-Processing Enterprise \"XLPR852\"",
-  "matchedColumns": [
-    6
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 26,
-  "name": "I Select Activity \"Full Time\"",
-  "matchedColumns": [
-    7
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 27,
-  "name": "I Input Office Address \"The Main Road, Grand Port\"",
-  "matchedColumns": [
-    8
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 28,
-  "name": "I Input Enterprise Address \"Royal Road, Port Louis\"",
-  "matchedColumns": [
-    9
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 29,
-  "name": "I Select Duration Year for Registration membership \"1\"",
-  "matchedColumns": [
-    11
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 30,
-  "name": "I Input List of Products manufactured \"Tomato, Pepper\"",
-  "matchedColumns": [
-    12
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 31,
-  "name": "I Select Status of Applicant for Agro-Processing Enterprise \"Company\"",
-  "matchedColumns": [
-    10
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 32,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 33,
-  "name": "I Verify Upload Required Documents Page is displayed",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 34,
-  "name": "I Upload Business Registration Card \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 35,
-  "name": "I Upload Certificate of Incorporation \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 36,
-  "name": "I Upload List of Directors/ Associates \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 37,
-  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 38,
-  "name": "I Upload National Identity card of representative \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 39,
-  "name": "I Upload National Identity cards of all shareholders \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 40,
-  "name": "I Upload Location Plan \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 41,
-  "name": "I Upload Copy of SMEDA Certificate \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 42,
-  "name": "I Upload Copy of Utility Bill \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 43,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 44,
-  "name": "I Click on Add Additional Document",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 45,
-  "name": "I Input Additional Document Name \"Additional Document Test\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 46,
-  "name": "I Verify Success message for adding Additional Document Name",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 47,
-  "name": "I Upload Additional Document \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 48,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 49,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 50,
-  "name": "I Verify Terms and Conditions Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 51,
-  "name": "I click on I agree to the Terms and Conditions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 52,
-  "name": "I Select Bank \"ABC Banking\"",
-  "matchedColumns": [
-    19
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 53,
-  "name": "I Input Bank Branch for Agro-Processing Enterprise \"Port Louis\"",
-  "matchedColumns": [
-    20
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 54,
-  "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"0001252563636\"",
-  "matchedColumns": [
-    21
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 55,
-  "name": "I Click on Submit Application \"Yes\"",
-  "matchedColumns": [
-    22
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 56,
-  "name": "I Verify Success message for application submitted",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 57,
-  "name": "I Verify Application Status \"Submitted\"",
-  "matchedColumns": [
-    23
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 58,
-  "name": "I Verify Payment Status \"Pending\"",
-  "matchedColumns": [
-    24
-  ],
-  "keyword": "And "
-});
-formatter.step({
   "line": 59,
+  "name": "I Copy Application Number",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 60,
+  "name": "I Click on Shopping Cart for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "Select Application for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "I Click on Proceed to Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 63,
+  "name": "I Click on Payment Icon",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 64,
+  "name": "I Select Payment Method \"Counter\"",
+  "matchedColumns": [
+    25
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 65,
+  "name": "I Click on Final Proceed to Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 66,
+  "name": "I Verify Message to proceed to Post Office for Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 67,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
@@ -737,7 +663,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePage(String)"
 });
 formatter.result({
-  "duration": 4637692300,
+  "duration": 2276661900,
   "status": "passed"
 });
 formatter.match({
@@ -754,513 +680,126 @@ formatter.match({
   "location": "Steps.iInputRegisteredUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 164316300,
+  "duration": 185380100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 1464175400,
+  "duration": 1162499600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 65285200,
+  "duration": 52514800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 332850900,
+  "duration": 375088400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 22062400,
+  "duration": 16660300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 24249600,
+  "duration": 23966900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 17322700,
+  "duration": 20741700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
+  "location": "Steps.iCopyApplicationNumber()"
 });
 formatter.result({
-  "duration": 155490100,
+  "duration": 44272700,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
+  "location": "Steps.iClickOnShoppingCartForPayment()"
 });
 formatter.result({
-  "duration": 15224100,
+  "duration": 2091283100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickOnAgroProcessingEnterprise()"
+  "location": "Steps.selectApplicationForPayment()"
 });
 formatter.result({
-  "duration": 2508113300,
+  "duration": 2190918200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage()"
+  "location": "Steps.iClickOnProceedToPayment()"
 });
 formatter.result({
-  "duration": 53232500,
+  "duration": 617688500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnPaymentIcon()"
+});
+formatter.result({
+  "duration": 602875400,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "ABC Agro Co Ltd",
-      "offset": 40
-    }
-  ],
-  "location": "Steps.iInputAssociateSocietyCompanyName(String)"
-});
-formatter.result({
-  "duration": 63068100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Mr John Brown",
-      "offset": 24
-    }
-  ],
-  "location": "Steps.iInputRepresentedBy(String)"
-});
-formatter.result({
-  "duration": 65867100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "C123456789",
-      "offset": 70
-    }
-  ],
-  "location": "Steps.iInputBusinessRegistrationNoBRNForAgroProcessingEnterprise(String)"
-});
-formatter.result({
-  "duration": 64178400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "XLPR852",
-      "offset": 72
-    }
-  ],
-  "location": "Steps.iInputCertificateOfIncorporationNoForAgroProcessingEnterprise(String)"
-});
-formatter.result({
-  "duration": 63756400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Full Time",
-      "offset": 19
-    }
-  ],
-  "location": "Steps.iSelectActivity(String)"
-});
-formatter.result({
-  "duration": 54172300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "The Main Road, Grand Port",
-      "offset": 24
-    }
-  ],
-  "location": "Steps.iInputOfficeAddress(String)"
-});
-formatter.result({
-  "duration": 71361900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Royal Road, Port Louis",
-      "offset": 28
-    }
-  ],
-  "location": "Steps.iInputEnterpriseAddress(String)"
-});
-formatter.result({
-  "duration": 72766900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "1",
-      "offset": 52
-    }
-  ],
-  "location": "Steps.iSelectDurationYearForRegistrationMembership(String)"
-});
-formatter.result({
-  "duration": 2122862100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Tomato, Pepper",
-      "offset": 39
-    }
-  ],
-  "location": "Steps.iInputListOfProductsManufactured(String)"
-});
-formatter.result({
-  "duration": 2130812800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Company",
-      "offset": 61
-    }
-  ],
-  "location": "Steps.iSelectStatusOfApplicantForAgroProcessingEnterprise(String)"
-});
-formatter.result({
-  "duration": 46722500,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnSaveAndContinue()"
-});
-formatter.result({
-  "duration": 9130930100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
-});
-formatter.result({
-  "duration": 82334800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 37
-    }
-  ],
-  "location": "Steps.iUploadBusinessRegistrationCard(String)"
-});
-formatter.result({
-  "duration": 3265343700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 39
-    }
-  ],
-  "location": "Steps.iUploadCertificateOfIncorporation(String)"
-});
-formatter.result({
-  "duration": 3262408400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 40
-    }
-  ],
-  "location": "Steps.iUploadListOfDirectorsAssociates(String)"
-});
-formatter.result({
-  "duration": 2195663900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 78
-    }
-  ],
-  "location": "Steps.iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String)"
-});
-formatter.result({
-  "duration": 1109451300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 51
-    }
-  ],
-  "location": "Steps.iUploadNationalIdentityCardOfRepresentative(String)"
-});
-formatter.result({
-  "duration": 1120757700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 54
-    }
-  ],
-  "location": "Steps.iUploadNationalIdentityCardsOfAllShareholders(String)"
-});
-formatter.result({
-  "duration": 2718491700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 24
-    }
-  ],
-  "location": "Steps.iUploadLocationPlan(String)"
-});
-formatter.result({
-  "duration": 16133007800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 36
-    }
-  ],
-  "location": "Steps.iUploadCopyOfSMEDACertificate(String)"
-});
-formatter.result({
-  "duration": 2226620100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 31
-    }
-  ],
-  "location": "Steps.iUploadCopyOfUtilityBill(String)"
-});
-formatter.result({
-  "duration": 1116772800,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
-});
-formatter.result({
-  "duration": 30436100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnAddAdditionalDocument()"
-});
-formatter.result({
-  "duration": 3150435800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Additional Document Test",
-      "offset": 34
-    }
-  ],
-  "location": "Steps.iInputAdditionalDocumentName(String)"
-});
-formatter.result({
-  "duration": 1641524400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
-});
-formatter.result({
-  "duration": 30597200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 30
-    }
-  ],
-  "location": "Steps.iUploadAdditionalDocument(String)"
-});
-formatter.result({
-  "duration": 2227956900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
-});
-formatter.result({
-  "duration": 26565600,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnSaveAndContinue()"
-});
-formatter.result({
-  "duration": 9165540400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifyTermsAndConditionsPage()"
-});
-formatter.result({
-  "duration": 81133100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
-});
-formatter.result({
-  "duration": 77766700,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "ABC Banking",
-      "offset": 15
-    }
-  ],
-  "location": "Steps.iSelectBank(String)"
-});
-formatter.result({
-  "duration": 4262883900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Port Louis",
-      "offset": 52
-    }
-  ],
-  "location": "Steps.iInputBankBranchForAgroProcessingEnterprise(String)"
-});
-formatter.result({
-  "duration": 1119587300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "0001252563636",
-      "offset": 65
-    }
-  ],
-  "location": "Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)"
-});
-formatter.result({
-  "duration": 1096358800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Yes",
-      "offset": 31
-    }
-  ],
-  "location": "Steps.iClickOnSubmitApplication(String)"
-});
-formatter.result({
-  "duration": 3477548400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
-});
-formatter.result({
-  "duration": 47588500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Submitted",
-      "offset": 29
-    }
-  ],
-  "location": "Steps.iVerifyApplicationStatus(String)"
-});
-formatter.result({
-  "duration": 13572100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Pending",
+      "val": "Counter",
       "offset": 25
     }
   ],
-  "location": "Steps.iVerifyPaymentStatus(String)"
+  "location": "Steps.iSelectPaymentMethod(String)"
 });
 formatter.result({
-  "duration": 84100,
+  "duration": 5170274200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnFinalProceedToPayment()"
+});
+formatter.result({
+  "duration": 100300400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyMessageToProceedToPostOfficeForPayment()"
+});
+formatter.result({
+  "duration": 6572122800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSignOutAsFrontRegisteredUser()"
 });
 formatter.result({
-  "duration": 6879590500,
+  "duration": 6911119100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1435449600,
+  "duration": 1202088200,
   "status": "passed"
 });
 formatter.after({
-  "duration": 94500,
+  "duration": 67974100,
   "status": "passed"
 });
 });
