@@ -2,7 +2,6 @@ package stepdefinition;
 
 import com.cucumber.listener.Reporter;
 import commonmethods.Utility;
-import cucumber.api.PendingException;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -10,28 +9,21 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import gherkin.lexer.Th;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import javassist.bytecode.stackmap.BasicBlock;
 import objectrepository.*;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-
 import java.io.File;
 import java.io.IOException;
-import java.time.Duration;
-import java.time.Instant;
-import java.util.function.Function;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
@@ -1001,6 +993,71 @@ public class Steps extends Utility {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Personal_Bank_Account_Number_label(driver));
         Thread.sleep(1000);
         Agro_Processing_Enterprise.Bank_account_number(driver).sendKeys(Bank_Account_No);
+    }
+
+    @And("^I Verify Application Status \"([^\"]*)\"$")
+    public void iVerifyApplicationStatus(String App_status) throws Throwable {
+        if (App_status.equals("Submitted")) {
+            try {
+                Front_Home_page.Application_status_submitted(driver);
+            } catch (Exception e){
+                System.out.println("Status did not appear");
+            }
+        } else if (App_status.equals("Draft")){
+            try {
+                Front_Home_page.Application_status_draft(driver);
+            } catch (Exception e){
+                System.out.println("Status did not appear");
+            }
+        } else if (App_status.equals("Under Query")){
+            try {
+                Front_Home_page.Application_status_underquery(driver);
+            } catch (Exception e){
+                System.out.println("Status did not appear");
+            }
+        } else {
+            System.out.println("Status is not valid");
+        }
+    }
+
+    @And("^I Verify Payment Status \"([^\"]*)\"$")
+    public void iVerifyPaymentStatus(String Payment_Status) throws Throwable {
+        if (Payment_Status.equals("Submitted")) {
+            try {
+                Front_Home_page.Application_status_submitted(driver);
+            } catch (Exception e){
+                System.out.println("Status did not appear");
+            }
+        } else if (Payment_Status.equals("Draft")){
+            try {
+                Front_Home_page.Application_status_draft(driver);
+            } catch (Exception e){
+                System.out.println("Status did not appear");
+            }
+        } else if (Payment_Status.equals("Under Query")){
+            try {
+                Front_Home_page.Application_status_underquery(driver);
+            } catch (Exception e){
+                System.out.println("Status did not appear");
+            }
+        } else {
+            System.out.println("Status is not valid");
+        }
+    }
+
+    @Then("^I Sign Out as Front Registered User$")
+    public void iSignOutAsFrontRegisteredUser() throws InterruptedException {
+        Front_Home_page.Welcome_user(driver).click();
+        Thread.sleep(2000);
+        Front_Home_page.Sign_out(driver).click();
+        Thread.sleep(2000);
+//        WebDriverWait w = new WebDriverWait(driver, 10);
+//        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Log Out')]\")));
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Front_Home_page.Yes_sign_out(driver)));
+        Front_Home_page.Yes_sign_out(driver).click();
+        Thread.sleep(2000);
+
     }
 }
 

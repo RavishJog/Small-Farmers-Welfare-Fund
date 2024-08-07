@@ -36,6 +36,20 @@ public class Front_Home_page {
         return element;
     }
 
+    //Object for Sign Out
+    private static By btn_Sign_out = By.xpath("//span[contains(.,'Sign Out')]");
+    public static WebElement Sign_out(WebDriver driver) {
+        element = driver.findElement(btn_Sign_out);
+        return element;
+    }
+
+    //Object for Accept Sign Out
+    private static By btn_Yes_sign_out = By.xpath("//i[contains(@class,'pi pi-check')]");
+    public static WebElement Yes_sign_out(WebDriver driver) {
+        element = driver.findElement(btn_Yes_sign_out);
+        return element;
+    }
+
     //Object for Register as Farmer Label
     private static By lbl_Register_as_farmer = By.xpath("//span[contains(.,'Register as Farmer')]");
     public static WebElement Register_as_farmer(WebDriver driver) {
@@ -75,6 +89,41 @@ public class Front_Home_page {
     private static By lbl_Registration_type_page = By.xpath("//h1[contains(.,'Registration Type')]");
     public static WebElement Registration_type_page(WebDriver driver) {
         element = driver.findElement(lbl_Registration_type_page);
+        return element;
+    }
+
+    //Object for Application Status - Submitted
+    private static By lbl_Application_status_submitted = By.xpath("(//label[contains(.,'SUBMITTED')])[1]");
+    public static WebElement Application_status_submitted(WebDriver driver) {
+        element = driver.findElement(lbl_Application_status_submitted);
+        return element;
+    }
+
+    //Object for Application Status - Draft
+    private static By lbl_Application_status_draft = By.xpath("(//label[contains(.,'DRAFT')])[1]");
+    public static WebElement Application_status_draft(WebDriver driver) {
+        element = driver.findElement(lbl_Application_status_draft);
+        return element;
+    }
+
+    //Object for Application Status - Under Query
+    private static By lbl_Application_status_underquery = By.xpath("(//label[contains(.,'UNDER QUERY')])[1]");
+    public static WebElement Application_status_underquery(WebDriver driver) {
+        element = driver.findElement(lbl_Application_status_underquery);
+        return element;
+    }
+
+    //Object for Payment Status - Pending Payment
+    private static By lbl_Payment_status_pending = By.xpath("(//label[contains(.,'Payment Pending')])[1]");
+    public static WebElement Payment_status_pending(WebDriver driver) {
+        element = driver.findElement(lbl_Payment_status_pending);
+        return element;
+    }
+
+    //Object for Payment Status - Paid
+    private static By lbl_Payment_status_paid = By.xpath("(//label[contains(.,'Paid')])[1]");
+    public static WebElement Payment_status_paid(WebDriver driver) {
+        element = driver.findElement(lbl_Payment_status_paid);
         return element;
     }
 
