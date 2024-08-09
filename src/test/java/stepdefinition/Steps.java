@@ -25,6 +25,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
@@ -449,26 +450,26 @@ public class Steps extends Utility {
         }
     }
 
-        @And("^I Verify display of Farmers Card link$")
-        public void iVerifyDisplayOfFarmersCardLink () {
-            try {
-                Front_Home_page.Farmer_card(driver);
-            } catch (Exception e) {
-                System.out.println("Farmers Card link did not appear");
-                Assert.fail("Farmers Card link did not appear");
-            }
+    @And("^I Verify display of Farmers Card link$")
+    public void iVerifyDisplayOfFarmersCardLink() {
+        try {
+            Front_Home_page.Farmer_card(driver);
+        } catch (Exception e) {
+            System.out.println("Farmers Card link did not appear");
+            Assert.fail("Farmers Card link did not appear");
         }
+    }
 
 
-        @And("^I Verify Programmes link$")
-        public void iVerifyProgrammesLink () {
-            try {
-                Front_Home_page.Programmes(driver);
-            } catch (Exception e) {
-                System.out.println("Programmes link did not appear");
-                Assert.fail("Programmes link did not appear");
-            }
+    @And("^I Verify Programmes link$")
+    public void iVerifyProgrammesLink() {
+        try {
+            Front_Home_page.Programmes(driver);
+        } catch (Exception e) {
+            System.out.println("Programmes link did not appear");
+            Assert.fail("Programmes link did not appear");
         }
+    }
 
     @And("^I Click on New Button to apply for Registration$")
     public void iClickOnNewButtonToApplyForRegistration() {
@@ -538,7 +539,7 @@ public class Steps extends Utility {
                 Assert.fail("Radio Button for Full Time is not working");
             }
         } else {
-            System.out.println("Radio Button is functioning properly");
+            System.out.println("Option is not valid");
         }
 
     }
@@ -581,21 +582,21 @@ public class Steps extends Utility {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else if (Status_Applicant.equals("Cooperative society")) {
+        } else if (Status_Applicant.equals("Cooperative society")) {
             try {
                 Farmers_cooperatives_association_society_company.Cooperative_society(driver).click();
             } catch (Exception e) {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else if (Status_Applicant.equals("Association")) {
+        } else if (Status_Applicant.equals("Association")) {
             try {
                 Farmers_cooperatives_association_society_company.Association(driver).click();
             } catch (Exception e) {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else {
+        } else {
             System.out.println("Radio Button is functioning properly");
         }
     }
@@ -611,7 +612,7 @@ public class Steps extends Utility {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else if (Year_dur.equals("2")) {
+        } else if (Year_dur.equals("2")) {
             try {
                 Farmers_cooperatives_association_society_company.Two_Years(driver).click();
             } catch (Exception e) {
@@ -651,7 +652,7 @@ public class Steps extends Utility {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else if (Status_business.equals("Existing")) {
+        } else if (Status_business.equals("Existing")) {
             try {
                 Farmers_cooperatives_association_society_company.Status_Existing(driver).click();
             } catch (Exception e) {
@@ -790,7 +791,6 @@ public class Steps extends Utility {
     }
 
 
-
     @And("^I Verify Terms and Conditions Page$")
     public void iVerifyTermsAndConditionsPage() {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Terms_and_condition(driver));
@@ -878,15 +878,15 @@ public class Steps extends Utility {
 
 
     @And("^I Verify Success message for application submitted$")
-    public void iVerifySuccessMessageForApplicationSubmitted() {
+    public void iVerifySuccessMessageForApplicationSubmitted() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
         try {
             My_application.Success_message_submit_application(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Success message did not appear");
         }
-
+        Thread.sleep(8000);
     }
 
     @And("^I Click on Submit Application \"([^\"]*)\"$")
@@ -895,10 +895,10 @@ public class Steps extends Utility {
         Thread.sleep(1000);
         Farmers_cooperatives_association_society_company.Submit_application(driver).click();
         Thread.sleep(2000);
-        if (Confirmation.equals("Yes")){
+        if (Confirmation.equals("Yes")) {
             Terms_and_Condition.Yes_submit_app(driver).click();
         } else {
-            if (Confirmation.equals("No")){
+            if (Confirmation.equals("No")) {
                 Terms_and_Condition.Yes_submit_app(driver).click();
             } else {
                 System.out.println("Confirmation did not appear");
@@ -965,21 +965,21 @@ public class Steps extends Utility {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else if (Status_Applicant.equals("Cooperative society")) {
+        } else if (Status_Applicant.equals("Cooperative society")) {
             try {
                 Agro_Processing_Enterprise.Cooperative_society(driver).click();
             } catch (Exception e) {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else if (Status_Applicant.equals("Association")) {
+        } else if (Status_Applicant.equals("Association")) {
             try {
                 Agro_Processing_Enterprise.Association(driver).click();
             } catch (Exception e) {
                 System.out.println("Radio Button is not working");
                 Assert.fail("Radio Button is not working");
             }
-        }  else {
+        } else {
             System.out.println("Radio Button is functioning properly");
         }
     }
@@ -1003,19 +1003,19 @@ public class Steps extends Utility {
         if (App_status.equals("Submitted")) {
             try {
                 Front_Home_page.Application_status_submitted(driver);
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Status did not appear");
             }
-        } else if (App_status.equals("Draft")){
+        } else if (App_status.equals("Draft")) {
             try {
                 Front_Home_page.Application_status_draft(driver);
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Status did not appear");
             }
-        } else if (App_status.equals("Under Query")){
+        } else if (App_status.equals("Under Query")) {
             try {
                 Front_Home_page.Application_status_underquery(driver);
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Status did not appear");
             }
         } else {
@@ -1028,19 +1028,19 @@ public class Steps extends Utility {
         if (Payment_Status.equals("Submitted")) {
             try {
                 Front_Home_page.Application_status_submitted(driver);
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Status did not appear");
             }
-        } else if (Payment_Status.equals("Draft")){
+        } else if (Payment_Status.equals("Draft")) {
             try {
                 Front_Home_page.Application_status_draft(driver);
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Status did not appear");
             }
-        } else if (Payment_Status.equals("Under Query")){
+        } else if (Payment_Status.equals("Under Query")) {
             try {
                 Front_Home_page.Application_status_underquery(driver);
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Status did not appear");
             }
         } else {
@@ -1067,8 +1067,8 @@ public class Steps extends Utility {
     public void iClickOnShoppingCartForPayment() throws InterruptedException {
         Payment_process.Payment_shopping_cart(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 10);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h3[contains(.,'Welcome, ')]")));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'Payment Process')]")));
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
         Thread.sleep(2000);
     }
 
@@ -1082,6 +1082,8 @@ public class Steps extends Utility {
 
     @And("^Select Application for payment$")
     public void selectApplicationForPayment() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Payment_process.Search_reference_number(driver)));
         Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
         Thread.sleep(2000);
         Payment_process.Select_last_application(driver).click();
@@ -1109,19 +1111,19 @@ public class Steps extends Utility {
         if (Payment_method.equals("Credit")) {
             try {
                 Payment_process.Credit_card(driver).click();
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Credit Card did not appear");
             }
-        } else if (Payment_method.equals("Debit")){
+        } else if (Payment_method.equals("Debit")) {
             try {
                 Payment_process.Debit_card(driver).click();
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Debit Card did not appear");
             }
-        } else if (Payment_method.equals("Counter")){
+        } else if (Payment_method.equals("Counter")) {
             try {
                 Payment_process.Counter(driver).click();
-            } catch (Exception e){
+            } catch (Exception e) {
                 System.out.println("Counter did not appear");
             }
         } else {
@@ -1137,7 +1139,7 @@ public class Steps extends Utility {
         ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
         Payment_process.Proceed_to_payment(driver).click();
 
-}
+    }
 
     @And("^I Verify Message to proceed to Post Office for Payment$")
     public void iVerifyMessageToProceedToPostOfficeForPayment() throws InterruptedException {
@@ -1152,6 +1154,514 @@ public class Steps extends Utility {
         Thread.sleep(8000);
 
     }
+
+    @And("^I Click on Small Planters Icon$")
+    public void iClickOnSmallPlantersIcon() throws InterruptedException {
+        Small_planters.Small_planters(driver).click();
+        Thread.sleep(2000);
+    }
+
+    @And("^I Verify display of REGISTRATION FOR SMALL PLANTERS Page$")
+    public void iVerifyDisplayOfREGISTRATIONFORSMALLPLANTERSPage() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'REGISTRATION FOR SMALL PLANTERS')]")));
+
+        try {
+            Small_planters.Small_planters_page_title(driver);
+        } catch (Exception e) {
+            System.out.println("REGISTRATION FOR SMALL PLANTERS Page did not appear");
+            Assert.fail("REGISTRATION FOR SMALL PLANTERS Page Page page did not appear");
+        }
+    }
+
+
+    @And("^I Select Applicant Title \"([^\"]*)\"$")
+    public void iSelectApplicantTitle(String Applicant_Title) throws Throwable {
+        Thread.sleep(1500);
+        if (Applicant_Title.equals("Mr")){
+            try {
+                Small_planters.Title_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Could not Select One");
+                Assert.fail("Could not Select One");
+            }
+            Thread.sleep(1000);
+            Small_planters.Title_Mr(driver).click();
+            System.out.println("Mr is working");
+
+
+        }else if (Applicant_Title.equals("Mrs")){
+            try {
+                Small_planters.Title_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Could not Select One");
+                Assert.fail("Could not Select One");
+            }
+            Thread.sleep(1000);
+            Small_planters.Title_Mrs(driver).click();
+            System.out.println("Mrs is working");
+
+        }else if (Applicant_Title.equals("Miss")){
+            try {
+                Small_planters.Title_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Could not Select One");
+                Assert.fail("Could not Select One");
+            }
+            Thread.sleep(1000);
+            Small_planters.Title_Miss(driver).click();
+            System.out.println("Miss is working");
+
+        }
+        else {
+            System.out.println("Option is Not Valid");
+        }
+    }
+
+    @And("^I Select Applicant District \"([^\"]*)\"$")
+    public void iSelectApplicantDistrict(String District) throws Throwable {
+        if (District.equals("Black River")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Black_river(driver).click();
+
+        }else if (District.equals("Flacq")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Flacq(driver).click();
+
+        }else if (District.equals("Grand Port")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Grand_port(driver).click();
+
+        }else if (District.equals("Moka")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Moka(driver).click();
+
+        }else if (District.equals("Pamplemousses")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Pamplemousses(driver).click();
+
+        }else if (District.equals("Port Louis")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Port_louis(driver).click();
+
+        }else if (District.equals("Plaine Wilhems")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Plaine_wilhems(driver).click();
+
+        }else if (District.equals("Riviere Du Rempart")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Riviere_du_rempart(driver).click();
+
+        }else if (District.equals("Savannes")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Savannes(driver).click();
+
+        }else if (District.equals("Rodrigues")){
+            System.out.println("District Select is working");
+            Small_planters.District_Select_one(driver).click();
+            Thread.sleep(1000);
+            Small_planters.Rodrigues(driver).click();
+
+        }
+        else {
+            System.out.println("Option is Not Valid");
+            Assert.fail("Option is Not Valid");
+        }
+    }
+
+    @And("^I Select Applicant Level of Education \"([^\"]*)\"$")
+    public void iSelectApplicantLevelOfEducation(String Education_Level) throws Throwable {
+        Thread.sleep(1500);
+        if (Education_Level.equals("Primary")){
+            Small_planters.Education_Select_one(driver).click();
+            Thread.sleep(2000);
+            Small_planters.Education_primary(driver).click();
+            System.out.println("Education Level is working");
+
+        }else if (Education_Level.equals("Secondary")){
+            Small_planters.Education_Select_one(driver).click();
+            Thread.sleep(2000);
+            Small_planters.Education_secondary(driver).click();
+            System.out.println("Education Level is working");
+
+
+        }else if (Education_Level.equals("Tertiary")){
+            Small_planters.Education_Select_one(driver).click();
+            Thread.sleep(2000);
+            Small_planters.Education_tertiary(driver).click();
+            System.out.println("Education Level is working");
+
+        }else {
+            System.out.println("Option is Not Valid");
+            Assert.fail("Option is Not Valid");
+        }
+    }
+
+    @And("^I Select Agricultural Activity \"([^\"]*)\"$")
+    public void iSelectAgriculturalActivity(String Act) throws Throwable {
+        if (Act.equals("Part Time")) {
+            try {
+                Farmers_cooperatives_association_society_company.Part_time(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button for Part Time is not working");
+                Assert.fail("Radio Button for Part Time is not working");
+            }
+        } else if (Act.equals("Full Time")) {
+            try {
+                Farmers_cooperatives_association_society_company.Full_time(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button for Full Time is not working");
+                Assert.fail("Radio Button for Full Time is not working");
+            }
+        } else {
+            System.out.println("Option is not valid");
+        }
+    }
+
+    @And("^I Input Other Occupation \"([^\"]*)\"$")
+    public void iInputOtherOccupation(String Other_Occupation) throws Throwable {
+        Small_planters.Other_occupation(driver).sendKeys(Other_Occupation);
+    }
+
+    @And("^I Upload Photograph \"([^\"]*)\"$")
+    public void iUploadPhotograph(String Photo) throws Throwable {
+        String filePath = new File(Photo).getAbsolutePath();
+        Documents_upload.Photo_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Upload')]")));
+        Documents_upload.Upload_button(driver).click();
+        WebDriverWait ww = new WebDriverWait(driver, 10);
+        WebElement element2 = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download']")));
+    }
+
+    @And("^I Select Marital Status \"([^\"]*)\"$")
+    public void iSelectMaritalStatus(String Marital_Status) throws Throwable {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Single(driver));
+        Thread.sleep(1500);
+        if (Marital_Status.equals("Sinlge")) {
+            try {
+                Small_planters.Single(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button for Marital_Status is not working");
+                Assert.fail("Radio Button for Marital_Status is not working");
+            }
+        } else if (Marital_Status.equals("Married")) {
+            try {
+                Small_planters.Married(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button for Married is not working");
+                Assert.fail("Radio Button for Married is not working");
+            }
+        } else if (Marital_Status.equals("Divorced")) {
+            try {
+                Small_planters.Divorced(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button for Divorced is not working");
+                Assert.fail("Radio Button for Divorced is not working");
+            }
+        } else if (Marital_Status.equals("Widow")) {
+            try {
+                Small_planters.Widow(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button for Widow is not working");
+                Assert.fail("Radio Button for Widow is not working");
+            }
+        }else {
+            System.out.println("Option is not valid");
+        }
+    }
+
+    @And("^I Verify for Photo upload success message$")
+    public void iVerifyForPhotoUploadSuccessMessage() throws InterruptedException {
+        Thread.sleep(1000);
+        try {
+            Documents_upload.Photo_upload_success_message(driver);
+        } catch (Exception e) {
+            System.out.println("Photo Upload Success Message did not appear");
+            Assert.fail("Photo Upload Success Message did not appear");
+        }
+    }
+
+
+    @And("^I Select No of years for Registration membership \"([^\"]*)\"$")
+    public void iSelectNoOfYearsForRegistrationMembership(String Year_dur) throws Throwable {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Single(driver));
+        Thread.sleep(1500);
+        Farmers_cooperatives_association_society_company.Select_one(driver).click();
+        Thread.sleep(2000);
+        if (Year_dur.equals("1")) {
+            Farmers_cooperatives_association_society_company.One_Year(driver).click();
+            System.out.println("Radio Button is working correctly");
+        } else if (Year_dur.equals("2")) {
+            Farmers_cooperatives_association_society_company.Two_Years(driver).click();
+            System.out.println("Radio Button is working correctly");
+        } else {
+            System.out.println("Radio Button is not functioning properly");
+        }
+        Thread.sleep(2000);
+    }
+
+    @And("^I Verify Display of Particulars of Family Beneficiaries Page$")
+    public void iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage() {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars of Family and Beneficiaries')]")));
+        try {
+            Small_planters.Particulars_family_ben_page(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars of Family Beneficiaries Page did not appear");
+            Assert.fail("Particulars of Family Beneficiaries Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Family and Beneficiaries$")
+    public void iClickOnAddFamilyAndBeneficiaries() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            Small_planters.Add_family_and_beneficiaries(driver);
+        } catch (Exception e){
+            Assert.fail("Add Family and Beneficiaries is not clicakble");
+        }
+        Thread.sleep(1500);
+        Small_planters.Add_family_and_beneficiaries(driver).click();
+
+    }
+
+    @And("^Verify Display of Particulars of Family Beneficiaries input table$")
+    public void verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable() throws InterruptedException {
+        Thread.sleep(3000);
+//        driver.switchTo().frame("//div[contains(@id, 'dlgfamily')]");  // Switch to the frame with the specified name or ID
+
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_family_ben_tab(driver)));
+        try {
+            Small_planters.Particulars_family_ben_tab(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars of Family Beneficiaries Tab did not appear");
+            Assert.fail("Particulars of Family Beneficiaries Tab did not appear");
+        }
+    }
+
+    @And("^I Select Family relationship \"([^\"]*)\"$")
+    public void iSelectFamilyRelationship(String Relationship) throws Throwable {
+        Thread.sleep(1500);
+        if (Relationship.equals("Spouse")){
+            try {
+                Small_planters.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            Thread.sleep(1000);
+            Small_planters.Family_spouse(driver).click();
+            System.out.println("Spouse option is working");
+
+
+        }else if (Relationship.equals("Child 1")){
+            try {
+                Small_planters.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            Thread.sleep(1000);
+            Small_planters.Family_child_one(driver).click();
+            System.out.println("Child 1 is working");
+
+        }else if (Relationship.equals("Child 2")){
+            try {
+                Small_planters.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            Thread.sleep(1000);
+            Small_planters.Family_child_two(driver).click();
+            System.out.println("Child 2 is working");
+
+        }else if (Relationship.equals("Child 3")){
+            try {
+                Small_planters.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            Thread.sleep(1000);
+            Small_planters.Family_child_three(driver).click();
+            System.out.println("Child 3 is working");
+
+        }
+        else {
+            System.out.println("Family Option is Not Valid");
+        }
+    }
+
+    @And("^I Input Family Surname \"([^\"]*)\"$")
+    public void iInputFamilySurname(String Family_Surname) throws Throwable {
+        Small_planters.Family_surname(driver).sendKeys(Family_Surname);
+    }
+
+    @And("^I Input Family Other Names \"([^\"]*)\"$")
+    public void iInputFamilyOtherNames(String Family_Other_Names) throws Throwable {
+        Small_planters.Family_other_names(driver).sendKeys(Family_Other_Names);
+    }
+
+    @And("^I Select Family Gender \"([^\"]*)\"$")
+    public void iSelectFamilyGender(String Gender) throws Throwable {
+        Small_planters.Family_gender_select_one(driver).click();
+        Thread.sleep(1500);
+        if (Gender.equals("Male")){
+            Small_planters.Family_gender_male(driver).click();
+            System.out.println("Gender Male is working fine");
+        }else if(Gender.equals("Female")){
+            Small_planters.Family_gender_female(driver).click();
+            System.out.println("Gender Female is working fine");
+        }else{
+            System.out.println("Gender option is not valid");
+            Assert.fail("Gender option is not valid");
+        }
+    }
+
+    @And("^I Input Family Date of Birth \"([^\"]*)\"$")
+    public void iInputFamilyDateOfBirth(String DOB) throws Throwable {
+        if (DOB.equals("1Jan94")){
+            Small_planters.Family_date_of_birth(driver).click();
+            Thread.sleep(1500);
+            driver.findElement(By.xpath("(//select[@data-event='change'])[2]")).sendKeys("1994");
+            Thread.sleep(1500);
+            driver.findElement(By.xpath("(//select[@data-event='change'])[1]")).sendKeys("Jan");
+            Thread.sleep(1500);
+            driver.findElement(By.xpath("(//a[@href='#'])[47]")).click();
+            Thread.sleep(1000);
+        }else{
+            Assert.fail("Cannot select date");
+        }
+
+    }
+
+    @And("^I Input Family Occupation \"([^\"]*)\"$")
+    public void iInputFamilyOccupation(String Occupation) throws Throwable {
+        Small_planters.Family_occupation(driver).sendKeys(Occupation);
+    }
+
+    @And("^I Click on Beneficiary of life Insurance Scheme$")
+    public void iClickOnBeneficiaryOfLifeInsuranceScheme() {
+        Small_planters.Life_insurance_scheme(driver).click();
+    }
+
+    @And("^I Click on Beneficiary of Accident Insurance Scheme$")
+    public void iClickOnBeneficiaryOfAccidentInsuranceScheme() {
+        Small_planters.Accident_insurance_scheme(driver).click();
+    }
+
+    @And("^I Save Particulars of Family and Beneficiaries$")
+    public void iSaveParticularsOfFamilyAndBeneficiaries() throws InterruptedException {
+        Small_planters.Save_family_ben(driver).click();
+    }
+
+    @And("^I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page$")
+    public void iVerifyDisplayOfParticularsOfCropSugarcaneAndTeaPlantationPage() {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars of Crop: Sugarcane and Tea Plantation')]")));
+        try {
+            Small_planters.Particulars_of_crop_page(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars of Crop: Sugarcane and Tea Plantation Page did not appear");
+            Assert.fail("Particulars of Crop: Sugarcane and Tea Plantation Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Crop$")
+    public void iClickOnAddCrop() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            Small_planters.Add_crop(driver);
+        } catch (Exception e){
+            Assert.fail("Add Crop is not clicakble");
+        }
+        Thread.sleep(1500);
+        Small_planters.Add_crop(driver).click();
+    }
+
+    @And("^I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table$")
+    public void iVerifyDisplayOfParticularsOfCropSugarcaneAndTeaPlantationTable() throws InterruptedException {
+        Thread.sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_of_crop_tab(driver)));
+        try {
+            Small_planters.Particulars_of_crop_tab(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars of Crop Tab did not appear");
+            Assert.fail("Particulars of Crop Tab did not appear");
+        }
+    }
+
+    @And("^I Input Organisation Account Number \"([^\"]*)\"$")
+    public void iInputOrganisationAccountNumber(String Org_acc_no) throws Throwable {
+        Small_planters.Organisation_acc_no(driver).sendKeys(Org_acc_no);
+    }
+
+    @And("^I Select Crop Type \"([^\"]*)\"$")
+    public void iSelectCropType(String Crop_Type) throws Throwable {
+        Small_planters.Select_one_crop_type(driver).click();
+        Thread.sleep(1500);
+        if (Crop_Type.equals("Cane")){
+            Small_planters.Cane_crop_type(driver).click();
+            System.out.println("Cane is working fine");
+        }else if(Crop_Type.equals("Tea")){
+            Small_planters.Tea_crop_type(driver).click();
+            System.out.println("Tea is working fine");
+        }else{
+            System.out.println("Crop Type option is not valid");
+            Assert.fail("Crop Type option is not valid");
+        }
+    }
+
+    @And("^I Input Total Extent of plot \\(In Arpent\\) \"([^\"]*)\"$")
+    public void iInputTotalExtentOfPlotInArpent(String Land_Extent) throws Throwable {
+        Small_planters.Total_Arpent(driver).sendKeys(Land_Extent);
+    }
+
+    @And("^I Select Owner Type \"([^\"]*)\"$")
+    public void iSelectOwnerType(String Owner_Type) throws Throwable {
+        Small_planters.Select_one_owner_type(driver).click();
+        Thread.sleep(1500);
+        if (Owner_Type.equals("Owner")){
+            Small_planters.Owner_owner_type(driver).click();
+            System.out.println("Owner is working fine");
+        }else if(Owner_Type.equals("Tenant")){
+            Small_planters.Tenant_owner_type(driver).click();
+            System.out.println("Tenant is working fine");
+        }else{
+            System.out.println("Owner Type option is not valid");
+            Assert.fail("Owner Type option is not valid");
+        }
+    }
+
+    @And("^I Input Plot Location \"([^\"]*)\"$")
+    public void iInputPlotLocation(String Plot_Location) throws Throwable {
+        Small_planters.Plot_location(driver).sendKeys(Plot_Location);
+    }
+
+    @And("^I Save Particulars of Crop$")
+    public void iSaveParticularsOfCrop() {
+        Small_planters.Save_Particulars_of_crop(driver).click();
+    }
 }
-
-

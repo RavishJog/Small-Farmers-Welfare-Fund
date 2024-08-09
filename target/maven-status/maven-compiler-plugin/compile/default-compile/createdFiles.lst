@@ -4,6 +4,7 @@ objectrepository\Back_office_main_page.class
 objectrepository\Home_page.class
 objectrepository\Payment_process.class
 objectrepository\Fees_and_fines.class
+objectrepository\Small_planters.class
 commonmethods\Utility.class
 objectrepository\Farmers_cooperatives_association_society_company.class
 objectrepository\Terms_and_Condition.class
