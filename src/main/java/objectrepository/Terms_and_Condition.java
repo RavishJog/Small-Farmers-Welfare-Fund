@@ -37,14 +37,14 @@ public class Terms_and_Condition {
     }
 
     //Object for Bank - Branch
-    private static By txt_Bank_Branch = By.xpath("//input[contains(@id,'idt281')]");
+    private static By txt_Bank_Branch = By.xpath("//input[contains(@id,'registration_branch')]");
     public static WebElement Bank_Branch(WebDriver driver) {
         element = driver.findElement(txt_Bank_Branch);
         return element;
     }
 
     //Object for Bank - Personal Bank Account Number
-    private static By txt_Bank_account_number = By.xpath("//input[contains(@id,'idt286')]");
+    private static By txt_Bank_account_number = By.xpath("//input[contains(@id,'registration_bankAccountNo')]");
     public static WebElement Bank_account_number(WebDriver driver) {
         element = driver.findElement(txt_Bank_account_number);
         return element;

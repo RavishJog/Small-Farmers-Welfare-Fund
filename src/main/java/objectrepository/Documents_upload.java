@@ -120,6 +120,26 @@ public class Documents_upload {
         return element;
     }
 
+    //Object for Photo
+    private static By btn_Photo_upload = By.xpath("//input[@type='file']");
+    public static WebElement Photo_upload(WebDriver driver) {
+        element = driver.findElement(btn_Photo_upload);
+        return element;
+    }
+
+    //Object for Upload Button
+    private static By btn_Upload_button = By.xpath("//span[contains(.,'Upload')]");
+    public static WebElement Upload_button(WebDriver driver) {
+        element = driver.findElement(btn_Upload_button);
+        return element;
+    }
+
+    //Object for Photo Upload Success Message
+    private static By txt_Photo_upload_success_message = By.xpath("(//span[contains(text (),'has been uploaded.')])[2]");
+    public static WebElement Photo_upload_success_message(WebDriver driver) {
+        element = driver.findElement(txt_Photo_upload_success_message);
+        return element;
+    }
 
 }
 

@@ -9,14 +9,14 @@ public class Payment_process {
 
     //Objects
     //Object for Payment Shopping Cart
-    private static By btn_Payment_shopping_cart = By.xpath("//i[@class='pi pi-shopping-cart']");
+    private static By btn_Payment_shopping_cart = By.xpath("//div[contains(@id, 'shoppingCart')]");
     public static WebElement Payment_shopping_cart(WebDriver driver) {
         element = driver.findElement(btn_Payment_shopping_cart);
         return element;
     }
 
     //Object for Search Bar for Reference Number
-    private static By txt_Search_reference_number = By.xpath("//input[contains(@id,'j_idt70:pendingpaymentid:j_idt83:filter')]");
+    private static By txt_Search_reference_number = By.xpath("(//input[@role='textbox'])[1]");
     public static WebElement Search_reference_number(WebDriver driver) {
         element = driver.findElement(txt_Search_reference_number);
         return element;
