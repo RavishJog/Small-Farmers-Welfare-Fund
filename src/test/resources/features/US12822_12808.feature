@@ -1,7 +1,7 @@
 #User Story 12822 - Payment Process
 
 @Main_feature @US12882/12808
-Feature: Payment for Registration
+Feature: User Story 12822 - Payment Process for Registration
 
    #Scenario1
   @Payment_at_counter_for_Agro-Processing-Enterprise

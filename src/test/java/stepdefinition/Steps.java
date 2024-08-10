@@ -988,14 +988,14 @@ public class Steps extends Utility {
     public void iInputBankBranchForAgroProcessingEnterprise(String Bank_Branch) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Branch_label(driver));
         Thread.sleep(1000);
-        Agro_Processing_Enterprise.Bank_Branch(driver).sendKeys(Bank_Branch);
+        Terms_and_Condition.Bank_Branch(driver).sendKeys(Bank_Branch);
     }
 
     @And("^I Input Personal Bank Account Number Agro-Processing Enterprise \"([^\"]*)\"$")
     public void iInputPersonalBankAccountNumberAgroProcessingEnterprise(String Bank_Account_No) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Personal_Bank_Account_Number_label(driver));
         Thread.sleep(1000);
-        Agro_Processing_Enterprise.Bank_account_number(driver).sendKeys(Bank_Account_No);
+        Terms_and_Condition.Bank_account_number(driver).sendKeys(Bank_Account_No);
     }
 
     @And("^I Verify Application Status \"([^\"]*)\"$")

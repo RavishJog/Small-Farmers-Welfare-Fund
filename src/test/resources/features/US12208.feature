@@ -1,7 +1,7 @@
 #User Story 12208 - Register as small planters
 
 @Main_feature @US12208
-Feature: Register as small planters
+Feature: User Story 12208 - Register as small planters
 
    #Scenario1
   @Registration_as_small_planters
