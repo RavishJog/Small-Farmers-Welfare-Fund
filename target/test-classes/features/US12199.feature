@@ -5,7 +5,7 @@
 
 
 @Main_feature @US12199
-Feature: View, Edit, Add fees and fines
+Feature: User Story 12199 - List of Type of Fee and Fine
 
   #Scenario1 - 12598 - TC 1-Sorting
   @Sorting_list_of_fees_and_fines
