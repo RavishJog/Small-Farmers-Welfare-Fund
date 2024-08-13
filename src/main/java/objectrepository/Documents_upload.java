@@ -71,6 +71,20 @@ public class Documents_upload {
         return element;
     }
 
+    //Object for upload Button 1 Documents for Particulars for Horticultural Plantations
+    private static By btn_Button_upload_horticultural_plantation = By.xpath("//button[contains(@id, 'horticulturalTb1:0:horti_uploadBtn')]");
+    public static WebElement Button_upload_horticultural_plantation(WebDriver driver) {
+        element = driver.findElement(btn_Button_upload_horticultural_plantation);
+        return element;
+    }
+
+    //Object for upload Documents for Particulars for Horticultural Plantations
+    private static By btn_Document_upload_horticultural_plantation = By.xpath("//input[contains(@id, 'fileUploadeSite0_input')]");
+    public static WebElement Document_upload_horticultural_plantation(WebDriver driver) {
+        element = driver.findElement(btn_Document_upload_horticultural_plantation);
+        return element;
+    }
+
     //Object for button to add upload for additional documents
     private static By btn_Add_additional_documents = By.xpath("//button[contains(@id, 'adddoc')]");
     public static WebElement Add_additional_documents(WebDriver driver) {
@@ -112,6 +126,16 @@ public class Documents_upload {
         element = driver.findElement(txt_Document_upload_success_message);
         return element;
     }
+
+    //Object for Close Button for Horticultural Plantations Documents tab
+    private static By btn_Close_hoticultural_document_tab = By.xpath("(//span[@class='ui-icon ui-icon-closethick'])[2]");
+    public static WebElement Close_hoticultural_document_tab(WebDriver driver) {
+        element = driver.findElement(btn_Close_hoticultural_document_tab);
+        return element;
+    }
+
+
+
 
     //Object for Success Message for Additional Document Name
     private static By txt_Adding_doc_name_success_message = By.xpath("(//span[contains(.,'New document added:')])");

@@ -85,6 +85,64 @@ public class Payment_process {
         return element;
     }
 
+    //Object for Display of Payment Gateway
+    private static By lbl_Payment_gateway_display = By.xpath("//span[contains(.,'Card number')]");
+    public static WebElement Payment_gateway_display(WebDriver driver) {
+        element = driver.findElement(lbl_Payment_gateway_display);
+        return element;
+    }
+
+    //Object for Payment Gateway - Card Number
+    private static By txt_Card_number = By.xpath("//input[@id='cardNumber']");
+    public static WebElement Card_number(WebDriver driver) {
+        element = driver.findElement(txt_Card_number);
+        return element;
+    }
+
+    //Object for Payment Gateway - Expiry Month
+    private static By txt_Expiry_month = By.xpath("//select[contains(@id,'expiryMonth')]");
+    public static WebElement Expiry_month(WebDriver driver) {
+        element = driver.findElement(txt_Expiry_month);
+        return element;
+    }
+
+    //Object for Payment Gateway - Expiry Year
+    private static By txt_Expiry_year = By.xpath("//select[contains(@id,'expiryYear')]");
+    public static WebElement Expiry_year(WebDriver driver) {
+        element = driver.findElement(txt_Expiry_year);
+        return element;
+    }
+
+    //Object for Cardholder name
+    private static By txt_Cardholder_name = By.xpath("//input[@id='cardHolderName']");
+    public static WebElement Cardholder_name(WebDriver driver) {
+        element = driver.findElement(txt_Cardholder_name);
+        return element;
+    }
+
+    //Object for Payment Gateway - Security Code
+    private static By txt_Security_code = By.xpath("//input[@id='csc']");
+    public static WebElement Security_code(WebDriver driver) {
+        element = driver.findElement(txt_Security_code);
+        return element;
+    }
+
+    //Object for Pay Now Button
+    private static By btn_Pay_now = By.xpath("(//button[contains(.,'Pay now')])[1]");
+    public static WebElement Pay_now(WebDriver driver) {
+        element = driver.findElement(btn_Pay_now);
+        return element;
+    }
+
+    //Object for Payment Status - Paid
+    private static By lbl_Payment_status_paid_last_application_ref = By.xpath("(//label[contains(.,'Paid')])[1]");
+    public static WebElement Payment_status_paid_last_application_ref(WebDriver driver) {
+        element = driver.findElement(lbl_Payment_status_paid_last_application_ref);
+        return element;
+    }
+
+
+
 }
 
 //Object for XXX

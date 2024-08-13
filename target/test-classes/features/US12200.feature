@@ -2,7 +2,7 @@
 
 
 @Main_feature @US12200
-Feature: Register as Farmers’ Cooperative Association, Society or Company
+Feature: User Story 12200 - Register as Farmers’ Cooperative Association, Society or Company-Application form
 
    #Scenario1
   @Register_as_Farmers_Cooperative_Association

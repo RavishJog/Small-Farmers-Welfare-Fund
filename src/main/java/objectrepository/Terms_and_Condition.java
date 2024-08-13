@@ -85,6 +85,12 @@ public class Terms_and_Condition {
         return element;
     }
 
+    //Object for Cancel Button not to proceed with another registration
+    private static By btn_Cancel_no_other_registration = By.xpath("//span[contains(.,'Cancel')]");
+    public static WebElement Cancel_no_other_registration(WebDriver driver) {
+        element = driver.findElement(btn_Cancel_no_other_registration);
+        return element;
+    }
 
 }
 
