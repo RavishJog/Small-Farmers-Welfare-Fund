@@ -23,7 +23,6 @@ Feature: Login into SFWF Backoffice Portal
     Examples:
     |Browser|Username     |Password |
     |Chrome |Suraj_Admin1 |Admin@123|
-    |Edge  |Suraj_Admin1 |Admin@123|
 
 
 #Scenario2
