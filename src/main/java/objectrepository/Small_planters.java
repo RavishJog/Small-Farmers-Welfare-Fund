@@ -406,6 +406,215 @@ public class Small_planters {
         return element;
     }
 
+    //Object for Particulars for Horticultural Plantations Page
+    private static By lbl_Particulars_horticultural_plantations_page = By.xpath("(//h6[contains(.,'Particulars for Horticultural Plantations')])[1]");
+    public static WebElement Particulars_horticultural_plantations_page(WebDriver driver) {
+        element = driver.findElement(lbl_Particulars_horticultural_plantations_page);
+        return element;
+    }
+
+    //Object for Add Horticultural  button
+    private static By btn_Add_horticultural  = By.xpath("//span[contains(.,'Add Horticultural')]");
+    public static WebElement Add_horticultural(WebDriver driver) {
+        element = driver.findElement(btn_Add_horticultural);
+        return element;
+    }
+
+    //Object for PParticulars for Horticultural Plantations Table
+    private static By lbl_Particulars_of_horticultural_tab = By.xpath("(//span[contains(.,'Particulars for Horticultural Plantations')])[1]");
+    public static WebElement Particulars_of_horticultural_tab(WebDriver driver) {
+        element = driver.findElement(lbl_Particulars_of_horticultural_tab);
+        return element;
+    }
+
+    //Object for Field Location
+    private static By txt_Field_location = By.xpath("//input[contains(@id,'j_idt70:field_location_horticultural')]");
+    public static WebElement Field_location(WebDriver driver) {
+        element = driver.findElement(txt_Field_location);
+        return element;
+    }
+
+    //Object for Production System - Select One
+    private static By lbl_Select_one_production_system = By.xpath("//label[contains(@id,'production_system_label')]");
+    public static WebElement Select_one_production_system(WebDriver driver) {
+        element = driver.findElement(lbl_Select_one_production_system);
+        return element;
+    }
+
+    //Object for Production System - Open Field
+    private static By lbl_Open_field = By.xpath("//li[contains(@id,'production_system_1')]");
+    public static WebElement Open_field(WebDriver driver) {
+        element = driver.findElement(lbl_Open_field);
+        return element;
+    }
+
+    //Object for Production System - Sheltered Farming
+    private static By lbl_Sheltered_farming = By.xpath("//li[contains(@id,'production_system_2')]");
+    public static WebElement Sheltered_farming(WebDriver driver) {
+        element = driver.findElement(lbl_Sheltered_farming);
+        return element;
+    }
+
+    //Object for Production System - Aquaponics
+    private static By lbl_Aquaponics = By.xpath("//li[contains(@id,'production_system_3')]");
+    public static WebElement Aquaponics(WebDriver driver) {
+        element = driver.findElement(lbl_Aquaponics);
+        return element;
+    }
+
+    //Object for Total Extent of plot
+    private static By txt_Total_extent_plot = By.xpath("//input[contains(@id,'totalExtentPlotm2')]");
+    public static WebElement Total_extent_plot(WebDriver driver) {
+        element = driver.findElement(txt_Total_extent_plot);
+        return element;
+    }
+
+    //Object for Crop grown at time of Registration/ Crop to be grown
+    private static By txt_Crop_grown = By.xpath("//textarea[contains(@id, 'crop_grown')]");
+    public static WebElement Crop_grown(WebDriver driver) {
+        element = driver.findElement(txt_Crop_grown);
+        return element;
+    }
+
+    //Object for Owner Type - Select_one
+    private static By lbl_Select_one_owner_type_horticultural = By.xpath("//label[contains(@id,'owner_type_horticultural_label')]");
+    public static WebElement Select_one_owner_type_horticultural(WebDriver driver) {
+        element = driver.findElement(lbl_Select_one_owner_type_horticultural);
+        return element;
+    }
+
+    //Object for Owner Type - Owner
+    private static By lbl_Owner_owner_type_horticultural = By.xpath("//li[contains(@id,'owner_type_horticultural_1')]");
+    public static WebElement Owner_owner_type_horticultural(WebDriver driver) {
+        element = driver.findElement(lbl_Owner_owner_type_horticultural);
+        return element;
+    }
+
+    //Object for Owner Type - Tenant
+    private static By lbl_Tenant_owner_type_horticultural = By.xpath("//li[contains(@id,'owner_type_horticultural_2')]");
+    public static WebElement Tenant_owner_type_horticultural(WebDriver driver) {
+        element = driver.findElement(lbl_Tenant_owner_type_horticultural);
+        return element;
+    }
+
+    //Object for Plantation Type - Select One
+    private static By lbl_Select_one_plantation_type = By.xpath("//label[contains(@id,'plantation_type_horticultural_label')]");
+    public static WebElement Select_one_plantation_type(WebDriver driver) {
+        element = driver.findElement(lbl_Select_one_plantation_type);
+        return element;
+    }
+
+    //Object for Plantation Type - Interline
+    private static By lbl_Interline_plantation_type = By.xpath("//li[contains(@id,'plantation_type_horticultural_1')]");
+    public static WebElement Interline_plantation_type(WebDriver driver) {
+        element = driver.findElement(lbl_Interline_plantation_type);
+        return element;
+    }
+
+    //Object for Plantation Type - Full Stand
+    private static By lbl_Full_stand_plantation_type = By.xpath("//li[contains(@id,'plantation_type_horticultural_2')]");
+    public static WebElement Full_stand_plantation_type(WebDriver driver) {
+        element = driver.findElement(lbl_Full_stand_plantation_type);
+        return element;
+    }
+
+    //Object for Expected Date of Planting/Seedling
+    private static By txt_Input_date_planting_seedling = By.xpath("//input[contains(@id,'datePlanting_input')]");
+    public static WebElement Input_date_planting_seedling(WebDriver driver) {
+        element = driver.findElement(txt_Input_date_planting_seedling);
+        return element;
+    }
+
+    //Object for Expected Date of Planting/Seedling - Month
+    private static By txt_Input_month_planting_seedling = By.xpath("//select[contains(@data-handler,'selectMonth')]");
+    public static WebElement Input_month_planting_seedling(WebDriver driver) {
+        element = driver.findElement(txt_Input_month_planting_seedling);
+        return element;
+    }
+
+    //Object for Expected Date of Planting/Seedling - Year
+    private static By txt_Input_year_planting_seedling = By.xpath("//select[contains(@data-handler,'selectYear')]");
+    public static WebElement Input_year_planting_seedling(WebDriver driver) {
+        element = driver.findElement(txt_Input_year_planting_seedling);
+        return element;
+    }
+
+    //Object for Expected Date of Planting/Seedling - Day - 1st Aug 2030
+    private static By txt_Input_day_planting_seedling = By.xpath("(//a[@href='#'])[50]");
+    public static WebElement Input_day_planting_seedling(WebDriver driver) {
+        element = driver.findElement(txt_Input_day_planting_seedling);
+        return element;
+    }
+
+
+    //Object for Save Button for Particulars for Horticultural Plantations
+    private static By btn_Save_Particulars_of_horticultural_plantations = By.xpath("(//span[contains(.,'Save')])[2]");
+    public static WebElement Save_Particulars_of_horticultural_plantations(WebDriver driver) {
+        element = driver.findElement(btn_Save_Particulars_of_horticultural_plantations);
+        return element;
+    }
+
+    //Object for Crop Status for Horticultural Plantation
+    private static By txt_Crop_status = By.xpath("//input[contains (@id, 'fpscrop_status')]");
+    public static WebElement Crop_status(WebDriver driver) {
+        element = driver.findElement(txt_Crop_status);
+        return element;
+    }
+    //Object for Save Button for Particulars for Horticultural Plantations declared under FPS
+    private static By btn_Save_Horticultural_plantations_under_FPS = By.xpath("(//span[contains(.,'Save')])[5]");
+    public static WebElement Save_Horticultural_plantations_under_FPS(WebDriver driver) {
+        element = driver.findElement(btn_Save_Horticultural_plantations_under_FPS);
+        return element;
+    }
+
+    //Object for Edit Button for Particulars for Horticultural Plantations declared under FPS
+    private static By btn_Edit_Horticultural_plantations_under_FPS = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-pencil'])[2]");
+    public static WebElement Edit_Horticultural_plantations_under_FPS(WebDriver driver) {
+        element = driver.findElement(btn_Edit_Horticultural_plantations_under_FPS);
+        return element;
+    }
+
+    //Object for Horticultural Plantations Document Table
+    private static By lbl_Horticultural_plantation_documents_tab = By.xpath("//span[contains(.,'Horticultural Plantation Documents')]");
+    public static WebElement Horticultural_plantation_documents_tab(WebDriver driver) {
+        element = driver.findElement(lbl_Horticultural_plantation_documents_tab);
+        return element;
+    }
+
+    //Object for label of Particulars for Horticultural Plantations declared under FPS
+    private static By lbl_Particulars_for_Horticultural_Plantations_declared_under_FPS = By.xpath("//h6[contains(text(),'Particulars for Horticultural Plantations declared')]");
+    public static WebElement Particulars_for_Horticultural_Plantations_declared_under_FPS(WebDriver driver) {
+        element = driver.findElement(lbl_Particulars_for_Horticultural_Plantations_declared_under_FPS);
+        return element;
+    }
+
+    //Object for Particulars for Horticultural Plantations declared under FPS table
+    private static By lbl_Particulars_for_Horticultural_Plantations_declared_under_FPS_table = By.xpath("//span[contains (@id, 'dlgfpshorticultural_title')]");
+    public static WebElement Particulars_for_Horticultural_Plantations_declared_under_FPS_table(WebDriver driver) {
+        element = driver.findElement(lbl_Particulars_for_Horticultural_Plantations_declared_under_FPS_table);
+        return element;
+    }
+
+    //Object for Membership into Small Farmers Welfare Fund (SFWF)
+    private static By lbl_Membership_into_sfwf = By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]");
+    public static WebElement Membership_into_sfwf(WebDriver driver) {
+        element = driver.findElement(lbl_Membership_into_sfwf);
+        return element;
+    }
+
+    //Object for Photo checkbox
+    private static By btn_Photo_checkbox = By.xpath("//span[contains(.,'Photo')]");
+    public static WebElement Photo_checkbox(WebDriver driver) {
+        element = driver.findElement(btn_Photo_checkbox);
+        return element;
+    }
+
+    //Object for Cancel Button not to proceed with another registration
+    private static By btn_Cancel_no_other_registration = By.xpath("//span[contains(.,'Cancel')]");
+    public static WebElement Cancel_no_other_registration(WebDriver driver) {
+        element = driver.findElement(btn_Cancel_no_other_registration);
+        return element;
+    }
 
 
 }

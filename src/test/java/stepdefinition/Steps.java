@@ -685,7 +685,7 @@ public class Steps extends Utility {
 //        WebDriverWait w = new WebDriverWait(driver, 5);
 //        w.until(ExpectedConditions.visibilityOf(Farmers_cooperatives_association_society_company.Upload_required_documents(driver)));
 //        Thread.sleep(1000);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(text(),'Upload Required Documents')]")));
         try {
             Farmers_cooperatives_association_society_company.Upload_required_documents(driver);
@@ -700,7 +700,7 @@ public class Steps extends Utility {
     public void iUploadBusinessRegistrationCard(String Upload_test) throws Throwable {
         String filePath = new File(Upload_test).getAbsolutePath();
         Documents_upload.Business_Registration_card_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[1]")));
 
 
@@ -708,7 +708,6 @@ public class Steps extends Utility {
 
     @And("^I Verify for Document Upload Success Message$")
     public void iVerifyForDocumentUploadSuccessMessage() {
-
         try {
             Documents_upload.Document_upload_success_message(driver);
         } catch (Exception e) {
@@ -722,7 +721,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Certificate_of_incorporation_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[2]")));
 
     }
@@ -732,7 +731,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.List_of_directors_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[3]")));
     }
 
@@ -741,7 +740,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Board_resolution_of_enterprise_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[4]")));
     }
 
@@ -750,7 +749,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.National_identity_card_Representative_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[5]")));
     }
 
@@ -759,7 +758,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.National_identity_card_Shareholders_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]")));
     }
 
@@ -768,7 +767,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Location_plan_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[7]")));
     }
 
@@ -777,7 +776,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.SMEDA_certificate_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[8]")));
     }
 
@@ -786,7 +785,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Utility_bill_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[9]")));
     }
 
@@ -871,7 +870,7 @@ public class Steps extends Utility {
     public void iUploadAdditionalDocument(String Upload_test) throws Throwable {
         String filePath = new File(Upload_test).getAbsolutePath();
         Documents_upload.Additional_document_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[10]")));
 
     }
@@ -881,6 +880,7 @@ public class Steps extends Utility {
     public void iVerifySuccessMessageForApplicationSubmitted() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
+        Thread.sleep(2000);
         try {
             My_application.Success_message_submit_application(driver);
         } catch (Exception e) {
@@ -897,13 +897,12 @@ public class Steps extends Utility {
         Thread.sleep(2000);
         if (Confirmation.equals("Yes")) {
             Terms_and_Condition.Yes_submit_app(driver).click();
+        } else if (Confirmation.equals("No")) {
+            Terms_and_Condition.No_submit_app(driver).click();
         } else {
-            if (Confirmation.equals("No")) {
-                Terms_and_Condition.Yes_submit_app(driver).click();
-            } else {
-                System.out.println("Confirmation did not appear");
-            }
+            System.out.println("Confirmation did not appear");
         }
+
 
     }
 
@@ -915,7 +914,7 @@ public class Steps extends Utility {
 
     @And("^I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page$")
     public void iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage() {
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'REGISTRATION FOR AGRO-PROCESSING ENTERPRISE')]")));
 
         try {
@@ -1138,7 +1137,7 @@ public class Steps extends Utility {
         WebDriverWait ww = new WebDriverWait(driver, 5);
         ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
         Payment_process.Proceed_to_payment(driver).click();
-
+        Thread.sleep(2000);
     }
 
     @And("^I Verify Message to proceed to Post Office for Payment$")
@@ -1661,7 +1660,273 @@ public class Steps extends Utility {
     }
 
     @And("^I Save Particulars of Crop$")
-    public void iSaveParticularsOfCrop() {
+    public void iSaveParticularsOfCrop() throws InterruptedException {
         Small_planters.Save_Particulars_of_crop(driver).click();
+        Thread.sleep(1000);
+    }
+
+    @And("^I Verify Display of Particulars for Horticultural Plantations Page$")
+    public void iVerifyDisplayOfParticularsForHorticulturalPlantationsPage() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//h6[contains(.,'Particulars for Horticultural Plantations')])[1]")));
+        try {
+            Small_planters.Particulars_horticultural_plantations_page(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Horticultural Plantations Page Page did not appear");
+            Assert.fail("Particulars for Horticultural Plantations Page Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Horticultural$")
+    public void iClickOnAddHorticultural() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            Small_planters.Add_horticultural(driver);
+        } catch (Exception e){
+            Assert.fail("Add Horticultural is not clicakble");
+        }
+        Thread.sleep(1500);
+        Small_planters.Add_horticultural(driver).click();
+    }
+
+    @And("^Verify Display of Particulars for Horticultural Plantations Table$")
+    public void verifyDisplayOfParticularsForHorticulturalPlantationsTable() throws InterruptedException {
+        Thread.sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_of_horticultural_tab(driver)));
+        try {
+            Small_planters.Particulars_of_horticultural_tab(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Horticultural Plantations Tab did not appear");
+            Assert.fail("Particulars for Horticultural Plantations Tab did not appear");
+        }
+    }
+
+    @And("^I Select Owner Type for Horticultural Plantation \"([^\"]*)\"$")
+    public void iSelectOwnerTypeForHorticulturalPlantation(String Owner_Type) throws Throwable {
+        Small_planters.Select_one_owner_type_horticultural(driver).click();
+        Thread.sleep(1500);
+        if (Owner_Type.equals("Owner")){
+            Small_planters.Owner_owner_type_horticultural(driver).click();
+            System.out.println("Owner is working fine");
+        }else if(Owner_Type.equals("Tenant")){
+            Small_planters.Tenant_owner_type_horticultural(driver).click();
+            System.out.println("Tenant is working fine");
+        }else{
+            System.out.println("Owner Type for Horticultural Plantation option is not valid");
+            Assert.fail("Owner Type for Horticultural Plantation option is not valid");
+        }
+    }
+
+    @And("^I Input Field Location \"([^\"]*)\"$")
+    public void iInputFieldLocation(String Field_Location) throws Throwable {
+        Small_planters.Field_location(driver).sendKeys(Field_Location);
+    }
+
+    @And("^I Select Production System \"([^\"]*)\"$")
+    public void iSelectProductionSystem(String Production_System) throws Throwable {
+        Small_planters.Select_one_production_system(driver).click();
+        Thread.sleep(1500);
+        if (Production_System.equals("Open Field")){
+            Small_planters.Open_field(driver).click();
+            System.out.println("Open Field is working fine");
+        }else if(Production_System.equals("Sheltered Farming")){
+            Small_planters.Sheltered_farming(driver).click();
+            System.out.println("Sheltered Farming is working fine");
+        }else if(Production_System.equals("Aquaponics")){
+            Small_planters.Aquaponics(driver).click();
+            System.out.println("Aquaponics is working fine");
+        }else{
+            System.out.println("Production System option is not valid");
+            Assert.fail("Production System option is not valid");
+        }
+    }
+
+    @And("^I Input Total Extent of plot - Size \"([^\"]*)\"$")
+    public void iInputTotalExtentOfPlotSize(String Total_Extent) throws Throwable {
+        Small_planters.Total_extent_plot(driver).sendKeys(Total_Extent);
+    }
+
+    @And("^I Input Crop grown at time of Registration/ Crop to be grown \"([^\"]*)\"$")
+    public void iInputCropGrownAtTimeOfRegistrationCropToBeGrown(String Crop_Grown) throws Throwable {
+        Small_planters.Crop_grown(driver).sendKeys(Crop_Grown);
+    }
+
+
+    @And("^I Select Plantation Type \"([^\"]*)\"$")
+    public void iSelectPlantationType(String Plantation_Type) throws Throwable {
+        Small_planters.Select_one_plantation_type(driver).click();
+        Thread.sleep(1500);
+        if (Plantation_Type.equals("Interline")){
+            Small_planters.Interline_plantation_type(driver).click();
+            System.out.println("Owner is working fine");
+        }else if(Plantation_Type.equals("Full Stand")){
+            Small_planters.Full_stand_plantation_type(driver).click();
+            System.out.println("Tenant is working fine");
+        }else{
+            System.out.println("Plantation Type option is not valid");
+            Assert.fail("Plantation Type option is not valid");
+        }
+    }
+
+    @And("^I Input Expected Date of Planting/Seedling \"([^\"]*)\"$")
+    public void iInputExpectedDateOfPlantingSeedling(String Date_Plantation_Seedling) throws Throwable {
+        if (Date_Plantation_Seedling.equals("1Aug2030")){
+            Small_planters.Input_date_planting_seedling(driver).click();
+            Thread.sleep(1500);
+            Small_planters.Input_year_planting_seedling(driver).sendKeys("2030");
+            Thread.sleep(1500);
+            Small_planters.Input_month_planting_seedling(driver).sendKeys("Aug");
+            Thread.sleep(1500);
+            Small_planters.Input_day_planting_seedling(driver).click();
+            Thread.sleep(1000);
+        }else{
+            Assert.fail("Cannot select date");
+        }
+    }
+
+    @And("^I Save Particulars for Horticultural Plantations$")
+    public void iSaveParticularsForHorticulturalPlantations() throws InterruptedException {
+        Small_planters.Save_Particulars_of_horticultural_plantations(driver).click();
+        Thread.sleep(1000);
+    }
+
+    @And("^I Upload documents for Horticultural Plantations \"([^\"]*)\"$")
+    public void iUploadDocumentsForHorticulturalPlantations(String Upload_test) throws Throwable {
+        Documents_upload.Button_upload_horticultural_plantation(driver).click();
+        Thread.sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Horticultural_plantation_documents_tab(driver)));
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Documents_upload.Document_upload_horticultural_plantation(driver).sendKeys(filePath);
+        WebDriverWait ww = new WebDriverWait(driver, 30);
+        WebElement element1 = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download']")));
+
+    }
+
+    @And("^I Close Horticultural Plantation Documents tab$")
+    public void iCloseHorticulturalPlantationDocumentsTab() throws InterruptedException {
+        Documents_upload.Close_hoticultural_document_tab(driver).click();
+        Thread.sleep(1500);
+    }
+
+    @And("^I Input Crop Status and Organisation \"([^\"]*)\"$")
+    public void iInputCropStatusAndOrganisation(String Crop_Status) throws Throwable {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Particulars for Horticultural Plantations declared under FPS')]")));
+        Small_planters.Crop_status(driver).sendKeys(Crop_Status);
+    }
+
+    @And("^I Save Particulars for Horticultural Plantations declared under FPS$")
+    public void iSaveParticularsForHorticulturalPlantationsDeclaredUnderFPS() {
+        Small_planters.Save_Horticultural_plantations_under_FPS(driver).click();
+    }
+
+    @And("^I Click on Edit button for Particulars for Horticultural Plantations declared under FPS$")
+    public void iClickOnEditButtonForParticularsForHorticulturalPlantationsDeclaredUnderFPS() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Small_planters.Particulars_for_Horticultural_Plantations_declared_under_FPS(driver));
+        Thread.sleep(8000);
+        Small_planters.Edit_Horticultural_plantations_under_FPS(driver).click();
+    }
+
+    @And("^I Verify Particulars for Horticultural Plantations declared under FPS Table$")
+    public void iVerifyParticularsForHorticulturalPlantationsDeclaredUnderFPSTable() throws InterruptedException {
+        Thread.sleep(1500);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_for_Horticultural_Plantations_declared_under_FPS_table(driver)));
+
+    }
+
+    @And("^I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS$")
+    public void iVerifyDeclarationPageForREGISTRATIONFORSMALLPLANTERS() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
+
+        WebDriverWait w = new WebDriverWait(driver, 20);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
+        try {
+            Small_planters.Membership_into_sfwf(driver);
+        } catch (Exception e) {
+            System.out.println("Declaration Page for REGISTRATION FOR SMALL PLANTERS did not appear");
+            Assert.fail("Declaration Page for REGISTRATION FOR SMALL PLANTERS did not appear");
+        }
+    }
+
+    @And("^I Click on Photo checkbox$")
+    public void iClickOnPhotoCheckbox() {
+        Small_planters.Photo_checkbox(driver).click();
+    }
+
+    @And("^I Click on Cancel button not to proceed with another registration$")
+    public void iClickOnCancelButtonNotToProceedWithAnotherRegistration() throws InterruptedException {
+        Thread.sleep(2000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Terms_and_Condition.Cancel_no_other_registration(driver)));
+        Terms_and_Condition.Cancel_no_other_registration(driver).click();
+        WebDriverWait ww = new WebDriverWait(driver, 10);
+        WebElement element = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
+
+    }
+
+    @And("^I Verify Success message for application submitted for Small Planters Registration$")
+    public void iVerifySuccessMessageForApplicationSubmittedForSmallPlantersRegistration() throws InterruptedException {
+        Thread.sleep(2000);
+        try {
+            My_application.Success_message_submit_application(driver);
+        } catch (Exception e) {
+            System.out.println("Success message did not appear");
+        }
+        Thread.sleep(8000);
+    }
+
+    @And("^I Verify display of Payment Gateway$")
+    public void iVerifyDisplayOfPaymentGateway() {
+        WebDriverWait ww = new WebDriverWait(driver, 30);
+        ww.until(ExpectedConditions.visibilityOf(Payment_process.Payment_gateway_display(driver)));
+//        WebDriverWait w = new WebDriverWait(driver, 60);
+//        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Card number')]")));
+        try {
+            Payment_process.Payment_gateway_display(driver);
+        } catch (Exception e) {
+            System.out.println("Display of Payment Gateway failed");
+            Assert.fail("Display of Payment Gateway failed");
+        }
+    }
+
+    @And("^I Input Card Details \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iInputCardDetails(String Card_Number, String Expiry_Month, String Expiry_Year, String Cardholder_Name, String Security_Code) throws Throwable {
+        Payment_process.Card_number(driver).sendKeys(Card_Number);
+        Payment_process.Expiry_month(driver).sendKeys(Expiry_Month);
+        Payment_process.Expiry_year(driver).sendKeys(Expiry_Year);
+        Payment_process.Security_code(driver).sendKeys(Security_Code);
+        Payment_process.Cardholder_name(driver).sendKeys(Cardholder_Name);
+
+    }
+
+    @And("^I Click on Pay Now button$")
+    public void iClickOnPayNowButton() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Payment_process.Pay_now(driver));
+        Thread.sleep(1000);
+        Payment_process.Pay_now(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'My Application')]")));
+
+    }
+
+    @And("^I Verify Payment Status is changed to Paid$")
+    public void iVerifyPaymentStatusIsChangedToPaid() {
+        try {
+            Payment_process.Payment_status_paid_last_application_ref(driver);
+        } catch (Exception e) {
+            System.out.println("Payment status not changed to Paid");
+            Assert.fail("Payment status not changed to Paid");
+        }
+    }
+
+    @And("^I Click on Final Proceed to Online Payment$")
+    public void iClickOnFinalProceedToOnlinePayment() throws InterruptedException {
+        WebDriverWait ww = new WebDriverWait(driver, 5);
+        ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
+        Payment_process.Proceed_to_payment(driver).click();
+        Thread.sleep(30000);
     }
 }
