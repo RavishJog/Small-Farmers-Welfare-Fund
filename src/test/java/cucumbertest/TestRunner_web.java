@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
                 "com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport/Report.html",
                 "pretty",
                 "json:target/cucumber-reports/cucumber.json" // Specify the JSON report path
-        }
-        ,tags = " @Main_feature"
+        }  
+        ,tags = "@Main_feature"
 )
 
 public class TestRunner_web {
