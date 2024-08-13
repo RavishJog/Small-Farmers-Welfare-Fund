@@ -12,7 +12,7 @@ Feature: User Story 12199 - List of Type of Fee and Fine
   Scenario Outline: Sorting of Fees and fines
 
     Given I am on SFWF Back Office Home Page "<Browser>"
-    When I Input Username "<Username>" and Password "<Password>"
+    When I Input Username "<BOUsername>" and Password "<BOPassword>"
     And I Click on Sign In button
     And I Verify Successful Login
     And I click on Manage Farmers Details
@@ -29,15 +29,15 @@ Feature: User Story 12199 - List of Type of Fee and Fine
     And I Verify Successful Sign Out
 
     Examples:
-      |Browser|Username     |Password |
-      |Chrome |Suraj_Admin1 |Admin@123|
+      |Browser|BOUsername     |BOPassword |
+      |Chrome |Suraj_Admin1   |Admin@123  |
 
       #Scenario2 - 12873 - TC 2-Search
   @Searching_list_of_fees_and_fines
   Scenario Outline: Searching of Fees and fines
 
     Given I am on SFWF Back Office Home Page "<Browser>"
-    When I Input Username "<Username>" and Password "<Password>"
+    When I Input Username "<BOUsername>" and Password "<BOPassword>"
     And I Click on Sign In button
     And I Verify Successful Login
     And I click on Manage Farmers Details
@@ -61,8 +61,8 @@ Feature: User Story 12199 - List of Type of Fee and Fine
     And I Verify Successful Sign Out
 
     Examples:
-      |Browser|Username     |Password |Fee_Type     |Fee_Code   |Amount |Year    |Currency |
-      |Chrome |Suraj_Admin1 |Admin@123|AA-Fertiliser|AAFSS2     |10000 |10 Year|AA-Rs     |
+      |Browser|BOUsername     |BOPassword |Fee_Type     |Fee_Code   |Amount |Year    |Currency |
+      |Chrome |Suraj_Admin1   |Admin@123  |AA-Fertiliser|AAFSS2     |10000  |10 Year  |AA-Rs   |
 
 
 #Scenario4 - 13204 - TC 4-Verify the content of Type of fee and fine
@@ -70,7 +70,7 @@ Feature: User Story 12199 - List of Type of Fee and Fine
   Scenario Outline: View List of Fees and fines
 
     Given I am on SFWF Back Office Home Page "<Browser>"
-    When I Input Username "<Username>" and Password "<Password>"
+    When I Input Username "<BOUsername>" and Password "<BOPassword>"
     And I Click on Sign In button
     And I Verify Successful Login
     And I click on Manage Farmers Details
@@ -87,8 +87,8 @@ Feature: User Story 12199 - List of Type of Fee and Fine
     And I Verify Successful Sign Out
 
     Examples:
-      |Browser|Username     |Password |
-      |Chrome |Suraj_Admin1 |Admin@123|
+      |Browser|BOUsername     |BOPassword |
+      |Chrome |Suraj_Admin1   |Admin@123  |
 
 
 

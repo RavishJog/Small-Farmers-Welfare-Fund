@@ -43,16 +43,118 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Finance - Manage Cashier - Click
+    private static By lbl_Manage_cashier = By.xpath("(//a[contains(.,'Click')])[2]");
+    public static WebElement Manage_cashier(WebDriver driver) {
+        element = driver.findElement(lbl_Manage_cashier);
+        return element;
+    }
 
+    //Object for List of Applications
+    private static By lbl_List_of_applications = By.xpath("//h6[contains(.,'List of Applications')]");
+    public static WebElement List_of_applications(WebDriver driver) {
+        element = driver.findElement(lbl_List_of_applications);
+        return element;
+    }
 
+    //Object for Confirm Processing Fees
+    private static By btn_Confirm_processing_fees = By.xpath("//span[contains(.,'Confirm Processing Fees')]");
+    public static WebElement Confirm_processing_fees(WebDriver driver) {
+        element = driver.findElement(btn_Confirm_processing_fees);
+        return element;
+    }
+
+    //Object for Processing Details Frame
+    private static By lbl_Processing_details_frame = By.xpath("//span[contains(.,'Payment Details')]");
+    public static WebElement Processing_details_frame(WebDriver driver) {
+        element = driver.findElement(lbl_Processing_details_frame);
+        return element;
+    }
+
+    //Object for Payment Mode - Select One
+    private static By lbl_Payment_mode_select_one = By.xpath("//label[contains(.,'Select One')]");
+    public static WebElement Payment_mode_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Payment_mode_select_one);
+        return element;
+    }
+
+    //Object for Payment Mode - Cash
+    private static By lbl_Payment_mode_cash = By.xpath("//li[contains(.,'Cash payment')]");
+    public static WebElement Payment_mode_cash(WebDriver driver) {
+        element = driver.findElement(lbl_Payment_mode_cash);
+        return element;
+    }
+
+    //Object for Payment Mode - Internet Banking
+    private static By lbl_Payment_mode_Internet_banking = By.xpath("//li[contains(.,'Internet Banking and Mobile Application(Juice/Blink)')]");
+    public static WebElement Payment_mode_Internet_banking(WebDriver driver) {
+        element = driver.findElement(lbl_Payment_mode_Internet_banking);
+        return element;
+    }
+
+    //Object for Amount
+    private static By txt_Amount = By.xpath("//input[@placeholder='Amount']");
+    public static WebElement Amount(WebDriver driver) {
+        element = driver.findElement(txt_Amount);
+        return element;
+    }
+
+    //Object for Add Payment
+    private static By btn_Add_payment = By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Add Payment')]");
+    public static WebElement Add_payment(WebDriver driver) {
+        element = driver.findElement(btn_Add_payment);
+        return element;
+    }
+
+    //Object for Save Payment
+    private static By btn_Save_payment = By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Save Payment')]");
+    public static WebElement Save_payment(WebDriver driver) {
+        element = driver.findElement(btn_Save_payment);
+        return element;
+    }
+
+    //Object for Success Message of confirmed payment
+    private static By lbl_Success_message_payment_confirmed = By.xpath("(//span[contains(.,'Payment confirmed')])[2]");
+    public static WebElement Success_message_payment_confirmed(WebDriver driver) {
+        element = driver.findElement(lbl_Success_message_payment_confirmed);
+        return element;
+    }
+
+    //Object for All Applications - Click button
+    private static By btn_All_applications_click = By.xpath("//a[contains(.,'Click')]");
+    public static WebElement All_applications_click(WebDriver driver) {
+        element = driver.findElement(btn_All_applications_click);
+        return element;
+    }
+
+    //Object for List of Registrations Page
+    private static By lbl_List_of_registrations_page = By.xpath("//h5[contains(.,'List of Registrations')]");
+    public static WebElement List_of_registrations_page(WebDriver driver) {
+        element = driver.findElement(lbl_List_of_registrations_page);
+        return element;
+    }
+
+    //Object for Search Bar for Application Ref number
+    private static By txt_Search_bar_app_num = By.xpath("//input[contains(@id,'idt74:filter')]");
+    public static WebElement Search_bar_app_num(WebDriver driver) {
+        element = driver.findElement(txt_Search_bar_app_num);
+        return element;
+    }
+
+    //Object for Button to view last application
+    private static By btn_View_last_application = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-eye'])[1]");
+    public static WebElement View_last_application(WebDriver driver) {
+        element = driver.findElement(btn_View_last_application);
+        return element;
+    }
 
 }
 
-
-//Object for About Us
-//    private static By XXXX = By.xpath("XXXX");
-//    public static WebElement XXXX(WebDriver driver) {
-//        element = driver.findElement(XXXX);
+    //Object for XXX
+//    private static By XXX = By.xpath("XXX");
+//    public static WebElement XXX(WebDriver driver) {
+//        element = driver.findElement(XXX);
 //        return element;
 //    }
+
 
