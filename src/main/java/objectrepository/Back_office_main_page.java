@@ -135,7 +135,7 @@ public class Back_office_main_page {
     }
 
     //Object for Search Bar for Application Ref number
-    private static By txt_Search_bar_app_num = By.xpath("//input[contains(@id,'idt74:filter')]");
+    private static By txt_Search_bar_app_num = By.xpath("(//input[@role='textbox'])[1]");
     public static WebElement Search_bar_app_num(WebDriver driver) {
         element = driver.findElement(txt_Search_bar_app_num);
         return element;
@@ -145,6 +145,13 @@ public class Back_office_main_page {
     private static By btn_View_last_application = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-eye'])[1]");
     public static WebElement View_last_application(WebDriver driver) {
         element = driver.findElement(btn_View_last_application);
+        return element;
+    }
+
+    //Object for Action Button for Back Office Users
+    private static By btn_Action_back_office_users = By.xpath("//span[contains(.,'Action')]");
+    public static WebElement Action_back_office_users(WebDriver driver) {
+        element = driver.findElement(btn_Action_back_office_users);
         return element;
     }
 

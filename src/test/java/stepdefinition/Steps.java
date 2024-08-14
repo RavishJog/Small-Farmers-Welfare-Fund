@@ -138,6 +138,7 @@ public class Steps extends Utility {
             System.out.println("Sign in to SFWF Label did not appear");
             Assert.fail("Sign in to SFWF Label did not appear");
         }
+        tearDown();
     }
 
     @And("^I Verify Bad Credential Message \"([^\"]*)\"$")
@@ -1060,7 +1061,7 @@ public class Steps extends Utility {
         w.until(ExpectedConditions.visibilityOf(Front_Home_page.Yes_sign_out(driver)));
         Front_Home_page.Yes_sign_out(driver).click();
         sleep(2000);
-
+        tearDown();
     }
 
     @And("^I Click on Shopping Cart for payment$")
@@ -1881,10 +1882,10 @@ public class Steps extends Utility {
 
     @And("^I Verify display of Payment Gateway$")
     public void iVerifyDisplayOfPaymentGateway() {
-        WebDriverWait ww = new WebDriverWait(driver, 30);
-        ww.until(ExpectedConditions.visibilityOf(Payment_process.Payment_gateway_display(driver)));
-//        WebDriverWait w = new WebDriverWait(driver, 60);
-//        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Card number')]")));
+//        WebDriverWait ww = new WebDriverWait(driver, 30);
+//        ww.until(ExpectedConditions.visibilityOf(Payment_process.Payment_gateway_display(driver)));
+        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Card number')]")));
         try {
             Payment_process.Payment_gateway_display(driver);
         } catch (Exception e) {
@@ -1908,7 +1909,7 @@ public class Steps extends Utility {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Payment_process.Pay_now(driver));
         sleep(1000);
         Payment_process.Pay_now(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebDriverWait w = new WebDriverWait(driver, 180);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'My Application')]")));
 
     }
@@ -2015,13 +2016,12 @@ public class Steps extends Utility {
 //        WebDriverWait w = new WebDriverWait(driver, 5);
 //        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Save_payment(driver)));
         Back_office_main_page.Save_payment(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 30);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'List of Applications')]")));
+        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Payment confirmed')])[2]")));
     }
 
     @And("^I Verify success message for adding payment$")
     public void iVerifySuccessMessageForAddingPayment() throws InterruptedException {
-        Thread.sleep(7000);
         WebDriverWait w = new WebDriverWait(driver, 5);
         w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Success_message_payment_confirmed(driver)));
         try {
@@ -2068,5 +2068,7 @@ public class Steps extends Utility {
     @And("^I Click to view Application$")
     public void iClickToViewApplication() {
         Back_office_main_page.View_last_application(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Action')]")));
     }
 }
