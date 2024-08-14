@@ -81,7 +81,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify success message for adding payment
     And I Sign Out
     And I Verify Successful Sign Out
-#    WPO
+#    PWO
+    And I am on SFWF Back Office Home Page "<Browser>"
     And I Input WPO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
