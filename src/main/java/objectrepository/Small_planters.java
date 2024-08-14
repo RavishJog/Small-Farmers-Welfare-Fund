@@ -211,14 +211,14 @@ public class Small_planters {
     }
 
     //Object for Family Relationship - Select One
-    private static By txt_Family_Select_one = By.xpath("//label[contains(@id, 'family_label')]");
+    private static By txt_Family_Select_one = By.xpath("//label[contains(.,'Select One')]");
     public static WebElement Family_Select_one(WebDriver driver) {
         element = driver.findElement(txt_Family_Select_one);
         return element;
     }
 
     //Object for Family Relationship - Spouse
-    private static By txt_Family_spouse = By.xpath("//li[contains(@id, 'family_1')]");
+    private static By txt_Family_spouse = By.xpath("//li[contains(.,'Spouse')]");
     public static WebElement Family_spouse(WebDriver driver) {
         element = driver.findElement(txt_Family_spouse);
         return element;

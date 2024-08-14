@@ -1,8 +1,21 @@
+<<<<<<< HEAD
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US12599.feature");
+=======
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US13280.feature");
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 formatter.feature({
   "comments": [
     {
       "line": 1,
+<<<<<<< HEAD
+      "value": "#User Story 12599 - Register as Tea Growers"
+    }
+  ],
+  "line": 4,
+  "name": "User Story 12599 - Register as Tea Grower",
+  "description": "",
+  "id": "user-story-12599---register-as-tea-grower",
+=======
       "value": "#User Story 13280 - Back Office Process for Registration"
     }
   ],
@@ -10,6 +23,7 @@ formatter.feature({
   "name": "User Story 13280 - Back Office Process for Registration",
   "description": "",
   "id": "user-story-13280---back-office-process-for-registration",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "Feature",
   "tags": [
     {
@@ -18,7 +32,11 @@ formatter.feature({
     },
     {
       "line": 3,
+<<<<<<< HEAD
+      "name": "@US12599"
+=======
       "name": "@US13280"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     }
   ]
 });
@@ -30,15 +48,25 @@ formatter.scenarioOutline({
     }
   ],
   "line": 8,
+<<<<<<< HEAD
+  "name": "Application to Register as tea_grower",
+  "description": "",
+  "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower",
+=======
   "name": "Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form",
   "description": "",
   "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 7,
+<<<<<<< HEAD
+      "name": "@Registration_as_tea_grower"
+=======
       "name": "@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     }
   ]
 });
@@ -94,17 +122,29 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
+<<<<<<< HEAD
+  "name": "I Click on Tea Grower Icon",
+=======
   "name": "I Click on Agro Processing Enterprise",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
+<<<<<<< HEAD
+  "name": "I Verify display of REGISTRATION FOR TEA GROWERS Page",
+=======
   "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
+<<<<<<< HEAD
+  "name": "I Select an Applicant Title \"\u003cApplicant_Title\u003e\"",
+=======
   "name": "I Input Associate/Society/Company Name \"\u003cCo_Name\u003e\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
@@ -114,7 +154,11 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
+<<<<<<< HEAD
+  "name": "I Select Applicant Education Level \"\u003cEducation_Level\u003e\"",
+=======
   "name": "I Input Business Registration No(BRN) for Agro-Processing Enterprise \"\u003cBRN\u003e\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
@@ -219,70 +263,145 @@ formatter.step({
 });
 formatter.step({
   "line": 45,
+<<<<<<< HEAD
+  "name": "I Verify Display of Particulars for Registration of Tea Plantation",
+=======
   "name": "I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 46,
+<<<<<<< HEAD
+  "name": "I Click on Add Tea Plantation",
+=======
   "name": "I Verify Success message for adding Additional Document Name",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 47,
+<<<<<<< HEAD
+  "name": "I Verify Display of Particulars for Registration of Tea Plantation Table",
+=======
   "name": "I Upload Additional Document \"\u003cUpload_test\u003e\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 48,
+<<<<<<< HEAD
+  "name": "I Input License No \"\u003cLicense\u003e\"",
+=======
   "name": "I Verify for Document Upload Success Message",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 49,
-  "name": "I Click on Save and Continue",
+<<<<<<< HEAD
+  "name": "I Input Total Extent of plot (In Arpent) \"\u003cLand_Extent\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 50,
-  "name": "I Verify Terms and Conditions Page",
+  "name": "I Select Type of Owner \"\u003cOwner_Type\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 51,
-  "name": "I click on I agree to the Terms and Conditions",
+  "name": "I Input Plot Location \"\u003cPlot_Location\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 52,
-  "name": "I Select Bank \"\u003cBank_Name\u003e\"",
+  "name": "I Save Particulars of Crop",
   "keyword": "And "
 });
 formatter.step({
   "line": 53,
+=======
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
+  "name": "I Click on Save and Continue",
+  "keyword": "And "
+});
+formatter.step({
+<<<<<<< HEAD
+  "line": 54,
+=======
+  "line": 50,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
+  "name": "I Verify Terms and Conditions Page",
+  "keyword": "And "
+});
+formatter.step({
+<<<<<<< HEAD
+  "line": 55,
+=======
+  "line": 51,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
+  "name": "I click on I agree to the Terms and Conditions",
+  "keyword": "And "
+});
+formatter.step({
+<<<<<<< HEAD
+  "line": 56,
+=======
+  "line": 52,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
+  "name": "I Select Bank \"\u003cBank_Name\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+<<<<<<< HEAD
+  "line": 57,
+=======
+  "line": 53,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Input Bank Branch for Agro-Processing Enterprise \"\u003cBank_Branch\u003e\"",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 58,
+=======
   "line": 54,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"\u003cBank_Account_No\u003e\"",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 59,
+=======
   "line": 55,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Click on Submit Application \"\u003cConfirmation\u003e\"",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 60,
+=======
   "line": 56,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Verify Success message for application submitted",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 61,
+=======
   "line": 57,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Verify Application Status \"\u003cApp_status\u003e\"",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 62,
+  "name": "I Verify Payment Status \"\u003cPayment_Status\u003e\"",
+=======
   "line": 58,
   "name": "I Verify Payment Status \"\u003cPayment_Status\u003e\"",
   "keyword": "And "
@@ -305,10 +424,13 @@ formatter.step({
 formatter.step({
   "line": 62,
   "name": "I Click on Proceed to Payment",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 63,
+<<<<<<< HEAD
+=======
   "name": "I Click on Payment Icon",
   "keyword": "And "
 });
@@ -329,6 +451,7 @@ formatter.step({
 });
 formatter.step({
   "line": 67,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Sign Out as Front Registered User",
   "keyword": "And "
 });
@@ -460,10 +583,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.examples({
+<<<<<<< HEAD
+  "line": 68,
+  "name": "",
+  "description": "",
+  "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;",
+=======
   "line": 96,
   "name": "",
   "description": "",
   "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "rows": [
     {
       "cells": [
@@ -483,11 +613,25 @@ formatter.examples({
         "Enterprise_Address",
         "Status_Applicant",
         "Year_dur",
+<<<<<<< HEAD
+        "Marital_Status",
+        "Relationship",
+        "Family_Surname",
+        "Family_Other_Names",
+        "Gender",
+        "DOB",
+        "Occupation",
+        "License",
+        "Land_Extent",
+        "Owner_Type",
+        "Plot_Location",
+=======
         "Prod_man",
         "No_person",
         "Actual_ann_turnover",
         "Status_business",
         "Years_operation",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
         "Upload_test",
         "Additional_Doc_Name",
         "Bank_Name",
@@ -498,14 +642,39 @@ formatter.examples({
         "Payment_Status",
         "Payment_method"
       ],
+<<<<<<< HEAD
+      "line": 69,
+      "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;;1"
+=======
       "line": 97,
       "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;1"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     },
     {
       "cells": [
         "Chrome",
-        "Suraj",
+        "Yavishta",
         "Admin@123",
+<<<<<<< HEAD
+        "Mrs",
+        "Port Louis",
+        "Tertiary",
+        "Full Time",
+        "Manager",
+        "src\\test\\resources\\Photo_upload.jpg",
+        "2",
+        "Married",
+        "Spouse",
+        "Keen",
+        "Dafne",
+        "Female",
+        "1Jan94",
+        "Actress",
+        "Tea Grower",
+        "2.7",
+        "Tenant",
+        "Moka",
+=======
         "FINANCE",
         "PWO",
         "Cash",
@@ -524,6 +693,7 @@ formatter.examples({
         "10000000",
         "Existing",
         "5",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
         "src\\test\\resources\\Upload_Test1.pdf",
         "Additional Document Test",
         "ABC Banking",
@@ -534,13 +704,28 @@ formatter.examples({
         "Pending",
         "Counter"
       ],
+<<<<<<< HEAD
+      "line": 70,
+      "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;;2"
+=======
       "line": 98,
       "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
+<<<<<<< HEAD
+  "duration": 143100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 70,
+  "name": "Application to Register as tea_grower",
+  "description": "",
+  "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;;2",
+=======
   "duration": 107300,
   "status": "passed"
 });
@@ -549,6 +734,7 @@ formatter.scenario({
   "name": "Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form",
   "description": "",
   "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -557,12 +743,21 @@ formatter.scenario({
       "name": "@Main_feature"
     },
     {
+<<<<<<< HEAD
+      "line": 7,
+      "name": "@Registration_as_tea_grower"
+    },
+    {
+      "line": 3,
+      "name": "@US12599"
+=======
       "line": 3,
       "name": "@US13280"
     },
     {
       "line": 7,
       "name": "@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     }
   ]
 });
@@ -576,7 +771,7 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "I Input Registered User\u0027s Username \"Suraj\" and Password \"Admin@123\"",
+  "name": "I Input Registered User\u0027s Username \"Yavishta\" and Password \"Admin@123\"",
   "matchedColumns": [
     1,
     2
@@ -625,17 +820,61 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
+<<<<<<< HEAD
+  "name": "I Click on Tea Grower Icon",
+=======
   "name": "I Click on Agro Processing Enterprise",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
+<<<<<<< HEAD
+  "name": "I Verify display of REGISTRATION FOR TEA GROWERS Page",
+=======
   "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
+<<<<<<< HEAD
+  "name": "I Select an Applicant Title \"Mrs\"",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "I Select Applicant District \"Port Louis\"",
+  "matchedColumns": [
+    4
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "I Select Applicant Education Level \"Tertiary\"",
+  "matchedColumns": [
+    5
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "I Select Agricultural Activity \"Full Time\"",
+  "matchedColumns": [
+    6
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I Input Other Occupation \"Manager\"",
+=======
   "name": "I Input Associate/Society/Company Name \"ABC Agro Co Ltd\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "matchedColumns": [
     7
   ],
@@ -650,8 +889,18 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 28,
+  "name": "I Verify for Photo upload success message",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I Select No of years for Registration membership \"2\"",
+=======
   "line": 24,
   "name": "I Input Business Registration No(BRN) for Agro-Processing Enterprise \"C123456789\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "matchedColumns": [
     9
   ],
@@ -674,16 +923,26 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 36,
+  "name": "I Input Family Surname \"Keen\"",
+=======
   "line": 27,
   "name": "I Input Office Address \"The Main Road, Grand Port\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "matchedColumns": [
     12
   ],
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 37,
+  "name": "I Input Family Other Names \"Dafne\"",
+=======
   "line": 28,
   "name": "I Input Enterprise Address \"Royal Road, Port Louis\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "matchedColumns": [
     13
   ],
@@ -698,8 +957,13 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 40,
+  "name": "I Input Family Occupation \"Actress\"",
+=======
   "line": 30,
   "name": "I Input List of Products manufactured \"Tomato, Pepper\"",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "matchedColumns": [
     16
   ],
@@ -719,6 +983,27 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 45,
+  "name": "I Verify Display of Particulars for Registration of Tea Plantation",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 46,
+  "name": "I Click on Add Tea Plantation",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 47,
+  "name": "I Verify Display of Particulars for Registration of Tea Plantation Table",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 48,
+  "name": "I Input License No \"Tea Grower\"",
+  "matchedColumns": [
+    17
+=======
   "line": 33,
   "name": "I Verify Upload Required Documents Page is displayed",
   "keyword": "And "
@@ -728,10 +1013,43 @@ formatter.step({
   "name": "I Upload Business Registration Card \"src\\test\\resources\\Upload_Test1.pdf\"",
   "matchedColumns": [
     21
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   ],
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 49,
+  "name": "I Input Total Extent of plot (In Arpent) \"2.7\"",
+  "matchedColumns": [
+    18
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 50,
+  "name": "I Select Type of Owner \"Tenant\"",
+  "matchedColumns": [
+    19
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 51,
+  "name": "I Input Plot Location \"Moka\"",
+  "matchedColumns": [
+    20
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 52,
+  "name": "I Save Particulars of Crop",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 53,
+=======
   "line": 35,
   "name": "I Upload Certificate of Incorporation \"src\\test\\resources\\Upload_Test1.pdf\"",
   "matchedColumns": [
@@ -833,21 +1151,34 @@ formatter.step({
 });
 formatter.step({
   "line": 49,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Click on Save and Continue",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 54,
+=======
   "line": 50,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Verify Terms and Conditions Page",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 55,
+=======
   "line": 51,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I click on I agree to the Terms and Conditions",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 56,
+=======
   "line": 52,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Select Bank \"ABC Banking\"",
   "matchedColumns": [
     23
@@ -855,7 +1186,11 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 57,
+=======
   "line": 53,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Input Bank Branch for Agro-Processing Enterprise \"Port Louis\"",
   "matchedColumns": [
     24
@@ -863,7 +1198,11 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 58,
+=======
   "line": 54,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"0001252563636\"",
   "matchedColumns": [
     25
@@ -871,7 +1210,11 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 59,
+=======
   "line": 55,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Click on Submit Application \"Yes\"",
   "matchedColumns": [
     26
@@ -879,12 +1222,20 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 60,
+=======
   "line": 56,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Verify Success message for application submitted",
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 61,
+=======
   "line": 57,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Verify Application Status \"Submitted\"",
   "matchedColumns": [
     27
@@ -892,6 +1243,13 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
+<<<<<<< HEAD
+  "line": 62,
+  "name": "I Verify Payment Status \"Pending\"",
+  "matchedColumns": [
+    28
+  ],
+=======
   "line": 58,
   "name": "I Verify Payment Status \"Pending\"",
   "matchedColumns": [
@@ -917,10 +1275,13 @@ formatter.step({
 formatter.step({
   "line": 62,
   "name": "I Click on Proceed to Payment",
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "keyword": "And "
 });
 formatter.step({
   "line": 63,
+<<<<<<< HEAD
+=======
   "name": "I Click on Payment Icon",
   "keyword": "And "
 });
@@ -944,6 +1305,7 @@ formatter.step({
 });
 formatter.step({
   "line": 67,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "name": "I Sign Out as Front Registered User",
   "keyword": "And "
 });
@@ -1104,79 +1466,132 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePage(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 4193789400,
+=======
   "duration": 4515364100,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Suraj",
+      "val": "Yavishta",
       "offset": 36
     },
     {
       "val": "Admin@123",
-      "offset": 57
+      "offset": 60
     }
   ],
   "location": "Steps.iInputRegisteredUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 526561800,
+=======
   "duration": 191699400,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 1880198300,
+=======
   "duration": 1204544700,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 106570000,
+=======
   "duration": 53230700,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 538960100,
+=======
   "duration": 402768800,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 27972000,
+=======
   "duration": 28097600,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 26566200,
+=======
   "duration": 24527300,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 29609700,
+=======
   "duration": 15144500,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 276568000,
+=======
   "duration": 201833500,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 26826000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnTeaGrowerIcon()"
+});
+formatter.result({
+  "duration": 2441206500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyDisplayOfREGISTRATIONFORTEAGROWERSPage()"
+});
+formatter.result({
+  "duration": 84916700,
+=======
   "duration": 31003200,
   "status": "passed"
 });
@@ -1192,11 +1607,22 @@ formatter.match({
 });
 formatter.result({
   "duration": 54894700,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "Mrs",
+      "offset": 29
+    }
+  ],
+  "location": "Steps.iSelectAnApplicantTitle(String)"
+});
+formatter.result({
+  "duration": 2712737100,
+=======
       "val": "ABC Agro Co Ltd",
       "offset": 40
     }
@@ -1205,24 +1631,44 @@ formatter.match({
 });
 formatter.result({
   "duration": 71129000,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "Port Louis",
+      "offset": 29
+=======
       "val": "Mr John Brown",
       "offset": 24
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     }
   ],
   "location": "Steps.iInputRepresentedBy(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 1217734400,
+=======
   "duration": 78776400,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "Tertiary",
+      "offset": 36
+    }
+  ],
+  "location": "Steps.iSelectApplicantEducationLevel(String)"
+});
+formatter.result({
+  "duration": 3706433400,
+=======
       "val": "C123456789",
       "offset": 70
     }
@@ -1244,6 +1690,7 @@ formatter.match({
 });
 formatter.result({
   "duration": 88815200,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
@@ -1256,7 +1703,11 @@ formatter.match({
   "location": "Steps.iSelectActivity(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 188633000,
+=======
   "duration": 52819600,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
@@ -1269,7 +1720,11 @@ formatter.match({
   "location": "Steps.iInputOfficeAddress(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 120364900,
+=======
   "duration": 83308900,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 formatter.match({
@@ -1282,21 +1737,42 @@ formatter.match({
   "location": "Steps.iInputEnterpriseAddress(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "duration": 30555083700,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class\u003d\u0027ui-button-icon-left ui-icon ui-c pi pi-download\u0027] (tried for 30 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat stepdefinition.Steps.iUploadPhotograph(Steps.java:1352)\r\n\tat ✽.And I Upload Photograph \"src\\test\\resources\\Photo_upload.jpg\"(features/US12599.feature:27)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //span[@class\u003d\u0027ui-button-icon-left ui-icon ui-c pi pi-download\u0027]\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LT5-ALIN\u0027, ip: \u0027130.1.19.186\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)\r\n\tat java.util.Optional.orElseThrow(Optional.java:290)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)\r\n\tat stepdefinition.Steps.iUploadPhotograph(Steps.java:1352)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)\r\n\tat cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "Steps.iVerifyForPhotoUploadSuccessMessage()"
+});
+formatter.result({
+  "status": "skipped"
+=======
   "duration": 97083900,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "2",
+      "offset": 50
+=======
       "val": "1",
       "offset": 52
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     }
   ],
   "location": "Steps.iSelectDurationYearForRegistrationMembership(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 2135665700,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1308,6 +1784,9 @@ formatter.match({
   "location": "Steps.iInputListOfProductsManufactured(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 2181787000,
   "status": "passed"
 });
@@ -1323,24 +1802,55 @@ formatter.match({
 formatter.result({
   "duration": 48632200,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 9160096600,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnAddFamilyAndBeneficiaries()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable()"
+});
+formatter.result({
+  "status": "skipped"
+=======
   "duration": 96239400,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "Spouse",
+      "offset": 30
+    }
+  ],
+  "location": "Steps.iSelectFamilyRelationship(String)"
+});
+formatter.result({
+  "status": "skipped"
+=======
       "val": "src\\test\\resources\\Upload_Test1.pdf",
       "offset": 37
     }
@@ -1350,10 +1860,123 @@ formatter.match({
 formatter.result({
   "duration": 1680047100,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "Keen",
+      "offset": 24
+    }
+  ],
+  "location": "Steps.iInputFamilySurname(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Dafne",
+      "offset": 28
+    }
+  ],
+  "location": "Steps.iInputFamilyOtherNames(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Female",
+      "offset": 24
+    }
+  ],
+  "location": "Steps.iSelectFamilyGender(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1Jan94",
+      "offset": 30
+    }
+  ],
+  "location": "Steps.iInputFamilyDateOfBirth(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Actress",
+      "offset": 27
+    }
+  ],
+  "location": "Steps.iInputFamilyOccupation(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnBeneficiaryOfLifeInsuranceScheme()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnBeneficiaryOfAccidentInsuranceScheme()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iSaveParticularsOfFamilyAndBeneficiaries()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnSaveAndContinue()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnAddTeaPlantation()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantationTable()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Tea Grower",
+      "offset": 20
+    }
+  ],
+  "location": "Steps.iInputLicenseNo(String)"
+});
+formatter.result({
+  "status": "skipped"
+=======
       "val": "src\\test\\resources\\Upload_Test1.pdf",
       "offset": 39
     }
@@ -1363,23 +1986,43 @@ formatter.match({
 formatter.result({
   "duration": 2771558800,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "2.7",
+      "offset": 42
+=======
       "val": "src\\test\\resources\\Upload_Test1.pdf",
       "offset": 40
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     }
   ],
   "location": "Steps.iUploadListOfDirectorsAssociates(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 1130411200,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
     {
+<<<<<<< HEAD
+      "val": "Tenant",
+      "offset": 24
+    }
+  ],
+  "location": "Steps.iSelectTypeOfOwner(String)"
+});
+formatter.result({
+  "status": "skipped"
+=======
       "val": "src\\test\\resources\\Upload_Test1.pdf",
       "offset": 78
     }
@@ -1389,6 +2032,7 @@ formatter.match({
 formatter.result({
   "duration": 1131001900,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1400,8 +2044,12 @@ formatter.match({
   "location": "Steps.iUploadNationalIdentityCardOfRepresentative(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 1150617100,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1413,6 +2061,9 @@ formatter.match({
   "location": "Steps.iUploadNationalIdentityCardsOfAllShareholders(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 1138167100,
   "status": "passed"
 });
@@ -1508,27 +2159,40 @@ formatter.match({
 formatter.result({
   "duration": 25985600,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 9145578800,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "location": "Steps.iVerifyTermsAndConditionsPage()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 67039100,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 76827200,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1540,8 +2204,12 @@ formatter.match({
   "location": "Steps.iSelectBank(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 4366180300,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1553,8 +2221,12 @@ formatter.match({
   "location": "Steps.iInputBankBranchForAgroProcessingEnterprise(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 1153497200,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1566,8 +2238,12 @@ formatter.match({
   "location": "Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 1142001500,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1579,15 +2255,23 @@ formatter.match({
   "location": "Steps.iClickOnSubmitApplication(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 3584568600,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 10092400000,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1599,8 +2283,12 @@ formatter.match({
   "location": "Steps.iVerifyApplicationStatus(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 56055900,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "arguments": [
@@ -1612,6 +2300,9 @@ formatter.match({
   "location": "Steps.iVerifyPaymentStatus(String)"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+=======
   "duration": 278100,
   "status": "passed"
 });
@@ -1676,11 +2367,23 @@ formatter.match({
 formatter.result({
   "duration": 8086059100,
   "status": "passed"
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 });
 formatter.match({
   "location": "Steps.iSignOutAsFrontRegisteredUser()"
 });
 formatter.result({
+<<<<<<< HEAD
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 14774090500,
+  "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LT5-ALIN\u0027, ip: \u0027130.1.19.186\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: RemoteWebDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir\u003dC:\\Users\\ALI~1.NAU\\AppData\\Local\\Temp\\scoped_dir11016_576635691}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57391}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d127.0.6533.100, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: d478eec8af539e22fdd39e9aaf997f56\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)\r\n\tat stepdefinition.Steps.setup(Steps.java:79)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)\r\n\tat cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\nCaused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn\u0027t taskkill it: Timeout waiting for process to die\r\n\tat org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)\r\n\tat org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)\r\n\tat org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)\r\n\tat org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)\r\n\tat org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)\r\n\tat org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)\r\n\tat org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\t... 52 more\r\nCaused by: org.openqa.selenium.os.ProcessUtils$ProcessStillAliveException: Timeout waiting for process to die\r\n\tat org.openqa.selenium.os.ProcessUtils.waitForProcessDeath(ProcessUtils.java:67)\r\n\tat org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:129)\r\n\t... 60 more\r\nCaused by: java.lang.InterruptedException\r\n\tat java.lang.ProcessImpl.waitFor(ProcessImpl.java:523)\r\n\tat org.openqa.selenium.os.ProcessUtils$ProcessWaiter.run(ProcessUtils.java:154)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n",
+  "status": "failed"
+});
+formatter.after({
+  "duration": 2469400,
+=======
   "duration": 8367441100,
   "status": "passed"
 });
@@ -1895,6 +2598,7 @@ formatter.after({
 });
 formatter.after({
   "duration": 197400,
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   "status": "passed"
 });
 });
