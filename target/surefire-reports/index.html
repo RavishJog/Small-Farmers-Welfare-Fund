@@ -128,6 +128,7 @@
                   <a name="runCukes">
                   </a> <!-- runCukes -->
                   <span class="method-name">runCukes</span>
+<<<<<<< HEAD
                   <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class=&apos;ui-button-icon-left ui-icon ui-c pi pi-download&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
@@ -163,6 +164,42 @@ Driver info: driver.version: unknown
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
 ... Removed 70 stack frames
+=======
+                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
+	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2062)
+	at ✽.And I Search for Application Ref Number(features/US13280.feature:91)
+... Removed 37 stack frames
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 </div> <!-- stack-trace -->
                   <em>
 (Example of using TestNGCucumberRunner to invoke Cucumber)                  </em>
@@ -233,12 +270,16 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runCukes')
 data.setCell(0, 2, 'cucumbertest.TestRunner_web')
+<<<<<<< HEAD
 data.setCell(0, 3, 65354);
+=======
+data.setCell(0, 3, 150697);
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 window.suiteTableData['cucumbertest.TestRunner_web']= { tableData: data, tableDiv: 'times-div-cucumbertest.TestRunner_web'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-cucumbertest.TestRunner_web">
               </div> <!-- times-div-cucumbertest.TestRunner_web -->
             </div> <!-- times-div -->

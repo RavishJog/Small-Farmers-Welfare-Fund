@@ -2,12 +2,17 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="cucumbertest.TestRunner_web" duration-ms="65371" started-at="2024-08-14T10:42:33Z" finished-at="2024-08-14T10:43:39Z">
+=======
+  <suite name="cucumbertest.TestRunner_web" duration-ms="150706" started-at="2024-08-14T10:25:33Z" finished-at="2024-08-14T10:28:03Z">
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     <groups>
       <group name="Web">
         <method signature="TestRunner_web.runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" class="cucumbertest.TestRunner_web"/>
       </group> <!-- Web -->
     </groups>
+<<<<<<< HEAD
     <test name="Command line test" duration-ms="65371" started-at="2024-08-14T10:42:33Z" finished-at="2024-08-14T10:43:39Z">
       <class name="cucumbertest.TestRunner_web">
         <test-method status="FAIL" signature="runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" duration-ms="65354" started-at="2024-08-14T14:42:33Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2024-08-14T14:43:39Z">
@@ -17,6 +22,33 @@
             </message>
             <full-stacktrace>
               <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'] (tried for 30 second(s) with 500 MILLISECONDS interval)
+=======
+    <test name="Command line test" duration-ms="150706" started-at="2024-08-14T10:25:33Z" finished-at="2024-08-14T10:28:03Z">
+      <class name="cucumbertest.TestRunner_web">
+        <test-method status="FAIL" signature="runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" duration-ms="150697" started-at="2024-08-14T14:25:33Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2024-08-14T14:28:03Z">
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='checkbox'])[7]"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type='checkbox'])[7]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='checkbox'])[7]"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type='checkbox'])[7]}
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -52,6 +84,7 @@
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+<<<<<<< HEAD
 Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'] (tried for 30 second(s) with 500 MILLISECONDS interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
@@ -120,6 +153,34 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+=======
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='checkbox'])[7]"}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type='checkbox'])[7]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
+	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2062)
+	at ✽.And I Search for Application Ref Number(features/US13280.feature:91)
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->

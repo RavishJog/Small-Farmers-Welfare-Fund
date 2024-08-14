@@ -27,6 +27,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
+import static java.lang.Thread.sleep;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 public class Steps extends Utility {
@@ -96,9 +97,9 @@ public class Steps extends Utility {
     }
 
     @When("^I Input Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
-    public void iInputUsernameAndPassword(String Username, String Password) throws Throwable {
-        Home_page.Username(driver).sendKeys(Username);
-        Home_page.Password(driver).sendKeys(Password);
+    public void iInputUsernameAndPassword(String BOUsername, String BOPassword) throws Throwable {
+        Home_page.Username(driver).sendKeys(BOUsername);
+        Home_page.Password(driver).sendKeys(BOPassword);
     }
 
     @And("^I Click on Sign In button$")
@@ -121,9 +122,9 @@ public class Steps extends Utility {
     @And("^I Sign Out$")
     public void iSignOut() throws InterruptedException {
         Back_office_main_page.Welcome_profile(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
         Back_office_main_page.Sign_out(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
         Back_office_main_page.Confirmation_yes(driver).click();
     }
 
@@ -137,6 +138,7 @@ public class Steps extends Utility {
             System.out.println("Sign in to SFWF Label did not appear");
             Assert.fail("Sign in to SFWF Label did not appear");
         }
+        tearDown();
     }
 
     @And("^I Verify Bad Credential Message \"([^\"]*)\"$")
@@ -243,13 +245,13 @@ public class Steps extends Utility {
 
     @And("^I Click on Type of Fees$")
     public void iClickOnTypeOfFees() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         Fees_and_fines.Type_of_fees_label(driver).click();
     }
 
     @And("^I Verify Ascending order of Type of Fees$")
     public void iVerifyAscendingOrderOfTypeOfFees() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.First_Type_of_fees(driver);
         } catch (Exception e) {
@@ -261,13 +263,13 @@ public class Steps extends Utility {
 
     @And("^I Click on Fee Code$")
     public void iClickOnFeeCode() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         Fees_and_fines.Fee_code_label(driver).click();
     }
 
     @And("^I Verify Ascending order of Fee Code$")
     public void iVerifyAscendingOrderOfFeeCode() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.First_Type_of_fee_code(driver);
         } catch (Exception e) {
@@ -279,7 +281,7 @@ public class Steps extends Utility {
 
     @And("^I Verify Descending order of Type of Fees$")
     public void iVerifyDescendingOrderOfTypeOfFees() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.Last_Type_of_fees(driver);
         } catch (Exception e) {
@@ -290,7 +292,7 @@ public class Steps extends Utility {
 
     @And("^I Verify Descending order of Fee Code$")
     public void iVerifyDescendingOrderOfFeeCode() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.Last_Type_of_fee_code(driver);
         } catch (Exception e) {
@@ -301,13 +303,13 @@ public class Steps extends Utility {
 
     @And("^I Input Type of Fee \"([^\"]*)\"$")
     public void iInputTypeOfFee(String Fee_Type) throws Throwable {
-        Thread.sleep(3000);
+        sleep(3000);
         Fees_and_fines.Type_of_fees_searchbar(driver).sendKeys(Fee_Type);
     }
 
     @And("^I Verify Type of Fee search Bar is working properly$")
     public void iVerifyTypeOfFeeSearchBarIsWorkingProperly() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.First_Type_of_fees(driver);
         } catch (Exception e) {
@@ -318,13 +320,13 @@ public class Steps extends Utility {
 
     @And("^I Input Fee Code \"([^\"]*)\"$")
     public void iInputFeeCode(String Fee_Code) throws Throwable {
-        Thread.sleep(3000);
+        sleep(3000);
         Fees_and_fines.Fee_code_searchbar(driver).sendKeys(Fee_Code);
     }
 
     @And("^I Verify Fee Code search Bar is working properly$")
     public void iVerifyFeeCodeSearchBarIsWorkingProperly() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.First_Type_of_fee_code(driver);
         } catch (Exception e) {
@@ -335,13 +337,13 @@ public class Steps extends Utility {
 
     @And("^I Input Amount \"([^\"]*)\"$")
     public void iInputAmount(String Amount) throws Throwable {
-        Thread.sleep(3000);
+        sleep(3000);
         Fees_and_fines.Amount_searchbar(driver).sendKeys(Amount);
     }
 
     @And("^I Verify Amount search Bar is working properly$")
     public void iVerifyAmountSearchBarIsWorkingProperly() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.Ten_thousand_amount(driver);
         } catch (Exception e) {
@@ -352,13 +354,13 @@ public class Steps extends Utility {
 
     @And("^I Input Year \"([^\"]*)\"$")
     public void iInputYear(String Year) throws Throwable {
-        Thread.sleep(3000);
+        sleep(3000);
         Fees_and_fines.Year_searchbar(driver).sendKeys(Year);
     }
 
     @And("^I Verify Year search Bar is working properly$")
     public void iVerifyYearSearchBarIsWorkingProperly() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.Ten_year(driver);
         } catch (Exception e) {
@@ -369,13 +371,13 @@ public class Steps extends Utility {
 
     @And("^I Input Currency \"([^\"]*)\"$")
     public void iInputCurrency(String Currency) throws Throwable {
-        Thread.sleep(3000);
+        sleep(3000);
         Fees_and_fines.Currency_searchbar(driver).sendKeys(Currency);
     }
 
     @And("^I Verify Currency search Bar is working properly$")
     public void iVerifyCurrencySearchBarIsWorkingProperly() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         try {
             Fees_and_fines.First_Type_of_currency(driver);
         } catch (Exception e) {
@@ -387,7 +389,7 @@ public class Steps extends Utility {
 
     @Then("^I click on forget password$")
     public void iClickOnForgetPassword() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         Home_page.Forget_password(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 5);
         w.until(ExpectedConditions.visibilityOf(Home_page.Forget_password_label(driver)));
@@ -489,7 +491,7 @@ public class Steps extends Utility {
     @And("^I Click on Farmers Cooperatives Association, Society or Company$")
     public void iClickOnFarmersCooperativesAssociationSocietyOrCompany() throws InterruptedException {
         Farmers_cooperatives_association_society_company.Farmers_coo_ass_soc_com(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
     }
 
     @And("^I Verify display of Registration of Farmers page$")
@@ -604,7 +606,7 @@ public class Steps extends Utility {
     @And("^I Select Duration Year for Registration membership \"([^\"]*)\"$")
     public void iSelectDurationYearForRegistrationMembership(String Year_dur) throws Throwable {
         Farmers_cooperatives_association_society_company.Select_one(driver).click();
-        Thread.sleep(1000);
+        sleep(1000);
         if (Year_dur.equals("1")) {
             try {
                 Farmers_cooperatives_association_society_company.One_Year(driver).click();
@@ -622,14 +624,14 @@ public class Steps extends Utility {
         } else {
             System.out.println("Radio Button is functioning properly");
         }
-        Thread.sleep(1000);
+        sleep(1000);
     }
 
     @And("^I Input List of Products manufactured \"([^\"]*)\"$")
     public void iInputListOfProductsManufactured(String Prod_man) throws Throwable {
-        Thread.sleep(1000);
+        sleep(1000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
-        Thread.sleep(1000);
+        sleep(1000);
         Farmers_cooperatives_association_society_company.List_products_manufactured(driver).sendKeys(Prod_man);
     }
 
@@ -672,11 +674,11 @@ public class Steps extends Utility {
     @And("^I Click on Save and Continue$")
     public void iClickOnSaveAndContinue() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Farmers_cooperatives_association_society_company.Save_and_continue(driver));
-        Thread.sleep(6000);
+        sleep(6000);
         WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Farmers_cooperatives_association_society_company.Save_and_continue(driver)));
         element.click();
-        Thread.sleep(3000);
+        sleep(3000);
     }
 
     @And("^I Verify Upload Required Documents Page is displayed$")
@@ -685,7 +687,7 @@ public class Steps extends Utility {
 //        WebDriverWait w = new WebDriverWait(driver, 5);
 //        w.until(ExpectedConditions.visibilityOf(Farmers_cooperatives_association_society_company.Upload_required_documents(driver)));
 //        Thread.sleep(1000);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(text(),'Upload Required Documents')]")));
         try {
             Farmers_cooperatives_association_society_company.Upload_required_documents(driver);
@@ -700,7 +702,7 @@ public class Steps extends Utility {
     public void iUploadBusinessRegistrationCard(String Upload_test) throws Throwable {
         String filePath = new File(Upload_test).getAbsolutePath();
         Documents_upload.Business_Registration_card_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[1]")));
 
 
@@ -708,7 +710,6 @@ public class Steps extends Utility {
 
     @And("^I Verify for Document Upload Success Message$")
     public void iVerifyForDocumentUploadSuccessMessage() {
-
         try {
             Documents_upload.Document_upload_success_message(driver);
         } catch (Exception e) {
@@ -722,7 +723,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Certificate_of_incorporation_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[2]")));
 
     }
@@ -732,7 +733,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.List_of_directors_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[3]")));
     }
 
@@ -741,7 +742,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Board_resolution_of_enterprise_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[4]")));
     }
 
@@ -750,7 +751,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.National_identity_card_Representative_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[5]")));
     }
 
@@ -759,7 +760,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.National_identity_card_Shareholders_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]")));
     }
 
@@ -768,7 +769,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Location_plan_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[7]")));
     }
 
@@ -777,7 +778,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.SMEDA_certificate_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[8]")));
     }
 
@@ -786,7 +787,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
 
         Documents_upload.Utility_bill_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[9]")));
     }
 
@@ -810,11 +811,11 @@ public class Steps extends Utility {
         WebDriverWait w = new WebDriverWait(driver, 20);
         w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[contains(.,'Personal Bank Account Number:')])[15]")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Personal_Bank_Account_Number_label(driver));
-        Thread.sleep(1000);
+        sleep(1000);
         if (Bank_Name.equals("ABC Banking")) {
             try {
                 Terms_and_Condition.Select_one(driver).click();
-                Thread.sleep(1500);
+                sleep(1500);
                 Terms_and_Condition.ABC_Banking_Corporation(driver).click();
             } catch (Exception e) {
                 System.out.println("Bank Selection is not working");
@@ -823,21 +824,21 @@ public class Steps extends Utility {
         } else {
             System.out.println("Bank Selection is functioning properly");
         }
-        Thread.sleep(1000);
+        sleep(1000);
         takeScreenShot(scenario);
     }
 
     @And("^I Input Bank Branch \"([^\"]*)\"$")
     public void iInputBankBranch(String Bank_Branch) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Branch_label(driver));
-        Thread.sleep(1000);
+        sleep(1000);
         Terms_and_Condition.Bank_Branch(driver).sendKeys(Bank_Branch);
     }
 
     @And("^I Input Personal Bank Account Number\"([^\"]*)\"$")
     public void iInputPersonalBankAccountNumber(String Bank_Account_No) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Personal_Bank_Account_Number_label(driver));
-        Thread.sleep(1000);
+        sleep(1000);
         Terms_and_Condition.Bank_account_number(driver).sendKeys(Bank_Account_No);
     }
 
@@ -845,16 +846,16 @@ public class Steps extends Utility {
     @And("^I Click on Add Additional Document$")
     public void iClickOnAddAdditionalDocument() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Farmers_cooperatives_association_society_company.Save_and_continue(driver));
-        Thread.sleep(1500);
+        sleep(1500);
         Documents_upload.Add_additional_documents(driver).click();
-        Thread.sleep(1500);
+        sleep(1500);
     }
 
     @And("^I Input Additional Document Name \"([^\"]*)\"$")
     public void iInputAdditionalDocumentName(String Additional_Doc_Name) throws Throwable {
         Documents_upload.Document_details(driver).sendKeys(Additional_Doc_Name);
         Documents_upload.Save_additional_documents(driver).click();
-        Thread.sleep(1500);
+        sleep(1500);
     }
 
     @And("^I Verify Success message for adding Additional Document Name$")
@@ -871,7 +872,7 @@ public class Steps extends Utility {
     public void iUploadAdditionalDocument(String Upload_test) throws Throwable {
         String filePath = new File(Upload_test).getAbsolutePath();
         Documents_upload.Additional_document_upload(driver).sendKeys(filePath);
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[10]")));
 
     }
@@ -881,41 +882,41 @@ public class Steps extends Utility {
     public void iVerifySuccessMessageForApplicationSubmitted() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
+        sleep(2000);
         try {
             My_application.Success_message_submit_application(driver);
         } catch (Exception e) {
             System.out.println("Success message did not appear");
         }
-        Thread.sleep(8000);
+        sleep(8000);
     }
 
     @And("^I Click on Submit Application \"([^\"]*)\"$")
     public void iClickOnSubmitApplication(String Confirmation) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Farmers_cooperatives_association_society_company.Submit_application(driver));
-        Thread.sleep(1000);
+        sleep(1000);
         Farmers_cooperatives_association_society_company.Submit_application(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
         if (Confirmation.equals("Yes")) {
             Terms_and_Condition.Yes_submit_app(driver).click();
+        } else if (Confirmation.equals("No")) {
+            Terms_and_Condition.No_submit_app(driver).click();
         } else {
-            if (Confirmation.equals("No")) {
-                Terms_and_Condition.Yes_submit_app(driver).click();
-            } else {
-                System.out.println("Confirmation did not appear");
-            }
+            System.out.println("Confirmation did not appear");
         }
+
 
     }
 
     @And("^I Click on Agro Processing Enterprise$")
     public void iClickOnAgroProcessingEnterprise() throws InterruptedException {
         Agro_Processing_Enterprise.Agro_processing_enterprise(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
     }
 
     @And("^I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page$")
     public void iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage() {
-        WebDriverWait w = new WebDriverWait(driver, 1000);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'REGISTRATION FOR AGRO-PROCESSING ENTERPRISE')]")));
 
         try {
@@ -987,14 +988,14 @@ public class Steps extends Utility {
     @And("^I Input Bank Branch for Agro-Processing Enterprise \"([^\"]*)\"$")
     public void iInputBankBranchForAgroProcessingEnterprise(String Bank_Branch) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Branch_label(driver));
-        Thread.sleep(1000);
+        sleep(1000);
         Terms_and_Condition.Bank_Branch(driver).sendKeys(Bank_Branch);
     }
 
     @And("^I Input Personal Bank Account Number Agro-Processing Enterprise \"([^\"]*)\"$")
     public void iInputPersonalBankAccountNumberAgroProcessingEnterprise(String Bank_Account_No) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Personal_Bank_Account_Number_label(driver));
-        Thread.sleep(1000);
+        sleep(1000);
         Terms_and_Condition.Bank_account_number(driver).sendKeys(Bank_Account_No);
     }
 
@@ -1051,16 +1052,16 @@ public class Steps extends Utility {
     @Then("^I Sign Out as Front Registered User$")
     public void iSignOutAsFrontRegisteredUser() throws InterruptedException {
         Front_Home_page.Welcome_user(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
         Front_Home_page.Sign_out(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
 //        WebDriverWait w = new WebDriverWait(driver, 10);
 //        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Log Out')]\")));
         WebDriverWait w = new WebDriverWait(driver, 5);
         w.until(ExpectedConditions.visibilityOf(Front_Home_page.Yes_sign_out(driver)));
         Front_Home_page.Yes_sign_out(driver).click();
-        Thread.sleep(2000);
-
+        sleep(2000);
+        tearDown();
     }
 
     @And("^I Click on Shopping Cart for payment$")
@@ -1069,7 +1070,7 @@ public class Steps extends Utility {
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'Payment Process')]")));
 //        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
-        Thread.sleep(2000);
+        sleep(2000);
     }
 
     @And("^I Copy Application Number$")
@@ -1085,7 +1086,7 @@ public class Steps extends Utility {
         WebDriverWait w = new WebDriverWait(driver, 5);
         w.until(ExpectedConditions.visibilityOf(Payment_process.Search_reference_number(driver)));
         Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
-        Thread.sleep(2000);
+        sleep(2000);
         Payment_process.Select_last_application(driver).click();
 
     }
@@ -1107,7 +1108,7 @@ public class Steps extends Utility {
     @And("^I Select Payment Method \"([^\"]*)\"$")
     public void iSelectPaymentMethod(String Payment_method) throws Throwable {
         Payment_process.Select_payment(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
         if (Payment_method.equals("Credit")) {
             try {
                 Payment_process.Credit_card(driver).click();
@@ -1129,7 +1130,7 @@ public class Steps extends Utility {
         } else {
             System.out.println("Payment Method is not valid");
         }
-        Thread.sleep(3000);
+        sleep(3000);
     }
 
 
@@ -1138,7 +1139,7 @@ public class Steps extends Utility {
         WebDriverWait ww = new WebDriverWait(driver, 5);
         ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
         Payment_process.Proceed_to_payment(driver).click();
-
+        sleep(2000);
     }
 
     @And("^I Verify Message to proceed to Post Office for Payment$")
@@ -1151,14 +1152,14 @@ public class Steps extends Utility {
             System.out.println("Message did not appear");
             Assert.fail("Message did not appear");
         }
-        Thread.sleep(8000);
+        sleep(8000);
 
     }
 
     @And("^I Click on Small Planters Icon$")
     public void iClickOnSmallPlantersIcon() throws InterruptedException {
         Small_planters.Small_planters(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
     }
 
     @And("^I Verify display of REGISTRATION FOR SMALL PLANTERS Page$")
@@ -1177,7 +1178,7 @@ public class Steps extends Utility {
 
     @And("^I Select Applicant Title \"([^\"]*)\"$")
     public void iSelectApplicantTitle(String Applicant_Title) throws Throwable {
-        Thread.sleep(1500);
+        sleep(1500);
         if (Applicant_Title.equals("Mr")){
             try {
                 Small_planters.Title_Select_one(driver).click();
@@ -1185,7 +1186,7 @@ public class Steps extends Utility {
                 System.out.println("Could not Select One");
                 Assert.fail("Could not Select One");
             }
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Title_Mr(driver).click();
             System.out.println("Mr is working");
 
@@ -1197,7 +1198,7 @@ public class Steps extends Utility {
                 System.out.println("Could not Select One");
                 Assert.fail("Could not Select One");
             }
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Title_Mrs(driver).click();
             System.out.println("Mrs is working");
 
@@ -1208,7 +1209,7 @@ public class Steps extends Utility {
                 System.out.println("Could not Select One");
                 Assert.fail("Could not Select One");
             }
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Title_Miss(driver).click();
             System.out.println("Miss is working");
 
@@ -1224,61 +1225,61 @@ public class Steps extends Utility {
         if (District.equals("Black River")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Black_river(driver).click();
 
         }else if (District.equals("Flacq")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Flacq(driver).click();
 
         }else if (District.equals("Grand Port")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Grand_port(driver).click();
 
         }else if (District.equals("Moka")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Moka(driver).click();
 
         }else if (District.equals("Pamplemousses")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Pamplemousses(driver).click();
 
         }else if (District.equals("Port Louis")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Port_louis(driver).click();
 
         }else if (District.equals("Plaine Wilhems")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Plaine_wilhems(driver).click();
 
         }else if (District.equals("Riviere Du Rempart")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Riviere_du_rempart(driver).click();
 
         }else if (District.equals("Savannes")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Savannes(driver).click();
 
         }else if (District.equals("Rodrigues")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Rodrigues(driver).click();
 
         }
@@ -1290,22 +1291,22 @@ public class Steps extends Utility {
 
     @And("^I Select Applicant Level of Education \"([^\"]*)\"$")
     public void iSelectApplicantLevelOfEducation(String Education_Level) throws Throwable {
-        Thread.sleep(1500);
+        sleep(1500);
         if (Education_Level.equals("Primary")){
             Small_planters.Education_Select_one(driver).click();
-            Thread.sleep(2000);
+            sleep(2000);
             Small_planters.Education_primary(driver).click();
             System.out.println("Education Level is working");
 
         }else if (Education_Level.equals("Secondary")){
             Small_planters.Education_Select_one(driver).click();
-            Thread.sleep(2000);
+            sleep(2000);
             Small_planters.Education_secondary(driver).click();
             System.out.println("Education Level is working");
 
         }else if (Education_Level.equals("Tertiary")){
             Small_planters.Education_Select_one(driver).click();
-            Thread.sleep(2000);
+            sleep(2000);
             Small_planters.Education_tertiary(driver).click();
             System.out.println("Education Level is working");
 
@@ -1355,8 +1356,13 @@ public class Steps extends Utility {
     @And("^I Select Marital Status \"([^\"]*)\"$")
     public void iSelectMaritalStatus(String Marital_Status) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Single(driver));
+<<<<<<< HEAD
         Thread.sleep(1500);
         if (Marital_Status.equals("Single")) {
+=======
+        sleep(1500);
+        if (Marital_Status.equals("Sinlge")) {
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
             try {
                 Small_planters.Single(driver).click();
             } catch (Exception e) {
@@ -1391,7 +1397,7 @@ public class Steps extends Utility {
 
     @And("^I Verify for Photo upload success message$")
     public void iVerifyForPhotoUploadSuccessMessage() throws InterruptedException {
-        Thread.sleep(1000);
+        sleep(1000);
         try {
             Documents_upload.Photo_upload_success_message(driver);
         } catch (Exception e) {
@@ -1404,9 +1410,9 @@ public class Steps extends Utility {
     @And("^I Select No of years for Registration membership \"([^\"]*)\"$")
     public void iSelectNoOfYearsForRegistrationMembership(String Year_dur) throws Throwable {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Single(driver));
-        Thread.sleep(1500);
+        sleep(1500);
         Farmers_cooperatives_association_society_company.Select_one(driver).click();
-        Thread.sleep(2000);
+        sleep(2000);
         if (Year_dur.equals("1")) {
             Farmers_cooperatives_association_society_company.One_Year(driver).click();
             System.out.println("Radio Button is working correctly");
@@ -1416,7 +1422,7 @@ public class Steps extends Utility {
         } else {
             System.out.println("Radio Button is not functioning properly");
         }
-        Thread.sleep(2000);
+        sleep(2000);
     }
 
     @And("^I Verify Display of Particulars of Family Beneficiaries Page$")
@@ -1434,21 +1440,26 @@ public class Steps extends Utility {
 
     @And("^I Click on Add Family and Beneficiaries$")
     public void iClickOnAddFamilyAndBeneficiaries() throws InterruptedException {
-        Thread.sleep(1500);
+        sleep(1500);
         try {
             Small_planters.Add_family_and_beneficiaries(driver);
         } catch (Exception e){
             Assert.fail("Add Family and Beneficiaries is not clicakble");
         }
-        Thread.sleep(1500);
+        sleep(1500);
         Small_planters.Add_family_and_beneficiaries(driver).click();
 
     }
 
     @And("^Verify Display of Particulars of Family Beneficiaries input table$")
     public void verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable() throws InterruptedException {
+<<<<<<< HEAD
         Thread.sleep(3000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Tea_grower.Particulars_for_Registration_of_Tea_Plantation_page(driver));
+=======
+        sleep(3000);
+//        driver.switchTo().frame("//div[contains(@id, 'dlgfamily')]");  // Switch to the frame with the specified name or ID
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 
         WebDriverWait w = new WebDriverWait(driver, 5);
         w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_family_ben_tab(driver)));
@@ -1462,7 +1473,7 @@ public class Steps extends Utility {
 
     @And("^I Select Family relationship \"([^\"]*)\"$")
     public void iSelectFamilyRelationship(String Relationship) throws Throwable {
-        Thread.sleep(1500);
+        sleep(1500);
         if (Relationship.equals("Spouse")){
             try {
                 Small_planters.Family_Select_one(driver).click();
@@ -1470,7 +1481,7 @@ public class Steps extends Utility {
                 System.out.println("Family - Could not Select One");
                 Assert.fail("Family - Could not Select One");
             }
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Family_spouse(driver).click();
             System.out.println("Spouse option is working");
 
@@ -1482,7 +1493,7 @@ public class Steps extends Utility {
                 System.out.println("Family - Could not Select One");
                 Assert.fail("Family - Could not Select One");
             }
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Family_child_one(driver).click();
             System.out.println("Child 1 is working");
 
@@ -1493,7 +1504,7 @@ public class Steps extends Utility {
                 System.out.println("Family - Could not Select One");
                 Assert.fail("Family - Could not Select One");
             }
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Family_child_two(driver).click();
             System.out.println("Child 2 is working");
 
@@ -1504,7 +1515,7 @@ public class Steps extends Utility {
                 System.out.println("Family - Could not Select One");
                 Assert.fail("Family - Could not Select One");
             }
-            Thread.sleep(1000);
+            sleep(1000);
             Small_planters.Family_child_three(driver).click();
             System.out.println("Child 3 is working");
 
@@ -1527,7 +1538,7 @@ public class Steps extends Utility {
     @And("^I Select Family Gender \"([^\"]*)\"$")
     public void iSelectFamilyGender(String Gender) throws Throwable {
         Small_planters.Family_gender_select_one(driver).click();
-        Thread.sleep(1500);
+        sleep(1500);
         if (Gender.equals("Male")){
             Small_planters.Family_gender_male(driver).click();
             System.out.println("Gender Male is working fine");
@@ -1544,14 +1555,18 @@ public class Steps extends Utility {
     public void iInputFamilyDateOfBirth(String DOB) throws Throwable {
         if (DOB.equals("1Jan94")){
             Small_planters.Family_date_of_birth(driver).click();
-            Thread.sleep(1500);
+            sleep(1500);
             driver.findElement(By.xpath("(//select[@data-event='change'])[2]")).sendKeys("1994");
-            Thread.sleep(1500);
+            sleep(1500);
             driver.findElement(By.xpath("(//select[@data-event='change'])[1]")).sendKeys("Jan");
-            Thread.sleep(1500);
+            sleep(1500);
             driver.findElement(By.xpath("(//a[@href='#'])[47]")).click();
+<<<<<<< HEAD
             Thread.sleep(1000);
 
+=======
+            sleep(1000);
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
         }else{
             Assert.fail("Cannot select date");
         }
@@ -1592,19 +1607,19 @@ public class Steps extends Utility {
 
     @And("^I Click on Add Crop$")
     public void iClickOnAddCrop() throws InterruptedException {
-        Thread.sleep(1500);
+        sleep(1500);
         try {
             Small_planters.Add_crop(driver);
         } catch (Exception e){
             Assert.fail("Add Crop is not clickable");
         }
-        Thread.sleep(1500);
+        sleep(1500);
         Small_planters.Add_crop(driver).click();
     }
 
     @And("^I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table$")
     public void iVerifyDisplayOfParticularsOfCropSugarcaneAndTeaPlantationTable() throws InterruptedException {
-        Thread.sleep(3000);
+        sleep(3000);
         WebDriverWait w = new WebDriverWait(driver, 5);
         w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_of_crop_tab(driver)));
         try {
@@ -1623,7 +1638,7 @@ public class Steps extends Utility {
     @And("^I Select Crop Type \"([^\"]*)\"$")
     public void iSelectCropType(String Crop_Type) throws Throwable {
         Small_planters.Select_one_crop_type(driver).click();
-        Thread.sleep(1500);
+        sleep(1500);
         if (Crop_Type.equals("Cane")){
             Small_planters.Cane_crop_type(driver).click();
             System.out.println("Cane is working fine");
@@ -1644,7 +1659,7 @@ public class Steps extends Utility {
     @And("^I Select Owner Type \"([^\"]*)\"$")
     public void iSelectOwnerType(String Owner_Type) throws Throwable {
         Small_planters.Select_one_owner_type(driver).click();
-        Thread.sleep(1500);
+        sleep(1500);
         if (Owner_Type.equals("Owner")){
             Small_planters.Owner_owner_type(driver).click();
             System.out.println("Owner is working fine");
@@ -1663,8 +1678,414 @@ public class Steps extends Utility {
     }
 
     @And("^I Save Particulars of Crop$")
-    public void iSaveParticularsOfCrop() {
+    public void iSaveParticularsOfCrop() throws InterruptedException {
         Small_planters.Save_Particulars_of_crop(driver).click();
+        sleep(1000);
+    }
+
+    @And("^I Verify Display of Particulars for Horticultural Plantations Page$")
+    public void iVerifyDisplayOfParticularsForHorticulturalPlantationsPage() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//h6[contains(.,'Particulars for Horticultural Plantations')])[1]")));
+        try {
+            Small_planters.Particulars_horticultural_plantations_page(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Horticultural Plantations Page Page did not appear");
+            Assert.fail("Particulars for Horticultural Plantations Page Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Horticultural$")
+    public void iClickOnAddHorticultural() throws InterruptedException {
+        sleep(1500);
+        try {
+            Small_planters.Add_horticultural(driver);
+        } catch (Exception e){
+            Assert.fail("Add Horticultural is not clicakble");
+        }
+        sleep(1500);
+        Small_planters.Add_horticultural(driver).click();
+    }
+
+    @And("^Verify Display of Particulars for Horticultural Plantations Table$")
+    public void verifyDisplayOfParticularsForHorticulturalPlantationsTable() throws InterruptedException {
+        sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_of_horticultural_tab(driver)));
+        try {
+            Small_planters.Particulars_of_horticultural_tab(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Horticultural Plantations Tab did not appear");
+            Assert.fail("Particulars for Horticultural Plantations Tab did not appear");
+        }
+    }
+
+    @And("^I Select Owner Type for Horticultural Plantation \"([^\"]*)\"$")
+    public void iSelectOwnerTypeForHorticulturalPlantation(String Owner_Type) throws Throwable {
+        Small_planters.Select_one_owner_type_horticultural(driver).click();
+        sleep(1500);
+        if (Owner_Type.equals("Owner")){
+            Small_planters.Owner_owner_type_horticultural(driver).click();
+            System.out.println("Owner is working fine");
+        }else if(Owner_Type.equals("Tenant")){
+            Small_planters.Tenant_owner_type_horticultural(driver).click();
+            System.out.println("Tenant is working fine");
+        }else{
+            System.out.println("Owner Type for Horticultural Plantation option is not valid");
+            Assert.fail("Owner Type for Horticultural Plantation option is not valid");
+        }
+    }
+
+    @And("^I Input Field Location \"([^\"]*)\"$")
+    public void iInputFieldLocation(String Field_Location) throws Throwable {
+        Small_planters.Field_location(driver).sendKeys(Field_Location);
+    }
+
+    @And("^I Select Production System \"([^\"]*)\"$")
+    public void iSelectProductionSystem(String Production_System) throws Throwable {
+        Small_planters.Select_one_production_system(driver).click();
+        sleep(1500);
+        if (Production_System.equals("Open Field")){
+            Small_planters.Open_field(driver).click();
+            System.out.println("Open Field is working fine");
+        }else if(Production_System.equals("Sheltered Farming")){
+            Small_planters.Sheltered_farming(driver).click();
+            System.out.println("Sheltered Farming is working fine");
+        }else if(Production_System.equals("Aquaponics")){
+            Small_planters.Aquaponics(driver).click();
+            System.out.println("Aquaponics is working fine");
+        }else{
+            System.out.println("Production System option is not valid");
+            Assert.fail("Production System option is not valid");
+        }
+    }
+
+    @And("^I Input Total Extent of plot - Size \"([^\"]*)\"$")
+    public void iInputTotalExtentOfPlotSize(String Total_Extent) throws Throwable {
+        Small_planters.Total_extent_plot(driver).sendKeys(Total_Extent);
+    }
+
+    @And("^I Input Crop grown at time of Registration/ Crop to be grown \"([^\"]*)\"$")
+    public void iInputCropGrownAtTimeOfRegistrationCropToBeGrown(String Crop_Grown) throws Throwable {
+        Small_planters.Crop_grown(driver).sendKeys(Crop_Grown);
+    }
+
+
+    @And("^I Select Plantation Type \"([^\"]*)\"$")
+    public void iSelectPlantationType(String Plantation_Type) throws Throwable {
+        Small_planters.Select_one_plantation_type(driver).click();
+        sleep(1500);
+        if (Plantation_Type.equals("Interline")){
+            Small_planters.Interline_plantation_type(driver).click();
+            System.out.println("Owner is working fine");
+        }else if(Plantation_Type.equals("Full Stand")){
+            Small_planters.Full_stand_plantation_type(driver).click();
+            System.out.println("Tenant is working fine");
+        }else{
+            System.out.println("Plantation Type option is not valid");
+            Assert.fail("Plantation Type option is not valid");
+        }
+    }
+
+    @And("^I Input Expected Date of Planting/Seedling \"([^\"]*)\"$")
+    public void iInputExpectedDateOfPlantingSeedling(String Date_Plantation_Seedling) throws Throwable {
+        if (Date_Plantation_Seedling.equals("1Aug2030")){
+            Small_planters.Input_date_planting_seedling(driver).click();
+            sleep(1500);
+            Small_planters.Input_year_planting_seedling(driver).sendKeys("2030");
+            sleep(1500);
+            Small_planters.Input_month_planting_seedling(driver).sendKeys("Aug");
+            sleep(1500);
+            Small_planters.Input_day_planting_seedling(driver).click();
+            sleep(1000);
+        }else{
+            Assert.fail("Cannot select date");
+        }
+    }
+
+    @And("^I Save Particulars for Horticultural Plantations$")
+    public void iSaveParticularsForHorticulturalPlantations() throws InterruptedException {
+        Small_planters.Save_Particulars_of_horticultural_plantations(driver).click();
+        sleep(1000);
+    }
+
+    @And("^I Upload documents for Horticultural Plantations \"([^\"]*)\"$")
+    public void iUploadDocumentsForHorticulturalPlantations(String Upload_test) throws Throwable {
+        Documents_upload.Button_upload_horticultural_plantation(driver).click();
+        sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Horticultural_plantation_documents_tab(driver)));
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Documents_upload.Document_upload_horticultural_plantation(driver).sendKeys(filePath);
+        WebDriverWait ww = new WebDriverWait(driver, 30);
+        WebElement element1 = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download']")));
+
+    }
+
+    @And("^I Close Horticultural Plantation Documents tab$")
+    public void iCloseHorticulturalPlantationDocumentsTab() throws InterruptedException {
+        Documents_upload.Close_hoticultural_document_tab(driver).click();
+        sleep(1500);
+    }
+
+    @And("^I Input Crop Status and Organisation \"([^\"]*)\"$")
+    public void iInputCropStatusAndOrganisation(String Crop_Status) throws Throwable {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Particulars for Horticultural Plantations declared under FPS')]")));
+        Small_planters.Crop_status(driver).sendKeys(Crop_Status);
+    }
+
+    @And("^I Save Particulars for Horticultural Plantations declared under FPS$")
+    public void iSaveParticularsForHorticulturalPlantationsDeclaredUnderFPS() {
+        Small_planters.Save_Horticultural_plantations_under_FPS(driver).click();
+    }
+
+    @And("^I Click on Edit button for Particulars for Horticultural Plantations declared under FPS$")
+    public void iClickOnEditButtonForParticularsForHorticulturalPlantationsDeclaredUnderFPS() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Small_planters.Particulars_for_Horticultural_Plantations_declared_under_FPS(driver));
+        sleep(8000);
+        Small_planters.Edit_Horticultural_plantations_under_FPS(driver).click();
+    }
+
+    @And("^I Verify Particulars for Horticultural Plantations declared under FPS Table$")
+    public void iVerifyParticularsForHorticulturalPlantationsDeclaredUnderFPSTable() throws InterruptedException {
+        sleep(1500);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_for_Horticultural_Plantations_declared_under_FPS_table(driver)));
+
+    }
+
+    @And("^I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS$")
+    public void iVerifyDeclarationPageForREGISTRATIONFORSMALLPLANTERS() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
+
+        WebDriverWait w = new WebDriverWait(driver, 20);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
+        try {
+            Small_planters.Membership_into_sfwf(driver);
+        } catch (Exception e) {
+            System.out.println("Declaration Page for REGISTRATION FOR SMALL PLANTERS did not appear");
+            Assert.fail("Declaration Page for REGISTRATION FOR SMALL PLANTERS did not appear");
+        }
+    }
+
+    @And("^I Click on Photo checkbox$")
+    public void iClickOnPhotoCheckbox() {
+        Small_planters.Photo_checkbox(driver).click();
+    }
+
+    @And("^I Click on Cancel button not to proceed with another registration$")
+    public void iClickOnCancelButtonNotToProceedWithAnotherRegistration() throws InterruptedException {
+        sleep(2000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Terms_and_Condition.Cancel_no_other_registration(driver)));
+        Terms_and_Condition.Cancel_no_other_registration(driver).click();
+        WebDriverWait ww = new WebDriverWait(driver, 10);
+        WebElement element = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
+
+    }
+
+    @And("^I Verify Success message for application submitted for Small Planters Registration$")
+    public void iVerifySuccessMessageForApplicationSubmittedForSmallPlantersRegistration() throws InterruptedException {
+        sleep(2000);
+        try {
+            My_application.Success_message_submit_application(driver);
+        } catch (Exception e) {
+            System.out.println("Success message did not appear");
+        }
+        sleep(8000);
+    }
+
+    @And("^I Verify display of Payment Gateway$")
+    public void iVerifyDisplayOfPaymentGateway() {
+//        WebDriverWait ww = new WebDriverWait(driver, 30);
+//        ww.until(ExpectedConditions.visibilityOf(Payment_process.Payment_gateway_display(driver)));
+        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Card number')]")));
+        try {
+            Payment_process.Payment_gateway_display(driver);
+        } catch (Exception e) {
+            System.out.println("Display of Payment Gateway failed");
+            Assert.fail("Display of Payment Gateway failed");
+        }
+    }
+
+    @And("^I Input Card Details \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iInputCardDetails(String Card_Number, String Expiry_Month, String Expiry_Year, String Cardholder_Name, String Security_Code) throws Throwable {
+        Payment_process.Card_number(driver).sendKeys(Card_Number);
+        Payment_process.Expiry_month(driver).sendKeys(Expiry_Month);
+        Payment_process.Expiry_year(driver).sendKeys(Expiry_Year);
+        Payment_process.Security_code(driver).sendKeys(Security_Code);
+        Payment_process.Cardholder_name(driver).sendKeys(Cardholder_Name);
+
+    }
+
+    @And("^I Click on Pay Now button$")
+    public void iClickOnPayNowButton() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Payment_process.Pay_now(driver));
+        sleep(1000);
+        Payment_process.Pay_now(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'My Application')]")));
+
+    }
+
+    @And("^I Verify Payment Status is changed to Paid$")
+    public void iVerifyPaymentStatusIsChangedToPaid() {
+        try {
+            Payment_process.Payment_status_paid_last_application_ref(driver);
+        } catch (Exception e) {
+            System.out.println("Payment status not changed to Paid");
+            Assert.fail("Payment status not changed to Paid");
+        }
+    }
+
+    @And("^I Click on Final Proceed to Online Payment$")
+    public void iClickOnFinalProceedToOnlinePayment() throws InterruptedException {
+        WebDriverWait ww = new WebDriverWait(driver, 5);
+        ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
+        Payment_process.Proceed_to_payment(driver).click();
+        sleep(30000);
+    }
+
+    @And("^I Input Finance Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputFinanceUsernameAndPassword(String FUsername, String Password) throws Throwable {
+        Home_page.Username(driver).sendKeys(FUsername);
+        Home_page.Password(driver).sendKeys(Password);
+    }
+
+    @And("^I Click on Manage Cashier$")
+    public void iClickOnManageCashier() {
+        Back_office_main_page.Manage_cashier(driver).click();
+    }
+
+    @And("^I Verify List of Applications page$")
+    public void iVerifyListOfApplicationsPage() throws InterruptedException {
+        sleep(1500);
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'List of Applications')]")));
+        try {
+            Back_office_main_page.List_of_applications(driver);
+        } catch (Exception e) {
+            System.out.println("List of Applications page did not appear");
+            Assert.fail("List of Applications page did not appear");
+        }
+    }
+
+    @And("^I Click on Confirm Processing Fees$")
+    public void iClickOnConfirmProcessingFees() throws InterruptedException {
+        Back_office_main_page.Confirm_processing_fees(driver).click();
+        sleep(1500);
+    }
+
+    @And("^I Verify display of Processing Details Frame$")
+    public void iVerifyDisplayOfProcessingDetailsFrame() {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Processing_details_frame(driver)));
+        try {
+            Back_office_main_page.Processing_details_frame(driver);
+        } catch (Exception e) {
+            System.out.println("Processing Details Frame did not appear");
+            Assert.fail("Processing Details Frame did not appear");
+        }
+    }
+
+    @And("^I Select Payment Mode \"([^\"]*)\"$")
+    public void iSelectPaymentMode(String Payment_Mode) throws Throwable {
+        Back_office_main_page.Payment_mode_select_one(driver).click();
+        sleep(2000);
+        if (Payment_Mode.equals("Cash")) {
+            try {
+                Back_office_main_page.Payment_mode_cash(driver).click();
+            } catch (Exception e) {
+                System.out.println("Cash Payment did not appear");
+                Assert.fail("Cash Payment did not appear");
+            }
+        } else if (Payment_Mode.equals("Internet Banking")) {
+            try {
+                Back_office_main_page.Payment_mode_Internet_banking(driver).click();
+            } catch (Exception e) {
+                System.out.println("Internet Banking did not appear");
+                Assert.fail("Internet Banking did not appear");
+            }
+        } else {
+            System.out.println("Payment Method is not valid");
+            Assert.fail("Payment Method is not valid");
+        }
+        sleep(3000);
+    }
+
+    @And("^I Input Amount of payment \"([^\"]*)\"$")
+    public void iInputAmountOfPayment(String Amount_To_Pay) throws Throwable {
+        Back_office_main_page.Amount(driver).sendKeys(Amount_To_Pay);
+    }
+
+    @And("^I Click on Add Payment$")
+    public void iClickOnAddPayment() throws InterruptedException {
+        Back_office_main_page.Add_payment(driver).click();
+    }
+
+
+    @And("^I Click on Save Payment$")
+    public void iClickOnSavePayment() throws InterruptedException {
+        sleep(1500);
+//        WebDriverWait w = new WebDriverWait(driver, 5);
+//        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Save_payment(driver)));
+        Back_office_main_page.Save_payment(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Payment confirmed')])[2]")));
+    }
+
+    @And("^I Verify success message for adding payment$")
+    public void iVerifySuccessMessageForAddingPayment() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Success_message_payment_confirmed(driver)));
+        try {
+            Back_office_main_page.Success_message_payment_confirmed(driver);
+        } catch (Exception e) {
+            System.out.println("Success message for adding payment did not appear");
+            Assert.fail("Success message for adding payment did not appear");
+        }
+    }
+
+    @And("^I Input WPO Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputWPOUsernameAndPassword(String PwoUsername, String Password) throws Throwable {
+        Home_page.Username(driver).sendKeys(PwoUsername);
+        Home_page.Password(driver).sendKeys(Password);
+    }
+
+    @And("^I Click on All Applications$")
+    public void iClickOnAllApplications() {
+        Back_office_main_page.All_applications_click(driver).click();
+    }
+
+    @And("^I Verify display of list of registrations page$")
+    public void iVerifyDisplayOfListOfRegistrationsPage() throws InterruptedException {
+        Thread.sleep(1500);
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'List of Registrations')]")));
+        try {
+            Back_office_main_page.List_of_registrations_page(driver);
+        } catch (Exception e) {
+            System.out.println("List oof registrations page did not appear");
+            Assert.fail("List of registrations page did not appear");
+        }
+    }
+
+    @And("^I Search for Application Ref Number$")
+    public void iSearchForApplicationRefNumber() throws InterruptedException {
+        Back_office_main_page.Search_bar_app_num(driver).sendKeys(Application_reference_number);
+        Thread.sleep(2000);
+        Payment_process.Select_last_application(driver).click();
+        Thread.sleep(1500);
+
+    }
+
+    @And("^I Click to view Application$")
+    public void iClickToViewApplication() {
+        Back_office_main_page.View_last_application(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Action')]")));
     }
 
     @And("^I Click on Tea Grower Icon$")

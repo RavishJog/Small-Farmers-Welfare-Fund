@@ -1,11 +1,11 @@
-#User Story 12822 - Payment Process
+#User Story 13280 - Back Office Process for Registration
 
-@Main_feature @US12882/12808
-Feature: User Story 12822 - Payment Process for Registration
+@Main_feature @US13280
+Feature: User Story 13280 - Back Office Process for Registration
 
    #Scenario1
-  @Payment_at_counter_for_Agro-Processing-Enterprise
-  Scenario Outline: Payment at counter for Registration as Agro-Processing Enterprise-Application form
+  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise
+  Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page "<Browser>"
     When I Input Registered User's Username "<Username>" and Password "<Password>"
@@ -64,12 +64,38 @@ Feature: User Story 12822 - Payment Process for Registration
     And I Select Payment Method "<Payment_method>"
     And I Click on Final Proceed to Payment
     And I Verify Message to proceed to Post Office for Payment
-    Then I Sign Out as Front Registered User
+    And I Sign Out as Front Registered User
+#    Finance
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input Finance Username "<FUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on Manage Cashier
+    And I Verify List of Applications page
+    And I Click on Confirm Processing Fees
+    And I Verify display of Processing Details Frame
+    And I Select Payment Mode "<Payment_Mode>"
+    And I Input Amount of payment "<Amount_To_Pay>"
+    And I Click on Add Payment
+    And I Click on Save Payment
+    And I Verify success message for adding payment
+    And I Sign Out
+    And I Verify Successful Sign Out
+#    PWO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WPO Username "<PwoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number
+    And I Click to view Application
+
 
 
     Examples:
-      |Browser|Username |Password |Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Suraj    |Admin@123|ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Browser|Username |Password |FUsername|PwoUsername|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
+      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
      #Scenario2
   @Payment_online_for_Agro-Processing-Enterprise

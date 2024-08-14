@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="65.429" errors="0" skipped="0">
+=======
+<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="150.701" errors="0" skipped="0">
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
   <properties>
     <property name="idea.version" value="2023.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -39,8 +43,13 @@
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
+<<<<<<< HEAD
     <property name="user.home" value="C:\Users\ali.nauzeer"/>
     <property name="tags" value="&quot;@US12599&quot;"/>
+=======
+    <property name="user.home" value="C:\Users\suraj.joggessur"/>
+    <property name="tags" value="&quot; @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise&quot;"/>
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     <property name="user.timezone" value="Indian/Mauritius"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
@@ -50,7 +59,11 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-1.8\jre"/>
+<<<<<<< HEAD
     <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.2 clean test -D tags=&quot;@US12599&quot;"/>
+=======
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 clean test -D tags=&quot; @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise&quot;"/>
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -68,6 +81,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
+<<<<<<< HEAD
   <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="65.429">
     <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class=&apos;ui-button-icon-left ui-icon ui-c pi pi-download&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class=&apos;ui-button-icon-left ui-icon ui-c pi pi-download&apos;] (tried for 30 second(s) with 500 MILLISECONDS interval)
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
@@ -149,6 +163,63 @@ Feature: User Story 12599 - Register as Tea Grower
   #Scenario1
   @Registration_as_tea_grower
   Scenario Outline: Application to Register as tea_grower                                   &amp;#27;[90m# features/US12599.feature:8&amp;#27;[0m
+=======
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="150.701">
+    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
+	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2062)
+	at ✽.And I Search for Application Ref Number(features/US13280.feature:91)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2cfb4a64
+#User Story 13280 - Back Office Process for Registration
+@Main_feature @US13280
+Feature: User Story 13280 - Back Office Process for Registration
+
+  #Scenario1
+  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise
+  Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form &amp;#27;[90m# features/US13280.feature:8&amp;#27;[0m
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered User&apos;s Username &quot;&lt;Username&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
@@ -159,6 +230,7 @@ Feature: User Story 12599 - Register as Tea Grower
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on New Button to apply for Registration&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Registration Type Page&amp;#27;[0m
+<<<<<<< HEAD
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Tea Grower Icon&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR TEA GROWERS Page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select an Applicant Title &quot;&lt;Applicant_Title&gt;&quot;&amp;#27;[0m
@@ -192,6 +264,37 @@ Feature: User Story 12599 - Register as Tea Grower
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Type of Owner &quot;&lt;Owner_Type&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Plot Location &quot;&lt;Plot_Location&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Save Particulars of Crop&amp;#27;[0m
+=======
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Agro Processing Enterprise&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Associate/Society/Company Name &quot;&lt;Co_Name&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Represented by &quot;&lt;Rep_by&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Business Registration No(BRN) for Agro-Processing Enterprise &quot;&lt;BRN&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Certificate of Incorporation No for Agro-Processing Enterprise &quot;&lt;Cert_No&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Activity &quot;&lt;Act&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Office Address &quot;&lt;Off_Add&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Enterprise Address &quot;&lt;Enterprise_Address&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Duration Year for Registration membership &quot;&lt;Year_dur&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input List of Products manufactured &quot;&lt;Prod_man&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Status of Applicant for Agro-Processing Enterprise &quot;&lt;Status_Applicant&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Upload Required Documents Page is displayed&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Business Registration Card &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Certificate of Incorporation &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload List of Directors/ Associates &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Board Resolution of Enterprise for appointment of representative(s) &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload National Identity card of representative &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload National Identity cards of all shareholders &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Location Plan &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Copy of SMEDA Certificate &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Copy of Utility Bill &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Additional Document&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Additional Document Name &quot;&lt;Additional_Doc_Name&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for adding Additional Document Name&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Additional Document &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message&amp;#27;[0m
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on I agree to the Terms and Conditions&amp;#27;[0m
@@ -202,6 +305,7 @@ Feature: User Story 12599 - Register as Tea Grower
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status &quot;&lt;App_status&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Payment Status &quot;&lt;Payment_Status&gt;&quot;&amp;#27;[0m
+<<<<<<< HEAD
     &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
 
     Examples: 
@@ -650,11 +754,203 @@ Caused by: java.lang.InterruptedException
 	at java.lang.ProcessImpl.waitFor(ProcessImpl.java:523)
 	at org.openqa.selenium.os.ProcessUtils$ProcessWaiter.run(ProcessUtils.java:154)
 	at java.lang.Thread.run(Thread.java:750)
+=======
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Copy Application Number&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Shopping Cart for payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mSelect Application for payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Proceed to Payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Payment Icon&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Payment Method &quot;&lt;Payment_method&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Final Proceed to Payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Message to proceed to Post Office for Payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
+    #    Finance
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Finance Username &quot;&lt;FUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Manage Cashier&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify List of Applications page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Confirm Processing Fees&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Processing Details Frame&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Payment Mode &quot;&lt;Payment_Mode&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Amount of payment &quot;&lt;Amount_To_Pay&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify success message for adding payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
+    #    PWO
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;PwoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+
+    Examples: 
+Unable to take screenshot
+java.lang.NullPointerException
+Status is not valid
+Text from source element: APE2024-00042
+Unable to take screenshot
+java.lang.NullPointerException
+
+  @Main_feature @US13280 @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise
+  Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form        &amp;#27;[90m# features/US13280.feature:98&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSuraj&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                               &amp;#27;[90m# Steps.iInputRegisteredUserSUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                                                              &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on New Button to apply for Registration&amp;#27;[0m                                                                    &amp;#27;[90m# Steps.iClickOnNewButtonToApplyForRegistration()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Registration Type Page&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iVerifyDisplayOfRegistrationTypePage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Agro Processing Enterprise&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iClickOnAgroProcessingEnterprise()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page&amp;#27;[0m                                               &amp;#27;[90m# Steps.iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Associate/Society/Company Name &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mABC Agro Co Ltd&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                           &amp;#27;[90m# Steps.iInputAssociateSocietyCompanyName(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Represented by &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMr John Brown&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                             &amp;#27;[90m# Steps.iInputRepresentedBy(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Business Registration No(BRN) for Agro-Processing Enterprise &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mC123456789&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                  &amp;#27;[90m# Steps.iInputBusinessRegistrationNoBRNForAgroProcessingEnterprise(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Certificate of Incorporation No for Agro-Processing Enterprise &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mXLPR852&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                   &amp;#27;[90m# Steps.iInputCertificateOfIncorporationNoForAgroProcessingEnterprise(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Activity &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFull Time&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iSelectActivity(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Office Address &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThe Main Road, Grand Port&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                 &amp;#27;[90m# Steps.iInputOfficeAddress(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Enterprise Address &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mRoyal Road, Port Louis&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputEnterpriseAddress(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Duration Year for Registration membership &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                             &amp;#27;[90m# Steps.iSelectDurationYearForRegistrationMembership(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input List of Products manufactured &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTomato, Pepper&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                             &amp;#27;[90m# Steps.iInputListOfProductsManufactured(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Status of Applicant for Agro-Processing Enterprise &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mCompany&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                              &amp;#27;[90m# Steps.iSelectStatusOfApplicantForAgroProcessingEnterprise(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Upload Required Documents Page is displayed&amp;#27;[0m                                                               &amp;#27;[90m# Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Business Registration Card &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                          &amp;#27;[90m# Steps.iUploadBusinessRegistrationCard(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Certificate of Incorporation &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                        &amp;#27;[90m# Steps.iUploadCertificateOfIncorporation(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload List of Directors/ Associates &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                       &amp;#27;[90m# Steps.iUploadListOfDirectorsAssociates(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Board Resolution of Enterprise for appointment of representative(s) &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m &amp;#27;[90m# Steps.iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload National Identity card of representative &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                            &amp;#27;[90m# Steps.iUploadNationalIdentityCardOfRepresentative(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload National Identity cards of all shareholders &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                         &amp;#27;[90m# Steps.iUploadNationalIdentityCardsOfAllShareholders(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Location Plan &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                       &amp;#27;[90m# Steps.iUploadLocationPlan(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Copy of SMEDA Certificate &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                           &amp;#27;[90m# Steps.iUploadCopyOfSMEDACertificate(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Copy of Utility Bill &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                &amp;#27;[90m# Steps.iUploadCopyOfUtilityBill(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Document Upload Success Message&amp;#27;[0m                                                                       &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Additional Document&amp;#27;[0m                                                                                 &amp;#27;[90m# Steps.iClickOnAddAdditionalDocument()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Additional Document Name &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdditional Document Test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                        &amp;#27;[90m# Steps.iInputAdditionalDocumentName(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success message for adding Additional Document Name&amp;#27;[0m                                                       &amp;#27;[90m# Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Additional Document &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                 &amp;#27;[90m# Steps.iUploadAdditionalDocument(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Document Upload Success Message&amp;#27;[0m                                                                       &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Terms and Conditions Page&amp;#27;[0m                                                                                 &amp;#27;[90m# Steps.iVerifyTermsAndConditionsPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI click on I agree to the Terms and Conditions&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iClickOnIAgreeToTheTermsAndConditions()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Bank &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mABC Banking&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iSelectBank(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Bank Branch for Agro-Processing Enterprise &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPort Louis&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                    &amp;#27;[90m# Steps.iInputBankBranchForAgroProcessingEnterprise(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Personal Bank Account Number Agro-Processing Enterprise &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m0001252563636&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                    &amp;#27;[90m# Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success message for application submitted&amp;#27;[0m                                                                 &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationSubmitted()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Application Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSubmitted&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                            &amp;#27;[90m# Steps.iVerifyApplicationStatus(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Payment Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPending&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                  &amp;#27;[90m# Steps.iVerifyPaymentStatus(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Copy Application Number&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iCopyApplicationNumber()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Shopping Cart for payment&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iClickOnShoppingCartForPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mSelect Application for payment&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.selectApplicationForPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Proceed to Payment&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnProceedToPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Payment Icon&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnPaymentIcon()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Payment Method &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mCounter&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                  &amp;#27;[90m# Steps.iSelectPaymentMethod(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Final Proceed to Payment&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iClickOnFinalProceedToPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Message to proceed to Post Office for Payment&amp;#27;[0m                                                             &amp;#27;[90m# Steps.iVerifyMessageToProceedToPostOfficeForPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out as Front Registered User&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
+    #    Finance
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Finance Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFINANCE&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                        &amp;#27;[90m# Steps.iInputFinanceUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Manage Cashier&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnManageCashier()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify List of Applications page&amp;#27;[0m                                                                                 &amp;#27;[90m# Steps.iVerifyListOfApplicationsPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Confirm Processing Fees&amp;#27;[0m                                                                                 &amp;#27;[90m# Steps.iClickOnConfirmProcessingFees()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Processing Details Frame&amp;#27;[0m                                                                       &amp;#27;[90m# Steps.iVerifyDisplayOfProcessingDetailsFrame()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Payment Mode &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mCash&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iSelectPaymentMode(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Amount of payment &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m850&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iInputAmountOfPayment(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Payment&amp;#27;[0m                                                                                             &amp;#27;[90m# Steps.iClickOnAddPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Payment&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnSavePayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify success message for adding payment&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iVerifySuccessMessageForAddingPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    PWO
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPWO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
+    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Search for Application Ref Number&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iSearchForApplicationRefNumber()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
+        (Session info: chrome=127.0.6533.100)
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+      System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+      Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+      *** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+      	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
+      	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2062)
+      	at ?.And I Search for Application Ref Number(features/US13280.feature:91)
+      &amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+
+&amp;#27;[31mFailed scenarios:&amp;#27;[0m
+&amp;#27;[31mfeatures/US13280.feature:98 &amp;#27;[0m# Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
+
+1 Scenarios (&amp;#27;[31m1 failed&amp;#27;[0m)
+81 Steps (&amp;#27;[31m1 failed&amp;#27;[0m, &amp;#27;[36m1 skipped&amp;#27;[0m, &amp;#27;[32m79 passed&amp;#27;[0m)
+2m29.894s
+
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
+  (Session info: chrome=127.0.6533.100)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir18844_181897080}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51787}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 05ff3981eff51b2619f0fa1c5ae8da28
+*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
+	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2062)
+	at ?.And I Search for Application Ref Number(features/US13280.feature:91)
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 
 </system-out>
     <system-err>SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+<<<<<<< HEAD
 Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 42932
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
@@ -731,6 +1027,26 @@ Caused by: java.lang.InterruptedException
 	at org.openqa.selenium.os.ProcessUtils$ProcessWaiter.run(ProcessUtils.java:154)
 	at java.lang.Thread.run(Thread.java:750)
 
+=======
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 17727
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 14, 2024 2:25:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 38959
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 14, 2024 2:27:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 42039
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 14, 2024 2:27:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+>>>>>>> fe70c59b61021e9ab1a272e8f1612ac1c2ebcd02
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
 </system-err>
