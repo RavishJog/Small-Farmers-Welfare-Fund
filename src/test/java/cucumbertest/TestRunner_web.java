@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
                 "pretty",
                 "json:target/cucumber-reports/cucumber.json" // Specify the JSON report path
         }
-        ,tags = "@Sign_in_correct_credentials"
+        ,tags = "@US12599"
 )
 
 public class TestRunner_web {

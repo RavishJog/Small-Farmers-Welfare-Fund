@@ -3,28 +3,16 @@
     "comments": [
       {
         "line": 1,
-        "value": "#User Story Sign In"
-      },
-      {
-        "line": 2,
-        "value": "# As an Back Office User"
-      },
-      {
-        "line": 3,
-        "value": "# I want to Sign In"
-      },
-      {
-        "line": 4,
-        "value": "# So that I can access the SFWF Backoffice Portal"
+        "value": "#User Story 12599 - Register as Tea Growers"
       }
     ],
-    "line": 8,
+    "line": 4,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 181900,
+              "duration": 143100,
               "status": "passed"
             },
             "match": {
@@ -32,15 +20,15 @@
             }
           }
         ],
-        "line": 25,
-        "name": "Login into SFWF Backoffice Portal with correct credentials",
+        "line": 70,
+        "name": "Application to Register as tea_grower",
         "description": "",
-        "id": "login-into-sfwf-backoffice-portal;login-into-sfwf-backoffice-portal-with-correct-credentials;;2",
+        "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;;2",
         "after": [
           {
             "result": {
-              "duration": 11916306799,
-              "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LT5-ALIN\u0027, ip: \u0027130.1.19.186\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: RemoteWebDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d127.0.6533.99 (f31af5097d90ef5ae5bd7b8700199bc6189ba34d-refs/branch-heads/6533@{#1910}), userDataDir\u003dC:\\Users\\ALI~1.NAU\\AppData\\Local\\Temp\\scoped_dir11672_975179490}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:53622}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d127.0.6533.100, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 2897502b577d3c56396215960fdda16f\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)\r\n\tat stepdefinition.Steps.setup(Steps.java:79)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)\r\n\tat cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\nCaused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn\u0027t taskkill it: Timeout waiting for process to die\r\n\tat org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)\r\n\tat org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)\r\n\tat org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)\r\n\tat org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)\r\n\tat org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)\r\n\tat org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)\r\n\tat org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\t... 52 more\r\nCaused by: org.openqa.selenium.os.ProcessUtils$ProcessStillAliveException: Timeout waiting for process to die\r\n\tat org.openqa.selenium.os.ProcessUtils.waitForProcessDeath(ProcessUtils.java:67)\r\n\tat org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:129)\r\n\t... 60 more\r\nCaused by: java.lang.InterruptedException\r\n\tat java.lang.ProcessImpl.waitFor(ProcessImpl.java:523)\r\n\tat org.openqa.selenium.os.ProcessUtils$ProcessWaiter.run(ProcessUtils.java:154)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n",
+              "duration": 14774090500,
+              "error_message": "org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LT5-ALIN\u0027, ip: \u0027130.1.19.186\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: RemoteWebDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir\u003dC:\\Users\\ALI~1.NAU\\AppData\\Local\\Temp\\scoped_dir11016_576635691}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57391}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d127.0.6533.100, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: d478eec8af539e22fdd39e9aaf997f56\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)\r\n\tat stepdefinition.Steps.setup(Steps.java:79)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:212)\r\n\tat cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)\r\n\tat cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\nCaused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn\u0027t taskkill it: Timeout waiting for process to die\r\n\tat org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)\r\n\tat org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)\r\n\tat org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)\r\n\tat org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)\r\n\tat org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)\r\n\tat org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)\r\n\tat org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\t... 52 more\r\nCaused by: org.openqa.selenium.os.ProcessUtils$ProcessStillAliveException: Timeout waiting for process to die\r\n\tat org.openqa.selenium.os.ProcessUtils.waitForProcessDeath(ProcessUtils.java:67)\r\n\tat org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:129)\r\n\t... 60 more\r\nCaused by: java.lang.InterruptedException\r\n\tat java.lang.ProcessImpl.waitFor(ProcessImpl.java:523)\r\n\tat org.openqa.selenium.os.ProcessUtils$ProcessWaiter.run(ProcessUtils.java:154)\r\n\tat java.lang.Thread.run(Thread.java:750)\r\n",
               "status": "failed"
             },
             "match": {
@@ -49,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 3032901,
+              "duration": 2469400,
               "status": "passed"
             },
             "match": {
@@ -62,19 +50,19 @@
         "steps": [
           {
             "result": {
-              "duration": 4478373700,
+              "duration": 4193789400,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I am on SFWF Back Office Home Page \"Chrome\"",
+            "line": 10,
+            "name": "I am on SFWF Front Office Home Page \"Chrome\"",
             "match": {
               "arguments": [
                 {
                   "val": "Chrome",
-                  "offset": 36
+                  "offset": 37
                 }
               ],
-              "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
+              "location": "Steps.iAmOnSFWFFrontOfficeHomePage(String)"
             },
             "matchedColumns": [
               0
@@ -83,23 +71,23 @@
           },
           {
             "result": {
-              "duration": 448065499,
+              "duration": 526561800,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I Input Username \"Suraj_Admin1\" and Password \"Admin@123\"",
+            "line": 11,
+            "name": "I Input Registered User\u0027s Username \"Yavishta\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Suraj_Admin1",
-                  "offset": 18
+                  "val": "Yavishta",
+                  "offset": 36
                 },
                 {
                   "val": "Admin@123",
-                  "offset": 46
+                  "offset": 60
                 }
               ],
-              "location": "Steps.iInputUsernameAndPassword(String,String)"
+              "location": "Steps.iInputRegisteredUserSUsernameAndPassword(String,String)"
             },
             "matchedColumns": [
               1,
@@ -109,10 +97,10 @@
           },
           {
             "result": {
-              "duration": 1476495999,
+              "duration": 1880198300,
               "status": "passed"
             },
-            "line": 16,
+            "line": 12,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -121,86 +109,827 @@
           },
           {
             "result": {
-              "duration": 110839999,
+              "duration": 106570000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I Verify Applicant\u0027s Successful Login",
+            "match": {
+              "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 538960100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I Click on Register as Farmer",
+            "match": {
+              "location": "Steps.iClickOnRegisterAsFarmer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27972000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I Verify that User is directed to My Application Page",
+            "match": {
+              "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26566200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I Verify display of Farmers Card link",
+            "match": {
+              "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29609700,
               "status": "passed"
             },
             "line": 17,
-            "name": "I Verify Successful Login",
+            "name": "I Verify Programmes link",
             "match": {
-              "location": "Steps.IVerifySuccessfulLogin()"
+              "location": "Steps.iVerifyProgrammesLink()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4356790700,
+              "duration": 276568000,
               "status": "passed"
             },
             "line": 18,
-            "name": "I Sign Out",
+            "name": "I Click on New Button to apply for Registration",
             "match": {
-              "location": "Steps.iSignOut()"
+              "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 128146199,
+              "duration": 26826000,
               "status": "passed"
             },
             "line": 19,
-            "name": "I Verify Successful Sign Out",
+            "name": "I Verify display of Registration Type Page",
             "match": {
-              "location": "Steps.iVerifySuccessfulSignOut()"
+              "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3281770499,
+              "duration": 2441206500,
               "status": "passed"
             },
             "line": 20,
-            "name": "I click on forget password",
+            "name": "I Click on Tea Grower Icon",
             "match": {
-              "location": "Steps.iClickOnForgetPassword()"
+              "location": "Steps.iClickOnTeaGrowerIcon()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 17331299,
+              "duration": 84916700,
               "status": "passed"
             },
             "line": 21,
-            "name": "I Verify Forget Password Page",
+            "name": "I Verify display of REGISTRATION FOR TEA GROWERS Page",
             "match": {
-              "location": "Steps.iVerifyForgetPasswordPage()"
+              "location": "Steps.iVerifyDisplayOfREGISTRATIONFORTEAGROWERSPage()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2712737100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I Select an Applicant Title \"Mrs\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mrs",
+                  "offset": 29
+                }
+              ],
+              "location": "Steps.iSelectAnApplicantTitle(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1217734400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I Select Applicant District \"Port Louis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Port Louis",
+                  "offset": 29
+                }
+              ],
+              "location": "Steps.iSelectApplicantDistrict(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3706433400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I Select Applicant Education Level \"Tertiary\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tertiary",
+                  "offset": 36
+                }
+              ],
+              "location": "Steps.iSelectApplicantEducationLevel(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 188633000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I Select Agricultural Activity \"Full Time\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Full Time",
+                  "offset": 32
+                }
+              ],
+              "location": "Steps.iSelectAgriculturalActivity(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 120364900,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I Input Other Occupation \"Manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Manager",
+                  "offset": 26
+                }
+              ],
+              "location": "Steps.iInputOtherOccupation(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30555083700,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //span[@class\u003d\u0027ui-button-icon-left ui-icon ui-c pi pi-download\u0027] (tried for 30 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat stepdefinition.Steps.iUploadPhotograph(Steps.java:1352)\r\n\tat ✽.And I Upload Photograph \"src\\test\\resources\\Photo_upload.jpg\"(features/US12599.feature:27)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //span[@class\u003d\u0027ui-button-icon-left ui-icon ui-c pi pi-download\u0027]\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LT5-ALIN\u0027, ip: \u0027130.1.19.186\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)\r\n\tat java.util.Optional.orElseThrow(Optional.java:290)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)\r\n\tat stepdefinition.Steps.iUploadPhotograph(Steps.java:1352)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)\r\n\tat cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "I Upload Photograph \"src\\test\\resources\\Photo_upload.jpg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src\\test\\resources\\Photo_upload.jpg",
+                  "offset": 21
+                }
+              ],
+              "location": "Steps.iUploadPhotograph(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "I Verify for Photo upload success message",
+            "match": {
+              "location": "Steps.iVerifyForPhotoUploadSuccessMessage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I Select No of years for Registration membership \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 50
+                }
+              ],
+              "location": "Steps.iSelectNoOfYearsForRegistrationMembership(String)"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "I Select Marital Status \"Married\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Married",
+                  "offset": 25
+                }
+              ],
+              "location": "Steps.iSelectMaritalStatus(String)"
+            },
+            "matchedColumns": [
+              10
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "I Click on Save and Continue",
+            "match": {
+              "location": "Steps.iClickOnSaveAndContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "I Verify Display of Particulars of Family Beneficiaries Page",
+            "match": {
+              "location": "Steps.iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "I Click on Add Family and Beneficiaries",
+            "match": {
+              "location": "Steps.iClickOnAddFamilyAndBeneficiaries()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Verify Display of Particulars of Family Beneficiaries input table",
+            "match": {
+              "location": "Steps.verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "I Select Family relationship \"Spouse\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Spouse",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.iSelectFamilyRelationship(String)"
+            },
+            "matchedColumns": [
+              11
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "I Input Family Surname \"Keen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Keen",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.iInputFamilySurname(String)"
+            },
+            "matchedColumns": [
+              12
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "I Input Family Other Names \"Dafne\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dafne",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.iInputFamilyOtherNames(String)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "I Select Family Gender \"Female\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Female",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.iSelectFamilyGender(String)"
+            },
+            "matchedColumns": [
+              14
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "I Input Family Date of Birth \"1Jan94\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1Jan94",
+                  "offset": 30
+                }
+              ],
+              "location": "Steps.iInputFamilyDateOfBirth(String)"
+            },
+            "matchedColumns": [
+              15
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "I Input Family Occupation \"Actress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Actress",
+                  "offset": 27
+                }
+              ],
+              "location": "Steps.iInputFamilyOccupation(String)"
+            },
+            "matchedColumns": [
+              16
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "I Click on Beneficiary of life Insurance Scheme",
+            "match": {
+              "location": "Steps.iClickOnBeneficiaryOfLifeInsuranceScheme()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "I Click on Beneficiary of Accident Insurance Scheme",
+            "match": {
+              "location": "Steps.iClickOnBeneficiaryOfAccidentInsuranceScheme()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "I Save Particulars of Family and Beneficiaries",
+            "match": {
+              "location": "Steps.iSaveParticularsOfFamilyAndBeneficiaries()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "I Click on Save and Continue",
+            "match": {
+              "location": "Steps.iClickOnSaveAndContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "I Verify Display of Particulars for Registration of Tea Plantation",
+            "match": {
+              "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "I Click on Add Tea Plantation",
+            "match": {
+              "location": "Steps.iClickOnAddTeaPlantation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "I Verify Display of Particulars for Registration of Tea Plantation Table",
+            "match": {
+              "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantationTable()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "I Input License No \"Tea Grower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tea Grower",
+                  "offset": 20
+                }
+              ],
+              "location": "Steps.iInputLicenseNo(String)"
+            },
+            "matchedColumns": [
+              17
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "I Input Total Extent of plot (In Arpent) \"2.7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2.7",
+                  "offset": 42
+                }
+              ],
+              "location": "Steps.iInputTotalExtentOfPlotInArpent(String)"
+            },
+            "matchedColumns": [
+              18
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 50,
+            "name": "I Select Type of Owner \"Tenant\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tenant",
+                  "offset": 24
+                }
+              ],
+              "location": "Steps.iSelectTypeOfOwner(String)"
+            },
+            "matchedColumns": [
+              19
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "I Input Plot Location \"Moka\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Moka",
+                  "offset": 23
+                }
+              ],
+              "location": "Steps.iInputPlotLocation(String)"
+            },
+            "matchedColumns": [
+              20
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "I Save Particulars of Crop",
+            "match": {
+              "location": "Steps.iSaveParticularsOfCrop()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "I Click on Save and Continue",
+            "match": {
+              "location": "Steps.iClickOnSaveAndContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "I Verify Terms and Conditions Page",
+            "match": {
+              "location": "Steps.iVerifyTermsAndConditionsPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "I click on I agree to the Terms and Conditions",
+            "match": {
+              "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "I Select Bank \"ABC Banking\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ABC Banking",
+                  "offset": 15
+                }
+              ],
+              "location": "Steps.iSelectBank(String)"
+            },
+            "matchedColumns": [
+              23
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "I Input Bank Branch for Agro-Processing Enterprise \"Port Louis\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Port Louis",
+                  "offset": 52
+                }
+              ],
+              "location": "Steps.iInputBankBranchForAgroProcessingEnterprise(String)"
+            },
+            "matchedColumns": [
+              24
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"0001252563636\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0001252563636",
+                  "offset": 65
+                }
+              ],
+              "location": "Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)"
+            },
+            "matchedColumns": [
+              25
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "I Click on Submit Application \"Yes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 31
+                }
+              ],
+              "location": "Steps.iClickOnSubmitApplication(String)"
+            },
+            "matchedColumns": [
+              26
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "I Verify Success message for application submitted",
+            "match": {
+              "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "I Verify Application Status \"Submitted\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Submitted",
+                  "offset": 29
+                }
+              ],
+              "location": "Steps.iVerifyApplicationStatus(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "I Verify Payment Status \"Pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pending",
+                  "offset": 25
+                }
+              ],
+              "location": "Steps.iVerifyPaymentStatus(String)"
+            },
+            "matchedColumns": [
+              28
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "I Sign Out as Front Registered User",
+            "match": {
+              "location": "Steps.iSignOutAsFrontRegisteredUser()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "line": 7,
+            "line": 3,
             "name": "@Main_feature"
           },
           {
-            "line": 11,
-            "name": "@Sign_in_correct_credentials"
+            "line": 7,
+            "name": "@Registration_as_tea_grower"
+          },
+          {
+            "line": 3,
+            "name": "@US12599"
           }
         ]
       }
     ],
-    "name": "Login into SFWF Backoffice Portal",
+    "name": "User Story 12599 - Register as Tea Grower",
     "description": "",
-    "id": "login-into-sfwf-backoffice-portal",
+    "id": "user-story-12599---register-as-tea-grower",
     "keyword": "Feature",
-    "uri": "features/Sign_in_backoffice.feature",
+    "uri": "features/US12599.feature",
     "tags": [
       {
-        "line": 7,
+        "line": 3,
         "name": "@Main_feature"
+      },
+      {
+        "line": 3,
+        "name": "@US12599"
       }
     ]
   }
